@@ -1,2 +1,1 @@
-# jcmsk.github.io
-Website: https://jcmsk.github.io
+Files for our website at: https://jcmsk.github.io
