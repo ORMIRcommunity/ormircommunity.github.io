@@ -11292,8 +11292,8 @@ footer .footer-item p {
 .bd-search {
     position: relative;
     padding: 1rem 15px;
-    margin-right: -15px;
-    margin-left: -15px
+    /* margin-right: -15px;
+    margin-left: -15px */
 }
 
 .bd-search .icon {
@@ -11722,4 +11722,18 @@ table.highlighttable td.linenos {
 .docutils.container {
     padding-left: unset;
     padding-right: unset
+}
+
+.nav-header {
+    text-decoration: none;
+    color: #000
+}
+
+.nav-header:hover {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.nav-header:active {
+    text-decoration: none;
 }

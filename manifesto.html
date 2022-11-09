@@ -78,159 +78,46 @@
 
 <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
 
-    <div class="container-fluid" id="banner"></div>
+    <div class="container-fluid" id="banner">
+        <nav class="navbar navbar-dark navbar-expand-lg bd-navbar bg-light shadow fixed-top">
+            <div class="container-xl">
+                <div id="logo">
+                    <img src="_images/ormir_logo.png" alt="ORMIR Logo" style="padding-right: 15px; width:100px">
+                </div>
+                <div id="navbar" class="mr-auto">
+                    <a class="mr-sm-2 nav-header" href="index.html">Home</a>
+                    <a class="mr-sm-2 nav-header" href="#">About</a>
+                    <a class="mr-sm-2 nav-header" href="nb_gallery.html">Notebooks</a>
+                    <a class="mr-sm-2 nav-header" href="packages.html">Packages</a>
+                    <a class="mr-sm-2 nav-header" href="datasets.html">Datasets</a>
+                    <a class="mr-sm-2 nav-header" href="learning.html">Learning</a>
+                    <a class="mr-sm-2 nav-header" href="for_contributors.html">Guidelines</a>
+                    <a class="mr-sm-2 nav-header" href="faq.html">FAQ</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div>&nbsp</div>
 
 
 
     <div class="container-xl">
         <div class="row">
 
-            <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-
-                <div class="navbar-brand-box">
-                    <a class="navbar-brand text-wrap" href="index.html">
-
-
-
-                        <h1 class="site-logo" id="site-title">ORMIR</h1>
-
-                    </a>
-                </div>
-                <form class="bd-search d-flex align-items-center" action="search.html" method="get">
-                    <i class="icon fas fa-search"></i>
-                    <input type="search" class="form-control" name="q" id="search-input"
-                        placeholder="Search this book..." aria-label="Search this book..." autocomplete="off">
-                </form>
-                <nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-                    <div class="bd-toc-item active">
-                        <ul class="nav bd-sidenav">
-                            <li class="toctree-l1">
-                                <a class="reference internal" href="index.html">
-                                    ORMIR
-                                </a>
-                            </li>
-                        </ul>
-                        <ul class="current nav bd-sidenav">
-                            <li class="toctree-l1 current active">
-                                <a class="current reference internal" href="#">
-                                    About
-                                </a>
-                            </li>
-                            <li class="toctree-l1">
-                                <a class="reference internal" href="nb_gallery.html">
-                                    Notebook gallery
-                                </a>
-                            </li>
-                            <li class="toctree-l1">
-                                <a class="reference internal" href="packages.html">
-                                    Python packages
-                                </a>
-                            </li>
-                            <li class="toctree-l1">
-                                <a class="reference internal" href="datasets.html">
-                                    Open MSK images
-                                </a>
-                            </li>
-                            <li class="toctree-l1">
-                                <a class="reference internal" href="learning.html">
-                                    Learning material
-                                </a>
-                            </li>
-                            <li class="toctree-l1">
-                                <a class="reference internal" href="for_contributors.html">
-                                    Guidelines for contributors
-                                </a>
-                            </li>
-                            <li class="toctree-l1">
-                                <a class="reference internal" href="faq.html">
-                                    FAQ
-                                </a>
-                            </li>
-                        </ul>
-
-                    </div>
-                </nav> <!-- To handle the deprecated key -->
-
-                <div class="navbar_extra_footer">
-                    Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-                </div>
-
-            </div>
-
-
-
-
-
-
             <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
 
-                <div class="topbar container-xl">
+                <div class="topbar container-xl position-fixed">
                     <div class="topbar-contents row">
-                        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-                        <div class="col pl-md-4 topbar-main">
-
-                            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation"
-                                aria-controls="navbar-menu" aria-expanded="true" aria-label="Toggle navigation"
-                                aria-controls="site-navigation" title="Toggle navigation" data-toggle="tooltip"
-                                data-placement="left">
-                                <i class="fas fa-bars"></i>
-                                <i class="fas fa-arrow-left"></i>
-                                <i class="fas fa-arrow-up"></i>
-                            </button>
-
-
-                            <div class="dropdown-buttons-trigger">
-                                <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-                                    aria-label="Download this page"><i class="fas fa-download"></i></button>
-
-                                <div class="dropdown-buttons">
-                                    <!-- ipynb file if we had a myst markdown file -->
-
-                                    <!-- Download raw file -->
-                                    <a class="dropdown-buttons" href="_sources/manifesto.ipynb"><button type="button"
-                                            class="btn btn-secondary topbarbtn" title="Download source file"
-                                            data-toggle="tooltip" data-placement="left">.ipynb</button></a>
-                                    <!-- Download PDF via print -->
-                                    <button type="button" id="download-print" class="btn btn-secondary topbarbtn"
-                                        title="Print to PDF" onclick="printPdf(this)" data-toggle="tooltip"
-                                        data-placement="left">.pdf</button>
-                                </div>
-                            </div>
-
-                            <!-- Source interaction buttons -->
-
-                            <!-- Full screen (wrap in <a> to have style consistency -->
-
-                            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn"
-                                    data-toggle="tooltip" data-placement="bottom" onclick="toggleFullScreen()"
-                                    aria-label="Fullscreen mode" title="Fullscreen mode"><i
-                                        class="fas fa-expand"></i></button></a>
-
-                            <!-- Launch buttons -->
-
-                            <div class="dropdown-buttons-trigger">
-                                <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-                                    aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-                                <div class="dropdown-buttons">
-
-                                    <a class="binder-button"
-                                        href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/manifesto.ipynb"><button
-                                            type="button" class="btn btn-secondary topbarbtn" title="Launch Binder"
-                                            data-toggle="tooltip" data-placement="left"><img class="binder-button-logo"
-                                                src="_static/images/logo_binder.svg"
-                                                alt="Interact on binder">Binder</button></a>
-
-
-
-
-                                </div>
-                            </div>
-
-                        </div>
 
                         <!-- Table of contents -->
                         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+
+                            <form class="bd-search d-flex align-items-center pb-xl-4" action="search.html" method="get">
+                                <i class="icon fas fa-search"></i>
+                                <input type="search" class="form-control" name="q" id="search-input"
+                                    placeholder="Search this book..." aria-label="Search this book..."
+                                    autocomplete="off">
+                            </form>
 
                             <div class="tocsection onthispage pt-5 pb-3">
                                 <i class="fas fa-list"></i> Contents
@@ -325,10 +212,63 @@
 
                             </nav>
                         </div>
+
+                        <div class="col pl-md-4 topbar-main mr-5">
+
+                            <div class="dropdown-buttons-trigger">
+                                <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+                                    aria-label="Download this page"><i class="fas fa-download"></i></button>
+
+                                <div class="dropdown-buttons">
+                                    <!-- ipynb file if we had a myst markdown file -->
+
+                                    <!-- Download raw file -->
+                                    <a class="dropdown-buttons" href="_sources/manifesto.ipynb"><button type="button"
+                                            class="btn btn-secondary topbarbtn" title="Download source file"
+                                            data-toggle="tooltip" data-placement="left">.ipynb</button></a>
+                                    <!-- Download PDF via print -->
+                                    <button type="button" id="download-print" class="btn btn-secondary topbarbtn"
+                                        title="Print to PDF" onclick="printPdf(this)" data-toggle="tooltip"
+                                        data-placement="left">.pdf</button>
+                                </div>
+                            </div>
+
+                            <!-- Source interaction buttons -->
+
+                            <!-- Full screen (wrap in <a> to have style consistency -->
+
+                            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn"
+                                    data-toggle="tooltip" data-placement="bottom" onclick="toggleFullScreen()"
+                                    aria-label="Fullscreen mode" title="Fullscreen mode"><i
+                                        class="fas fa-expand"></i></button></a>
+
+                            <!-- Launch buttons -->
+
+                            <div class="dropdown-buttons-trigger">
+                                <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+                                    aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+                                <div class="dropdown-buttons">
+
+                                    <a class="binder-button"
+                                        href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/manifesto.ipynb"><button
+                                            type="button" class="btn btn-secondary topbarbtn" title="Launch Binder"
+                                            data-toggle="tooltip" data-placement="left"><img class="binder-button-logo"
+                                                src="_static/images/logo_binder.svg"
+                                                alt="Interact on binder">Binder</button></a>
+
+
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
                 <div id="main-content" class="row">
-                    <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+                    <div id="whitespace" class="col-2 invisible"></div>
+                    <div class="col-11 col-md-8 pl-md-5 pr-md-0">
                         <!-- Table of contents that is only displayed when printing the page -->
                         <div id="jb-print-docs-body" class="onlyprint">
                             <h1>About</h1>
