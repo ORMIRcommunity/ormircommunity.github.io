@@ -80,12 +80,13 @@
     <div class="container-fluid" id="banner">
         <nav class="navbar navbar-dark navbar-expand-lg bd-navbar bg-light shadow fixed-top">
             <div class="container-xl">
-                <div id="logo">
+                <a id="logo" href="#">
                     <img src="_images/ormir_logo.png" alt="ORMIR Logo" style="padding-right: 15px; width:100px">
-                </div>
+                </a>
                 <div id="navbar" class="mr-auto">
                     <a class="mr-sm-2 nav-header" href="#">Home</a>
                     <a class="mr-sm-2 nav-header" href="manifesto.html">About</a>
+                    <a class="mr-sm-2 nav-header" href="projects.html">Projects</a>
                     <a class="mr-sm-2 nav-header" href="nb_gallery.html">Notebooks</a>
                     <a class="mr-sm-2 nav-header" href="packages.html">Packages</a>
                     <a class="mr-sm-2 nav-header" href="datasets.html">Datasets</a>
@@ -261,58 +262,76 @@
                         </div>
 
                         <div>
-
                             <section class="tex2jax_ignore mathjax_ignore" id="ormir">
                                 <h1>ORMIR<a class="headerlink" href="#ormir" title="Permalink to this headline">¶</a>
                                 </h1>
-                                <p>ORMIR is the community for Open and Reproducible Musculoskeletal Imaging
+                                <p>The community for Open and Reproducible Musculoskeletal Imaging
                                     Research<br />
                                     We create code, documentation, and guidelines that are open and easy to share. Our
                                     pipelines are in Jupyter Notebook and our code is in Python and C++</p>
-                                <section id="our-goals">
+                                <section id="our-goals" class="float-left col-6 d-block">
                                     <h2>Our Goals<a class="headerlink" href="#our-goals"
                                             title="Permalink to this headline">¶</a></h2>
-                                    <p>We aim to:</p>
-                                    <ol class="simple">
-                                        <li>
-                                            <p>To create open and reproducible software to analyze MSK images that we
-                                                can use, adapt, and share inside and outside our community</p>
-                                        </li>
-                                        <li>
-                                            <p>To standardize data acquisition and storage to favor data sharing,
-                                                algorithm comparison, and federated learning</p>
-                                        </li>
-                                        <li>
-                                            <p>To promote a culture of openness and reproducibility in MSK imaging
-                                                research for a faster advancement of the field</p>
-                                        </li>
-                                    </ol>
+                                    <div>
+                                        <h1 class="float-left d-block mr-2">1</h1>
+                                        <pclass="float-left d-block"><b>Create</b> open and reproducible software to
+                                            analyze
+                                            MSK
+                                            images that we
+                                            can use, adapt, and share inside and outside our community</p>
+                                    </div>
+                                    <div>
+                                        <h1 class="float-left d-block mr-2">2</h1>
+                                        <pclass="float-left d-block"><b>Standardize</b> data acquisition and storage to
+                                            favor
+                                            data sharing,
+                                            algorithm comparison, and federated learning</p>
+                                    </div>
+                                    <div>
+                                        <h1 class="float-left d-block mr-2">3</h1>
+                                        <pclass="float-left d-block"><b>Promote</b> a culture of openness and
+                                            reproducibility
+                                            in MSK imaging
+                                            research for a faster advancement of the field</p>
+                                    </div>
                                 </section>
-                                <section id="content">
+                                <section class="col-6 float-left d-block" id="content">
                                     <h2>Content<a class="headerlink" href="#content"
                                             title="Permalink to this headline">¶</a></h2>
-                                    <p>In this website you will find:</p>
-                                    <ul class="simple">
-                                        <li>
-                                            <p><a href="nb_gallery.html">Workflows in Jupyter notebook</a> and <a
-                                                    href="packages">python packages</a></p>
-                                        </li>
-                                        <li>
-                                            <p>Link to <a href="datasets.html">repositories</a> with MSK images</p>
-                                        </li>
-                                        <li>
-                                            <p>Material to <a href="learning.html">learn the Jupyter/python
-                                                    environment</a></p>
-                                        </li>
-                                        <li>
-                                            <p>Guidelines on <a href="for_contributors.html">how to contribute to the
-                                                    community</a></p>
-                                        </li>
-                                        <li>
-                                            <p><a href="manifesto.html">Motivations for this community</a> and <a
-                                                    href="manifesto.html#who-we-are">who we are </a></p>
-                                        </li>
-                                    </ul>
+                                    <button class="btn btn-outline-secondary col-10 m-sm-1"
+                                        onclick="window.location.href='nb_gallery.html'">
+                                        Workflows in Jupyter notebook
+                                    </button>
+                                    <br>
+                                    <button class="btn btn-outline-secondary col-10 m-sm-1"
+                                        onclick="window.location.href='packages.html'">
+                                        Python packages
+                                    </button>
+                                    <br>
+                                    <button class="btn btn-outline-secondary col-10 m-sm-1"
+                                        onclick="window.location.href='datasets.html'">
+                                        Repositories with MSK images
+                                    </button>
+                                    <br>
+                                    <button class="btn btn-outline-secondary col-10 m-sm-1"
+                                        onclick="window.location.href='learning.html'">
+                                        Learn the Jupyter/Python environment
+                                    </button>
+                                    <br>
+                                    <button class="btn btn-outline-secondary col-10 m-sm-1"
+                                        onclick="window.location.href='for_contributors.html'">
+                                        Guidelines on how to contribute
+                                    </button>
+                                    <br>
+                                    <button class="btn btn-outline-secondary col-10 m-sm-1"
+                                        onclick="window.location.href='manifesto.html'">
+                                        Motivations for the community
+                                    </button>
+                                    <br>
+                                    <button class="btn btn-outline-secondary col-10 m-sm-1"
+                                        onclick="window.location.href='manifesto.html#who-we-are'">
+                                        Who we are
+                                    </button>
                                 </section>
                             </section>
                             <hr class="docutils" />
