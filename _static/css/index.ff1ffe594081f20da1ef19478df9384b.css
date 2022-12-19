@@ -2998,7 +2998,7 @@ fieldset:disabled a.btn {
 
 .btn-outline-secondary {
     /* color: #6c757d; */
-    color: #343a40;
+    color: #1d2024;
     border-color: #6c757d;
 }
 
@@ -11737,4 +11737,26 @@ table.highlighttable td.linenos {
 
 .nav-header:active {
     text-decoration: none;
+}
+
+.calendar {
+    align-items: center;
+    width: 100%;
+}
+
+.calendar .days {
+    background-color: darkslategray;
+}
+
+.calendar th {
+    width: 14%;
+    color: white;
+    height: 50px;
+    border: 1px solid lightgray;
+}
+
+.calendar td {
+    vertical-align: top;
+    height: 100px;
+    border: 1px solid darkslategray
 }

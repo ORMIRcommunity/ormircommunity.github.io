@@ -1,0 +1,20 @@
+[
+    {
+        "name" : "Christmas Party",
+        "description" : "Potluck and secret santa gift exchange",
+        "year" : 2022,
+        "month" : 12,
+        "day" : 25,
+        "start" : "9:00",
+        "end" : "17:00"
+    },
+    {
+        "name" : "New Year Celebration",
+        "description" : "The start of a new year",
+        "year" : 2023,
+        "month" : 1,
+        "day" : 1,
+        "start" : "11:00",
+        "end" : "14:00"
+    }
+]

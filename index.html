@@ -53,6 +53,7 @@
         const thebe_selector_output = ".output, .cell_output"
     </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="_static/js/calendar.js" defer></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="About" href="manifesto.html" />
@@ -152,6 +153,11 @@
                                                 </a>
                                             </li>
                                         </ul>
+                                    </li>
+                                    <li class="toc-h1 nav-item toc-entry">
+                                        <a class="reference internal nav-link" href="#event-calendar">
+                                            Event Calendar
+                                        </a>
                                     </li>
                                 </ul>
 
@@ -254,6 +260,11 @@
                                                     </li>
                                                 </ul>
                                             </li>
+                                            <li class="toc-h1 nav-item toc-entry">
+                                                <a class="reference internal nav-link" href="#event-calendar">
+                                                    Event Calendar
+                                                </a>
+                                            </li>
                                         </ul>
 
                                     </nav>
@@ -263,17 +274,18 @@
 
                         <div>
                             <section class="tex2jax_ignore mathjax_ignore" id="ormir">
-                                <h1>ORMIR<a class="headerlink" href="#ormir" title="Permalink to this headline">¶</a>
+                                <h1>ORMIR<a class="headerlink d-none" href="#ormir"
+                                        title="Permalink to this headline">¶</a>
                                 </h1>
                                 <p>The community for Open and Reproducible Musculoskeletal Imaging
                                     Research<br />
                                     We create code, documentation, and guidelines that are open and easy to share. Our
                                     pipelines are in Jupyter Notebook and our code is in Python and C++</p>
                                 <section id="our-goals" class="float-left col-6 d-block">
-                                    <h2>Our Goals<a class="headerlink" href="#our-goals"
+                                    <h2>Our Goals<a class="headerlink d-none" href="#our-goals"
                                             title="Permalink to this headline">¶</a></h2>
                                     <div>
-                                        <h1 class="float-left d-block mr-2">1</h1>
+                                        <h1 class="float-left d-block mr-2">1&nbsp;</h1>
                                         <pclass="float-left d-block"><b>Create</b> open and reproducible software to
                                             analyze
                                             MSK
@@ -281,22 +293,22 @@
                                             can use, adapt, and share inside and outside our community</p>
                                     </div>
                                     <div>
-                                        <h1 class="float-left d-block mr-2">2</h1>
+                                        <h1 class="float-left d-block mr-2">2&nbsp;</h1>
                                         <pclass="float-left d-block"><b>Standardize</b> data acquisition and storage to
                                             favor
                                             data sharing,
                                             algorithm comparison, and federated learning</p>
                                     </div>
                                     <div>
-                                        <h1 class="float-left d-block mr-2">3</h1>
+                                        <h1 class="float-left d-block mr-2">3&nbsp;</h1>
                                         <pclass="float-left d-block"><b>Promote</b> a culture of openness and
                                             reproducibility
                                             in MSK imaging
                                             research for a faster advancement of the field</p>
                                     </div>
                                 </section>
-                                <section class="col-6 float-left d-block" id="content">
-                                    <h2>Content<a class="headerlink" href="#content"
+                                <section class="col-6 float-sm-left d-block" id="content">
+                                    <h2>Content<a class="headerlink d-none" href="#content"
                                             title="Permalink to this headline">¶</a></h2>
                                     <button class="btn btn-outline-secondary col-10 m-sm-1"
                                         onclick="window.location.href='nb_gallery.html'">
@@ -336,11 +348,11 @@
                             </section>
                             <hr class="docutils" />
                             <section class="tex2jax_ignore mathjax_ignore" id="latest-news">
-                                <h1>Latest news<a class="headerlink" href="#latest-news"
+                                <h1>Latest news<a class="headerlink d-none" href="#latest-news"
                                         title="Permalink to this headline">¶</a></h1>
                                 <section id="jupyter-community-workshop-june-9-11-2022-maastricht-the-netherlands">
                                     <h2>Jupyter Community Workshop, June 9-11, 2022, Maastricht, The Netherlands<a
-                                            class="headerlink"
+                                            class="headerlink d-none"
                                             href="#jupyter-community-workshop-june-9-11-2022-maastricht-the-netherlands"
                                             title="Permalink to this headline">¶</a></h2>
                                     <ul class="simple">
@@ -352,6 +364,92 @@
                                     </ul>
                                 </section>
                                 <div class="toctree-wrapper compound">
+                                </div>
+                            </section>
+                            <section class="tex2jax_ignore mathjax_ignore" id="event-calendar">
+                                <h1>Event Calendar<a class="headerlink d-none" href="#event-calendar"
+                                        title="Permalink to this headline">¶</a></h1>
+                                <div class="d-flex col-12 p-2 docutils">
+                                    <div class="card w-100 text-center docutils">
+                                        <div class="card-header bg-light docutils"
+                                            style="display: flex; flex-direction: row; align-items: center;">
+                                            <button style="width:10%" class="border-0 bg-transparent"
+                                                onclick="prevMonth()"><img src=" _images/icon_arrow_l.png"
+                                                    height="30"></button>
+                                            <div id="month-name" class="font-weight-bolder" style="width:80%">Month
+                                            </div>
+                                            <button style="width:10%" class="border-0 bg-transparent"
+                                                onclick="nextMonth()"><img src="_images/icon_arrow_r.png"
+                                                    height="30"></button>
+                                        </div>
+                                        <div class="card-body docutils p-0">
+                                            <table class="calendar">
+                                                <tr class="days">
+                                                    <th>Sun</th>
+                                                    <th>Mon</th>
+                                                    <th>Tue</th>
+                                                    <th>Wed</th>
+                                                    <th>Thu</th>
+                                                    <th>Fri</th>
+                                                    <th>Sat</th>
+                                                </tr>
+                                                <tr class="day-box">
+                                                    <td id="r1c1">a</td>
+                                                    <td id="r1c2">a</td>
+                                                    <td id="r1c3">a</td>
+                                                    <td id="r1c4">a</td>
+                                                    <td id="r1c5">a</td>
+                                                    <td id="r1c6">a</td>
+                                                    <td id="r1c7">a</td>
+                                                </tr>
+                                                <tr class="day-box">
+                                                    <td id="r2c1">a</td>
+                                                    <td id="r2c2">a</td>
+                                                    <td id="r2c3">a</td>
+                                                    <td id="r2c4">a</td>
+                                                    <td id="r2c5">a</td>
+                                                    <td id="r2c6">a</td>
+                                                    <td id="r2c7">a</td>
+                                                </tr>
+                                                <tr class="day-box">
+                                                    <td id="r3c1">a</td>
+                                                    <td id="r3c2">a</td>
+                                                    <td id="r3c3">a</td>
+                                                    <td id="r3c4">a</td>
+                                                    <td id="r3c5">a</td>
+                                                    <td id="r3c6">a</td>
+                                                    <td id="r3c7">a</td>
+                                                </tr>
+                                                <tr class="day-box">
+                                                    <td id="r4c1">a</td>
+                                                    <td id="r4c2">a</td>
+                                                    <td id="r4c3">a</td>
+                                                    <td id="r4c4">a</td>
+                                                    <td id="r4c5">a</td>
+                                                    <td id="r4c6">a</td>
+                                                    <td id="r4c7">a</td>
+                                                </tr>
+                                                <tr class="day-box day-box-extra">
+                                                    <td id="r5c1">a</td>
+                                                    <td id="r5c2">a</td>
+                                                    <td id="r5c3">a</td>
+                                                    <td id="r5c4">a</td>
+                                                    <td id="r5c5">a</td>
+                                                    <td id="r5c6">a</td>
+                                                    <td id="r5c7">a</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="card-footer bg-white docutils d-none" id="event-banner">
+                                            <p class="font-weight-bolder" style="font-size: large;"
+                                                id="event-banner-name">Event
+                                                name</p>
+                                            <p id="event-banner-time">time</p>
+                                            <p id="event-banner-text">
+                                                description
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </section>
 
