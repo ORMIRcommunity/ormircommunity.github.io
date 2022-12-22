@@ -1,5 +1,6 @@
 const monDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 const monNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+const groupColors = {"ORMIR community":"GhostWhite", "SPECTRA":"LemonChiffon", "Knee":"Cyan", "Biomechanics":"LightSalmon", "Muscle":"LightPink"}
 
 function createCalendar(date) {  
     const calDays = [];
@@ -42,6 +43,7 @@ function readEvents(date){
             if (event.year == date.getFullYear() && event.month == date.getMonth() + 1) {
                 const elem = document.createElement("button");
                 elem.innerHTML = event.name;
+                elem.style.backgroundColor = groupColors[event.group]
                 elem.addEventListener('click', (func) => {
                     document.getElementById("event-banner").classList.remove("d-none");
 
