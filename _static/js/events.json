@@ -1,0 +1,52 @@
+[
+    {
+        "name" : "ORMIR Meeting",
+        "description" : "Updates on project progress",
+        "year" : 2023,
+        "month" : 1,
+        "day" : 19,
+        "start" : "21:00 CET",
+        "end" : "22:00 CET",
+        "group" : "ORMIR community"
+    },
+    {
+        "name" : "Sample SPECTRA Event",
+        "description" : "SPECTRA event color",
+        "year" : 2022,
+        "month" : 11,
+        "day" : 22,
+        "start" : "11:00",
+        "end" : "14:00",
+        "group" : "SPECTRA"
+    },
+    {
+        "name" : "Sample Knee Event",
+        "description" : "Knee event color",
+        "year" : 2022,
+        "month" : 11,
+        "day" : 23,
+        "start" : "11:00",
+        "end" : "14:00",
+        "group" : "Knee"
+    },
+    {
+        "name" : "Sample Biomechanics Event",
+        "description" : "Biomechanics event color",
+        "year" : 2022,
+        "month" : 11,
+        "day" : 24,
+        "start" : "11:00",
+        "end" : "14:00",
+        "group" : "Biomechanics"
+    },
+    {
+        "name" : "Sample Muscle Event",
+        "description" : "Muscle event color",
+        "year" : 2022,
+        "month" : 11,
+        "day" : 25,
+        "start" : "11:00",
+        "end" : "14:00",
+        "group" : "Muscle"
+    }
+]

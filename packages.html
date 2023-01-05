@@ -1,38 +1,39 @@
-
 <!DOCTYPE html>
 
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Python packages &#8212; ORMIR</title>
-    
-  <link href="_static/css/theme.css" rel="stylesheet">
-  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
-    
-  <link rel="stylesheet"
-    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+    <link href="_static/css/theme.css" rel="stylesheet">
+    <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
-    
-      
 
-    
+    <link rel="stylesheet" href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+
+
+
+
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css"
+        href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
-    
-  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
@@ -47,10 +48,10 @@
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output, .cell_output"
+    </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -58,325 +59,381 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="prev" title="Notebook gallery" href="nb_gallery.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
-    
+
 
     <!-- Google Analytics -->
-    
-<script async="" src="https://www.google-analytics.com/analytics.js"></script>
-<script>
-                        window.ga = window.ga || function () {
-                            (ga.q = ga.q || []).push(arguments) };
-                        ga.l = +new Date;
-                        ga('create', 'xxx', 'auto');
-                        ga('set', 'anonymizeIp', true);
-                        ga('send', 'pageview');
-                    </script>
 
-  </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
-    
-    <div class="container-fluid" id="banner"></div>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script>
+        window.ga = window.ga || function () {
+            (ga.q = ga.q || []).push(arguments)
+        };
+        ga.l = +new Date;
+        ga('create', 'xxx', 'auto');
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview');
+    </script>
 
-    
+</head>
 
-    <div class="container-xl">
-      <div class="row">
-          
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="index.html">
-      
-      
-      
-      <h1 class="site-logo" id="site-title">ORMIR</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="index.html">
-   ORMIR
-  </a>
- </li>
-</ul>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="manifesto.html">
-   About
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="nb_gallery.html">
-   Notebook gallery
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Python packages
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="datasets.html">
-   Open MSK images
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="learning.html">
-   Learning material
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="for_contributors.html">
-   Guidelines for contributors
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="faq.html">
-   FAQ
-  </a>
- </li>
-</ul>
+<body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
 
-    </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
-            
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/packages.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/packages.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        
-    </div>
-</div>
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#tissue-level-hr-pqct-ct">
-   Tissue level: HR-pQCT / µCT
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#organ-level-mr-ct">
-   Organ level: MR / CT
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#mechanical-analysis">
-   Mechanical analysis
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#general">
-   General
-  </a>
- </li>
-</ul>
-
-            </nav>
-        </div>
-    </div>
-</div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Python packages</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#tissue-level-hr-pqct-ct">
-   Tissue level: HR-pQCT / µCT
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#organ-level-mr-ct">
-   Organ level: MR / CT
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#mechanical-analysis">
-   Mechanical analysis
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#general">
-   General
-  </a>
- </li>
-</ul>
-
-                        </nav>
-                    </div>
+    <div class="container-fluid" id="banner">
+        <nav class="navbar navbar-dark navbar-expand-lg bd-navbar bg-light shadow fixed-top">
+            <div class="container-xl">
+                <a id="logo" href="index.html">
+                    <img src="_images/ormir_logo.png" alt="ORMIR Logo" style="padding-right: 15px; width:100px">
+                </a>
+                <div id="navbar" class="mr-auto">
+                    <a class="mr-sm-2 nav-header" href="index.html">Home</a>
+                    <a class="mr-sm-2 nav-header" href="manifesto.html">About</a>
+                    <a class="mr-sm-2 nav-header" href="projects.html">Projects</a>
+                    <a class="mr-sm-2 nav-header" href="nb_gallery.html">Notebooks</a>
+                    <a class="mr-sm-2 nav-header" href="#">Packages</a>
+                    <a class="mr-sm-2 nav-header" href="datasets.html">Datasets</a>
+                    <a class="mr-sm-2 nav-header" href="learning.html">Learning</a>
+                    <a class="mr-sm-2 nav-header" href="for_contributors.html">Guidelines</a>
+                    <a class="mr-sm-2 nav-header" href="faq.html">FAQ</a>
                 </div>
             </div>
-            
-              <div>
-                
-  <section class="tex2jax_ignore mathjax_ignore" id="python-packages">
-<h1>Python packages<a class="headerlink" href="#python-packages" title="Permalink to this headline">¶</a></h1>
-<p>This page contains links to the Python packages we are working on</p>
-<section id="tissue-level-hr-pqct-ct">
-<h2>Tissue level: HR-pQCT / µCT<a class="headerlink" href="#tissue-level-hr-pqct-ct" title="Permalink to this headline">¶</a></h2>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="text-align:left head"><p>Package name</p></th>
-<th class="text-align:left head"><p>Description</p></th>
-<th class="text-align:center head"><p>Link to GitHub</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-align:left"><p>ITKIOScanco</p></td>
-<td class="text-align:left"><p>An ITK module to read and write Scanco microCT .isq files</p></td>
-<td class="text-align:center"><p><a href="https://github.com/KitwareMedical/ITKIOScanco"> <img src="./_images/github_logo.png"  width="20" height="20"></a></p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="organ-level-mr-ct">
-<h2>Organ level: MR / CT<a class="headerlink" href="#organ-level-mr-ct" title="Permalink to this headline">¶</a></h2>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="text-align:left head"><p>Package name</p></th>
-<th class="text-align:left head"><p>Description</p></th>
-<th class="text-align:center head"><p>Link to GitHub</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-align:left"><p>OAI analysis 2</p></td>
-<td class="text-align:left"><p>An open source analysis approach for the Osteoarthitis Initiative (OAI) dataset</p></td>
-<td class="text-align:center"><p><a href="https://github.com/uncbiag/OAI_analysis_2"> <img src="./_images/github_logo.png"  width="20" height="20"></a></p></td>
-</tr>
-<tr class="row-odd"><td class="text-align:left"><p>pyKNEEr</p></td>
-<td class="text-align:left"><p>An open and reproducible workflows for femoral knee cartilage image analysis</p></td>
-<td class="text-align:center"><p><a href="https://github.com/sbonaretti/pyKNEEr"> <img src="./_images/github_logo.png"  width="20" height="20"></a></p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="mechanical-analysis">
-<h2>Mechanical analysis<a class="headerlink" href="#mechanical-analysis" title="Permalink to this headline">¶</a></h2>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="text-align:left head"><p>Package name</p></th>
-<th class="text-align:left head"><p>Description</p></th>
-<th class="text-align:center head"><p>Link to GitHub</p></th>
-<th class="text-align:center head"><p>Link to Binder</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-align:left"><p>ciclope</p></td>
-<td class="text-align:left"><p>It processes micro computed tomography data to generate finite element models</p></td>
-<td class="text-align:center"><p><a href="https://github.com/gianthk/ciclope"> <img src="./_images/github_logo.png"  width="20" height="20"></a></p></td>
-<td class="text-align:center"><p>Coming soon</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="general">
-<h2>General<a class="headerlink" href="#general" title="Permalink to this headline">¶</a></h2>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="text-align:left head"><p>Package name</p></th>
-<th class="text-align:left head"><p>Description</p></th>
-<th class="text-align:center head"><p>Link to GitHub</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-align:left"><p>pyMSK</p></td>
-<td class="text-align:left"><p>A core package to process and analyze musculoskeletal images</p></td>
-<td class="text-align:center"><p><a href="https://github.com/JCMSK/pymsk"> <img src="./_images/github_logo.png"  width="20" height="20"></a></p></td>
-</tr>
-</tbody>
-</table>
-</section>
-</section>
+        </nav>
+    </div>
+    <div>&nbsp</div>
 
-    <script type="text/x-thebe-config">
+
+    <div class="container-xl">
+        <div class="row">
+
+            <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+
+                <div class="topbar container-xl position-fixed">
+                    <div class="topbar-contents row">
+
+                        <!-- Table of contents -->
+                        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+
+                            <form class="bd-search d-flex align-items-center pb-xl-4" action="search.html" method="get">
+                                <i class="icon fas fa-search"></i>
+                                <input type="search" class="form-control" name="q" id="search-input"
+                                    placeholder="Search this book..." aria-label="Search this book..."
+                                    autocomplete="off">
+                            </form>
+
+                            <div class="tocsection onthispage pt-5 pb-3">
+                                <i class="fas fa-list"></i> Contents
+                            </div>
+                            <nav id="bd-toc-nav" aria-label="Page">
+                                <ul class="visible nav section-nav flex-column">
+                                    <li class="toc-h2 nav-item toc-entry">
+                                        <a class="reference internal nav-link" href="#tissue-level-hr-pqct-ct">
+                                            Tissue level: HR-pQCT / µCT
+                                        </a>
+                                    </li>
+                                    <li class="toc-h2 nav-item toc-entry">
+                                        <a class="reference internal nav-link" href="#organ-level-mr-ct">
+                                            Organ level: MR / CT
+                                        </a>
+                                    </li>
+                                    <li class="toc-h2 nav-item toc-entry">
+                                        <a class="reference internal nav-link" href="#mechanical-analysis">
+                                            Mechanical analysis
+                                        </a>
+                                    </li>
+                                    <li class="toc-h2 nav-item toc-entry">
+                                        <a class="reference internal nav-link" href="#general">
+                                            General
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </nav>
+                        </div>
+
+                        <div class="col pl-md-4 topbar-main mr-5">
+
+
+                            <div class="dropdown-buttons-trigger">
+                                <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+                                    aria-label="Download this page"><i class="fas fa-download"></i></button>
+
+                                <div class="dropdown-buttons">
+                                    <!-- ipynb file if we had a myst markdown file -->
+
+                                    <!-- Download raw file -->
+                                    <a class="dropdown-buttons" href="_sources/packages.ipynb"><button type="button"
+                                            class="btn btn-secondary topbarbtn" title="Download source file"
+                                            data-toggle="tooltip" data-placement="left">.ipynb</button></a>
+                                    <!-- Download PDF via print -->
+                                    <button type="button" id="download-print" class="btn btn-secondary topbarbtn"
+                                        title="Print to PDF" onclick="printPdf(this)" data-toggle="tooltip"
+                                        data-placement="left">.pdf</button>
+                                </div>
+                            </div>
+
+                            <!-- Source interaction buttons -->
+
+                            <!-- Full screen (wrap in <a> to have style consistency -->
+
+                            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn"
+                                    data-toggle="tooltip" data-placement="bottom" onclick="toggleFullScreen()"
+                                    aria-label="Fullscreen mode" title="Fullscreen mode"><i
+                                        class="fas fa-expand"></i></button></a>
+
+                            <!-- Launch buttons -->
+
+                            <div class="dropdown-buttons-trigger">
+                                <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+                                    aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+                                <div class="dropdown-buttons">
+
+                                    <a class="binder-button"
+                                        href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/packages.ipynb"><button
+                                            type="button" class="btn btn-secondary topbarbtn" title="Launch Binder"
+                                            data-toggle="tooltip" data-placement="left"><img class="binder-button-logo"
+                                                src="_static/images/logo_binder.svg"
+                                                alt="Interact on binder">Binder</button></a>
+
+
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="main-content" class="row">
+                    <div id="whitespace" class="col-2 invisible"></div>
+                    <div class="col-11 col-md-8 pl-md-5 pr-md-0">
+                        <!-- Table of contents that is only displayed when printing the page -->
+                        <div id="jb-print-docs-body" class="onlyprint">
+                            <h1>Python packages</h1>
+                            <!-- Table of contents -->
+                            <div id="print-main-content">
+                                <div id="jb-print-toc">
+
+                                    <div>
+                                        <h2> Contents </h2>
+                                    </div>
+                                    <nav aria-label="Page">
+                                        <ul class="visible nav section-nav flex-column">
+                                            <li class="toc-h2 nav-item toc-entry">
+                                                <a class="reference internal nav-link" href="#tissue-level-hr-pqct-ct">
+                                                    Tissue level: HR-pQCT / µCT
+                                                </a>
+                                            </li>
+                                            <li class="toc-h2 nav-item toc-entry">
+                                                <a class="reference internal nav-link" href="#organ-level-mr-ct">
+                                                    Organ level: MR / CT
+                                                </a>
+                                            </li>
+                                            <li class="toc-h2 nav-item toc-entry">
+                                                <a class="reference internal nav-link" href="#mechanical-analysis">
+                                                    Mechanical analysis
+                                                </a>
+                                            </li>
+                                            <li class="toc-h2 nav-item toc-entry">
+                                                <a class="reference internal nav-link" href="#general">
+                                                    General
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+
+                            <section class="tex2jax_ignore mathjax_ignore" id="python-packages">
+                                <h1>Python packages<a class="headerlink d-none" href="#python-packages"
+                                        title="Permalink to this headline">¶</a></h1>
+                                <p>This page contains links to the Python packages we are working on</p>
+                                <section id="tissue-level-hr-pqct-ct">
+                                    <h2>Tissue level: HR-pQCT / µCT<a class="headerlink d-none"
+                                            href="#tissue-level-hr-pqct-ct" title="Permalink to this headline">¶</a>
+                                    </h2>
+                                    <div class="sphinx-bs container pb-4 docutils">
+                                        <div class="row docutils">
+                                            <div class="d-flex col-lg-6 col-md-4 col-sm-6 col-xs-12 p-2 docutils">
+                                                <div class="card w-100 text-center docutils">
+                                                    <div class="card-header bg-light docutils">
+                                                        <p class="card-text">ITKIOScanco</p>
+                                                    </div>
+                                                    <div class="card-body docutils">
+                                                        <p class="card-text"><img
+                                                                alt="representative picture for project"
+                                                                src="_images/project_ITKIOScanco.png" />
+                                                        </p>
+                                                    </div>
+                                                    <div class="card-footer bg-white docutils">
+                                                        <p class="card-text">
+                                                            An ITK module to read and write Scanco microCT .isq files
+                                                            <td class="text-align:center">
+                                                                <p><a
+                                                                        href="https://github.com/KitwareMedical/ITKIOScanco">
+                                                                        <img src="./_images/github_logo.png" width="30"
+                                                                            height="30"></a></p>
+                                                            </td>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section id="organ-level-mr-ct">
+                                    <h2>Organ level: MR / CT<a class="headerlink d-none" href="#organ-level-mr-ct"
+                                            title="Permalink to this headline">¶</a></h2>
+                                    <div class="sphinx-bs container pb-4 docutils">
+                                        <div class="row docutils">
+                                            <div class="d-flex col-lg-6 col-md-4 col-sm-6 col-xs-12 p-2 docutils">
+                                                <div class="card w-100 text-center docutils">
+                                                    <div class="card-header bg-light docutils">
+                                                        <p class="card-text">OAI analysis 2</p>
+                                                    </div>
+                                                    <div class="card-body docutils">
+                                                        <p class="card-text"><img
+                                                                alt="representative picture for project"
+                                                                src="_images/project_OAI.png" />
+                                                        </p>
+                                                    </div>
+                                                    <div class="card-footer bg-white docutils">
+                                                        <p class="card-text">
+                                                            An open source analysis approach for the Osteoarthitis
+                                                            Initiative (OAI) dataset
+                                                            <td class="text-align:center">
+                                                                <p><a href="https://github.com/uncbiag/OAI_analysis_2">
+                                                                        <img src="./_images/github_logo.png" width="30"
+                                                                            height="30"></a></p>
+                                                            </td>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex col-lg-6 col-md-4 col-sm-6 col-xs-12 p-2 docutils">
+                                                <div class="card w-100 text-center docutils">
+                                                    <div class="card-header bg-light docutils">
+                                                        <p class="card-text">pyKNEEr</p>
+                                                    </div>
+                                                    <div class="card-body docutils">
+                                                        <p class="card-text"><img
+                                                                alt="representative picture for project"
+                                                                src="_images/project_pyKNEEr.png" />
+                                                        </p>
+                                                    </div>
+                                                    <div class="card-footer bg-white docutils">
+                                                        <p class="card-text">
+                                                            An open and reproducible workflows for femoral knee
+                                                            cartilage image analysis
+                                                            <td class="text-align:center">
+                                                                <p><a href="https://github.com/sbonaretti/pyKNEEr"> <img
+                                                                            src="./_images/github_logo.png" width="30"
+                                                                            height="30"></a></p>
+                                                            </td>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section id="mechanical-analysis">
+                                    <h2>Mechanical analysis<a class="headerlink d-none" href="#mechanical-analysis"
+                                            title="Permalink to this headline">¶</a></h2>
+                                    <div class="sphinx-bs container pb-4 docutils">
+                                        <div class="row docutils">
+                                            <div class="d-flex col-lg-6 col-md-4 col-sm-6 col-xs-12 p-2 docutils">
+                                                <div class="card w-100 text-center docutils">
+                                                    <div class="card-header bg-light docutils">
+                                                        <p class="card-text">ciclope</p>
+                                                    </div>
+                                                    <div class="card-body docutils">
+                                                        <p class="card-text"><img
+                                                                alt="representative picture for project"
+                                                                src="_images/project_ciclope.png" />
+                                                        </p>
+                                                    </div>
+                                                    <div class="card-footer bg-white docutils">
+                                                        <p class="card-text">
+                                                            Processes micro computed tomography data to generate finite
+                                                            element models
+                                                            <td class="text-align:center">
+                                                                <p><a href="https://github.com/gianthk/ciclope"> <img
+                                                                            src="./_images/github_logo.png" width="30"
+                                                                            height="30"></a></p>
+                                                            </td>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section id="general">
+                                    <h2>General<a class="headerlink d-none" href="#general"
+                                            title="Permalink to this headline">¶</a></h2>
+                                    <div class="sphinx-bs container pb-4 docutils">
+                                        <div class="row docutils">
+                                            <div class="d-flex col-lg-6 col-md-4 col-sm-6 col-xs-12 p-2 docutils">
+                                                <div class="card w-100 text-center docutils">
+                                                    <div class="card-header bg-light docutils">
+                                                        <p class="card-text">pyMSK</p>
+                                                    </div>
+                                                    <div class="card-body docutils">
+                                                        <p class="card-text"><img
+                                                                alt="representative picture for project"
+                                                                src="_images/project_default_python.png" />
+                                                        </p>
+                                                    </div>
+                                                    <div class="card-footer bg-white docutils">
+                                                        <p class="card-text">
+                                                            A core package to process and analyze musculoskeletal images
+                                                            <td class="text-align:center">
+                                                                <p><a href="https://github.com/JCMSK/pymsk"> <img
+                                                                            src="./_images/github_logo.png" width="30"
+                                                                            height="30"></a></p>
+                                                            </td>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex col-lg-6 col-md-4 col-sm-6 col-xs-12 p-2 docutils">
+                                                <div class="card w-100 text-center docutils">
+                                                    <div class="card-header bg-light docutils">
+                                                        <p class="card-text">Muscle-BIDS</p>
+                                                    </div>
+                                                    <div class="card-body docutils">
+                                                        <p class="card-text"><img
+                                                                alt="representative picture for project"
+                                                                src="_images/project_BIDS.png" />
+                                                        </p>
+                                                    </div>
+                                                    <div class="card-footer bg-white docutils">
+                                                        <p class="card-text">
+                                                            An open data standard for Muscle MR imaging
+                                                            <td class="text-align:center">
+                                                                <p><a href="https://muscle-bids.github.io/ ">
+                                                                        <img src="_images/icon_link.png" width="30"
+                                                                            height="30"></a>
+                                                                </p>
+                                                            </td>
+                                                            <td class="text-align:center">
+                                                                <p><a href="https://github.com/muscle-bids/muscle-bids">
+                                                                        <img src="./_images/github_logo.png" width="30"
+                                                                            height="30"></a></p>
+                                                            </td>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </section>
+
+                            <script type="text/x-thebe-config">
     {
         requestKernel: true,
         binderOptions: {
@@ -394,46 +451,47 @@ const thebe_selector_output = ".output, .cell_output"
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
+                            <script>kernelName = 'python3'</script>
 
-              </div>
-              
-            
-                <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="nb_gallery.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Notebook gallery</p>
+                        </div>
+
+
+                        <!-- Previous / next buttons -->
+                        <div class='prev-next-area'>
+                            <a class='left-prev' id="prev-link" href="nb_gallery.html" title="previous page">
+                                <i class="fas fa-angle-left"></i>
+                                <div class="prev-next-info">
+                                    <p class="prev-next-subtitle">previous</p>
+                                    <p class="prev-next-title">Notebook gallery</p>
+                                </div>
+                            </a>
+                            <a class='right-next' id="next-link" href="datasets.html" title="next page">
+                                <div class="prev-next-info">
+                                    <p class="prev-next-subtitle">next</p>
+                                    <p class="prev-next-title">Open MSK images</p>
+                                </div>
+                                <i class="fas fa-angle-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <footer class="footer">
+                    <p>
+
+                        By ORMIR<br />
+
+                        &copy; Copyright 2021.<br />
+                    </p>
+                </footer>
+            </main>
+
+
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="datasets.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Open MSK images</p>
     </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
-</div>
-            
-        </div>
-    </div>
-    <footer class="footer">
-  <p>
-    
-      By ORMIR<br/>
-    
-        &copy; Copyright 2021.<br/>
-  </p>
-</footer>
-</main>
 
+    <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
-      </div>
-    </div>
-  
-  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+</body>
 
-  </body>
 </html>
