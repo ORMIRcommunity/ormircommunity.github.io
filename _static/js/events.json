@@ -1,7 +1,27 @@
 [
     {
-        "name" : "ORMIR Meeting",
-        "description" : "Updates on project progress",
+        "name" : "ORMIR Community Meeting",
+        "description" : "Quarterly meeting",
+        "year" : 2023,
+        "month" : 4,
+        "day" : 20,
+        "start" : "15:00 CET",
+        "end" : "15:00 CET",
+        "group" : "ORMIR community"
+    },
+    {
+        "name" : "Th. algo comparison",
+        "description" : "Organizing project",
+        "year" : 2023,
+        "month" : 2,
+        "day" : 15,
+        "start" : "17:00 CET",
+        "end" : "18:00 CET",
+        "group" : "extra_meeting"
+    },
+    {
+        "name" : "ORMIR Community Meeting",
+        "description" : "Quarterly meeting",
         "year" : 2023,
         "month" : 1,
         "day" : 19,
