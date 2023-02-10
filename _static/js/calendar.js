@@ -1,6 +1,8 @@
 const monDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 const monNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-const groupColors = {"ORMIR community":"GhostWhite", "SPECTRA":"LemonChiffon", "Knee":"Cyan", "Biomechanics":"LightSalmon", "Muscle":"LightPink", "extra_meeting":"lightgreen"}
+/*const groupColors = {"ORMIR community":"LightSalmon", "SPECTRA":"LemonChiffon", "Knee":"Cyan", "Biomechanics":"GhostWhite", "Muscle":"LightPink", "extra_meeting":"lightgreen"}*/
+const groupColors = {"ORMIR community":"#fdb462", "SPECTRA":"#80b1d3", "Knee":"#fb8072", "Biomechanics":"#bebada", "Muscle":"#ffffb3", "extra_meeting":"#8dd3c7"}
+
 
 function createCalendar(date) {  
     const calDays = [];
