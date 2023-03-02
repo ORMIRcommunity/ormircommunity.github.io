@@ -1,9 +1,25 @@
 const monDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 const monNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 /*const groupColors = {"ORMIR community":"LightSalmon", "SPECTRA":"LemonChiffon", "Knee":"Cyan", "Biomechanics":"GhostWhite", "Muscle":"LightPink", "extra_meeting":"lightgreen"}*/
-const groupColors = {"ORMIR community":"#fdb462", "SPECTRA":"#80b1d3", "Knee":"#fb8072", "Biomechanics":"#bebada", "Muscle":"#ffffb3", "extra_meeting":"#8dd3c7"}
-
-
+const groupColors = {"ORMIR community":"#9b5fe0", 
+                     "SPECTRA":"#16a4d8", "Knee":"#60dbe8", "Biomechanics":"#8bd346", "Muscle":"#efdf48", 
+                     "advisory board meeting":"#f9a52c", "technical board meeting":"#d64e12",
+                     "extra_meeting":"#8dd3c7" }
+// Color palette from: https://colorswall.com/palette/171311
+//  Lavender Indigo
+//  #9b5fe0
+//  Battery Charged Blue
+//  #16a4d8
+//  Sky Blue (Crayola)
+//  #60dbe8
+//  Kiwi
+//  #8bd346
+//  Minion Yellow
+//  #efdf48
+//  Deep Saffron
+//  #f9a52c
+//  Sinopia
+//  #d64e12
 function createCalendar(date) {  
     const calDays = [];
     

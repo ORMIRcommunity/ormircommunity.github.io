@@ -20,6 +20,26 @@
         "group" : "extra_meeting"
     },
     {
+        "name" : "Community Advisory Board",
+        "description" : "Meeting",
+        "year" : 2023,
+        "month" : 3,
+        "day" : 30,
+        "start" : "9:00 CET",
+        "end" : "10:00 CET",
+        "group" : "Community Advisory Board"
+    },
+    {
+        "name" : "Technical Advisory Board",
+        "description" : "Meeting",
+        "year" : 2023,
+        "month" : 3,
+        "day" : 14,
+        "start" : "15:00 CET",
+        "end" : "15:00 CET",
+        "group" : "Technical Advisory Board"
+    },
+    {
         "name" : "Th. algo comparison (1)",
         "description" : "Organizing project",
         "year" : 2023,
