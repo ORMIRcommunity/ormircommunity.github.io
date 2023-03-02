@@ -10,7 +10,17 @@
         "group" : "ORMIR community"
     },
     {
-        "name" : "Th. algo comparison",
+        "name" : "Th. algo compariso (2)",
+        "description" : "Organizing project",
+        "year" : 2023,
+        "month" : 4,
+        "day" : 11,
+        "start" : "18:00 CET",
+        "end" : "19:00 CET",
+        "group" : "extra_meeting"
+    },
+    {
+        "name" : "Th. algo comparison (1)",
         "description" : "Organizing project",
         "year" : 2023,
         "month" : 2,
