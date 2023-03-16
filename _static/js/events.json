@@ -23,8 +23,8 @@
         "name" : "Community Advisory Board",
         "description" : "Meeting",
         "year" : 2023,
-        "month" : 3,
-        "day" : 30,
+        "month" : 4,
+        "day" : 5,
         "start" : "9:00 CET",
         "end" : "10:00 CET",
         "group" : "Community Advisory Board"
@@ -34,7 +34,7 @@
         "description" : "Meeting",
         "year" : 2023,
         "month" : 3,
-        "day" : 14,
+        "day" : 23,
         "start" : "15:00 CET",
         "end" : "15:00 CET",
         "group" : "Technical Advisory Board"
