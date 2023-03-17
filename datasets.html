@@ -85,15 +85,16 @@
                     <img src="_images/ormir_logo.png" alt="ORMIR Logo" style="padding-right: 15px; width:100px">
                 </a>
                 <div id="navbar" class="mr-auto">
-                    <a class="mr-sm-2 nav-header" href="index.html">Home</a>
-                    <a class="mr-sm-2 nav-header" href="manifesto.html">About</a>
-                    <a class="mr-sm-2 nav-header" href="projects.html">Projects</a>
-                    <a class="mr-sm-2 nav-header" href="nb_gallery.html">Notebooks</a>
+                    <!-- <a class="mr-sm-2 nav-header" href="index.html">Home</a> -->
+                    <a class="mr-sm-2 nav-header" href="about.html">About</a>
+                    <!-- <a class="mr-sm-2 nav-header" href="projects.html">Projects</a> -->
                     <a class="mr-sm-2 nav-header" href="packages.html">Packages</a>
-                    <a class="mr-sm-2 nav-header" href="#">Datasets</a>
+                    <a class="mr-sm-2 nav-header" href="nb_gallery.html">Notebooks</a>
+                    <a class="mr-sm-2 nav-header current" href="#">Datasets</a>
+                    <a class="mr-sm-2 nav-header" href="guidelines.html">Guidelines</a>
                     <a class="mr-sm-2 nav-header" href="learning.html">Learning</a>
-                    <a class="mr-sm-2 nav-header" href="for_contributors.html">Guidelines</a>
-                    <a class="mr-sm-2 nav-header" href="faq.html">FAQ</a>
+                    
+                    <!-- <a class="mr-sm-2 nav-header" href="faq.html">FAQ</a> -->
                 </div>
             </div>
         </nav>
@@ -113,18 +114,18 @@
                         <!-- Table of contents -->
                         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
 
-                            <form class="bd-search d-flex align-items-center pb-xl-4" action="search.html" method="get">
+                            <!-- <form class="bd-search d-flex align-items-center pb-xl-4" action="search.html" method="get">
                                 <i class="icon fas fa-search"></i>
                                 <input type="search" class="form-control" name="q" id="search-input"
                                     placeholder="Search this book..." aria-label="Search this book..."
                                     autocomplete="off">
-                            </form>
+                            </form> -->
 
                             <div class="tocsection onthispage pt-5 pb-3">
-                                <i class="fas fa-list"></i> Contents
+                                <!-- <i class="fas fa-list"></i> Contents -->
                             </div>
                             <nav id="bd-toc-nav" aria-label="Page">
-                                <ul class="visible nav section-nav flex-column">
+                                <!-- <ul class="visible nav section-nav flex-column">
                                     <li class="toc-h2 nav-item toc-entry">
                                         <a class="reference internal nav-link" href="#tissue-level-hr-pqct-ct">
                                             Tissue level: HR-pQCT / µCT
@@ -135,44 +136,44 @@
                                             Organ level: MR / CT
                                         </a>
                                     </li>
-                                </ul>
+                                </ul> -->
 
                             </nav>
                         </div>
 
-                        <div class="col pl-md-4 topbar-main mr-5">
+                        <!-- <div class="col pl-md-4 topbar-main mr-5">
 
 
                             <div class="dropdown-buttons-trigger">
                                 <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
                                     aria-label="Download this page"><i class="fas fa-download"></i></button>
 
-                                <div class="dropdown-buttons">
+                                <div class="dropdown-buttons"> -->
                                     <!-- ipynb file if we had a myst markdown file -->
 
                                     <!-- Download raw file -->
-                                    <a class="dropdown-buttons" href="_sources/datasets.ipynb"><button type="button"
+                                    <!-- <a class="dropdown-buttons" href="_sources/datasets.ipynb"><button type="button"
                                             class="btn btn-secondary topbarbtn" title="Download source file"
-                                            data-toggle="tooltip" data-placement="left">.ipynb</button></a>
+                                            data-toggle="tooltip" data-placement="left">.ipynb</button></a> -->
                                     <!-- Download PDF via print -->
-                                    <button type="button" id="download-print" class="btn btn-secondary topbarbtn"
+                                    <!-- <button type="button" id="download-print" class="btn btn-secondary topbarbtn"
                                         title="Print to PDF" onclick="printPdf(this)" data-toggle="tooltip"
                                         data-placement="left">.pdf</button>
                                 </div>
-                            </div>
+                            </div> -->
 
                             <!-- Source interaction buttons -->
 
                             <!-- Full screen (wrap in <a> to have style consistency -->
 
-                            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn"
+                            <!-- <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn"
                                     data-toggle="tooltip" data-placement="bottom" onclick="toggleFullScreen()"
                                     aria-label="Fullscreen mode" title="Fullscreen mode"><i
-                                        class="fas fa-expand"></i></button></a>
+                                        class="fas fa-expand"></i></button></a> -->
 
                             <!-- Launch buttons -->
 
-                            <div class="dropdown-buttons-trigger">
+                            <!-- <div class="dropdown-buttons-trigger">
                                 <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
                                     aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
                                 <div class="dropdown-buttons">
@@ -190,7 +191,7 @@
                                 </div>
                             </div>
 
-                        </div>
+                        </div> -->
 
 
                     </div>
@@ -232,9 +233,13 @@
                             <section class="tex2jax_ignore mathjax_ignore" id="open-msk-images">
                                 <h1>Open MSK images<a class="headerlink d-none" href="#open-msk-images"
                                         title="Permalink to this headline">¶</a></h1>
-                                <p>This page contain links to open musculoskeletal images available on the internet</p>
-                                <section id="tissue-level-hr-pqct-ct">
-                                    <h2>Tissue level: HR-pQCT / µCT<a class="headerlink d-none"
+                                <p> Here are links to open MSK images 
+                                    <br>
+                                <i>Note: These repository are not currently supported by the community, but we hope to be able to work on data soon!</i>    
+                                </p>
+
+                                <section id="table">
+                                    <!-- <h2>Tissue level: HR-pQCT / µCT<a class="headerlink d-none"
                                             href="#tissue-level-hr-pqct-ct" title="Permalink to this headline">¶</a>
                                     </h2>
                                     <ul class="simple">
@@ -242,7 +247,92 @@
                                             <p>Human or animal images</p>
                                         </li>
                                     </ul>
+ -->
+                                    <br>
 
+                                    
+                                    <table class="colwidths-auto table">
+                                        <thead>
+                                            <tr class="row-odd"><th class="text-align:left head"><p>Species</p></th>
+                                            <th class="text-align:left head"><p>Anatomy</p></th>
+                                            <th class="text-align:left head"><p>Image characteristics</p></th>
+                                            <th class="text-align:left head"><p>Corresponding paper</p></th>
+                                            <th class="text-align:center head"><p>Link to repository</p></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="row-even">
+                                                <td class="text-align:left"><p>Human</p></td>
+                                                <td class="text-align:left"><p>Radius and tibia (HR-pQCT)</p></td>
+                                                <td class="text-align:left"><p>1 radius and 1 tibia acquired with standard protocol (82µ)</p></td>
+                                                <td class="text-align:left"><p>No publication available</p></td>
+                                                <td class="text-align:center"><p><a href="https://zenodo.org/record/4073082">here</a></p></td>
+                                            </tr>
+                                            <tr class="row-odd">
+                                                <td class="text-align:left"><p>Mouse</p></td>
+                                                <td class="text-align:left"><p>Knee (µCT)</p></td>
+                                                <td class="text-align:left"><p>22 images of trabecular bone at the proximal tibia</p></td>
+                                                <td class="text-align:left"><p>Lau A. et al. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4396845/">Joint bleeding in factor VIII deficient mice causes an acute loss of trabecular bone and calcification of joint soft tissues which is prevented with aggressive factor replacement</a></p></td>
+                                                <td class="text-align:center"><p><a href="https://zenodo.org/record/3909552">here</a></p></td>
+                                            </tr>
+                                            <tr class="row-even">
+                                                <td class="text-align:left"><p>Human</p></td>
+                                                <td class="text-align:left"><p>Knee (MR)</p></td>
+                                                <td class="text-align:left"><p>Masks of bones and cartilages of about 600 images from the OAI dataset</p></td>
+                                                <td class="text-align:left"><p>Ambellan F. et al. <a href="https://pubmed.ncbi.nlm.nih.gov/30529224/">Automated segmentation of knee bone and cartilage combining statistical shape knowledge and convolutional neural networks: Data from the Osteoarthritis Initiative</a></p></td>
+                                                <td class="text-align:center"><p><a href="https://opus4.kobv.de/opus4-zib/frontdoor/index/index/docId/6995">here</a></p></td>
+                                            </tr>
+                                            <tr class="row-odd">
+                                                <td class="text-align:left"><p>Human</p></td>
+                                                <td class="text-align:left"><p>Knee (MR)</p></td>
+                                                <td class="text-align:left"><p>About 100 OAI images with corresponding femoral cartilage masks, thicknesses, and relaxometry</p></td>
+                                                <td class="text-align:left"><p>Bonaretti S. et al.  <a href="https://doi.org/10.1371/journal.pone.0226501">pyKNEEr: An image analysis workflow for open and reproducible research on femoral knee cartilage</a></p></td>
+                                                <td class="text-align:center"><p><a href="https://zenodo.org/record/2583184">here</a></p></td>
+                                            </tr>
+                                            <tr class="row-even">
+                                                <td class="text-align:left"><p>Human</p></td>
+                                                <td class="text-align:left"><p>Knee (MR)</p></td>
+                                                <td class="text-align:left"><p>1,370 knee MRI exams performed at Stanford University Medical Center.</p></td>
+                                                <td class="text-align:left"><p>Bien N. et al.  <a href="https://doi.org/10.1371/journal.pmed.1002699">Deep-learning-assisted diagnosis for knee magnetic resonance imaging: Development and retrospective validation of MRNet</a></p></td>
+                                                <td class="text-align:center"><p><a href="https://stanfordmlgroup.github.io/competitions/mrnet/">here</a></p></td>
+                                            </tr>
+                                            <tr class="row-odd">
+                                                <td class="text-align:left"><p>Human</p></td>
+                                                <td class="text-align:left"><p>Knee (MR)</p></td>
+                                                <td class="text-align:left"><p>46996 automated segmentations of bones and cartilages from the OAI dataset</p></td>
+                                                <td class="text-align:left"><p>Tack A. et al.  <a href="https://doi.org/10.1371/journal.pone.0258855">Towards novel osteoarthritis biomarkers: Multi-criteria evaluation of 46,996 segmented knee MRI data from the Osteoarthritis Initiative</a></p></td>
+                                                <td class="text-align:center"><p><a href="https://pubdata.zib.de/">here</a></p></td>
+                                            </tr>
+                                                <tr class="row-even">
+                                                <td class="text-align:left"><p>Human</p></td>
+                                                <td class="text-align:left"><p>Knee (MR)</p></td>
+                                                <td class="text-align:left"><p>2399 automated MR knee menisci</p></td>
+                                                <td class="text-align:left"><p>Tack A. et al.  <a href="https://www.frontiersin.org/articles/10.3389/fbioe.2021.747217">A deep multi-task learning method for detection of meniscal tears in MRI data from the Osteoarthritis Initiative database.</a></p></td>
+                                                <td class="text-align:center"><p><a href="https://pubdata.zib.de/">here</a></p></td>
+                                            </tr>
+                                                <tr class="row-odd">
+                                                <td class="text-align:left"><p>Human</p></td>
+                                                <td class="text-align:left"><p>Spine (CT)</p></td>
+                                                <td class="text-align:left"><p>160 CT image series of 141 patients with segmentation masks of 1725 vertebrae</p></td>
+                                                <td class="text-align:left"><p>Sekuboyina A. et al  <a href="https://pubmed.ncbi.nlm.nih.gov/34340104/">VerSe: A Vertebrae labelling and segmentation benchmark for multi-detector CT images</a></p></td>
+                                                <td class="text-align:center"><p><a href="https://osf.io/nqjyw/">here</a></p></td>
+                                            </tr>
+                                                <tr class="row-even">
+                                                <td class="text-align:left"><p>Human</p></td>
+                                                <td class="text-align:left"><p>Spine (MR)</p></td>
+                                                <td class="text-align:left"><p>Collection of single subject datasets across 19 centers and multi-subject datasets across 42 centers (for a total of 260 participants), spanning different MRI manufacturers</p></td>
+                                                <td class="text-align:left"><p>Cohen-Adad J. et al.  <a href="https://www.nature.com/articles/s41597-021-00941-8">Open-access quantitative MRI data of the spinal cord and reproducibility across participants, sites and manufacturers</a></p></td>
+                                                <td class="text-align:center"><p><a href="https://spine-generic.readthedocs.io/">here</a></p></td>
+                                            </tr>
+                                        </tbody>
+                                        </table>
+
+
+
+
+
+
+<!-- 
                                     <div class="sphinx-bs container pb-4 docutils">
                                         <div class="row docutils">
                                             <div class="d-flex col-lg-6 col-md-4 col-sm-6 col-xs-12 p-2 docutils">
@@ -307,10 +397,10 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
 
                                 </section>
-                                <section id="organ-level-mr-ct">
+                                <!-- <section id="organ-level-mr-ct">
                                     <h2>Organ level: MR / CT<a class="headerlink d-none" href="#organ-level-mr-ct"
                                             title="Permalink to this headline">¶</a></h2>
                                     <ul class="simple">
@@ -563,7 +653,7 @@
                                         </div>
                                     </div>
                                 </section>
-                            </section>
+                            </section> -->
 
                             <script type="text/x-thebe-config">
     {
@@ -589,7 +679,7 @@
 
 
                         <!-- Previous / next buttons -->
-                        <div class='prev-next-area'>
+                        <!-- <div class='prev-next-area'>
                             <a class='left-prev' id="prev-link" href="packages.html" title="previous page">
                                 <i class="fas fa-angle-left"></i>
                                 <div class="prev-next-info">
@@ -604,16 +694,14 @@
                                 </div>
                                 <i class="fas fa-angle-right"></i>
                             </a>
-                        </div>
+                        </div> -->
 
                     </div>
                 </div>
+                <br>
                 <footer class="footer">
                     <p>
-
-                        By ORMIR<br />
-
-                        &copy; Copyright 2021.<br />
+                        Website by the ORMIR community, modified from <a href="https://jupyterbook.org/en/stable/intro.html" > Jupyter Book</a>
                     </p>
                 </footer>
             </main>

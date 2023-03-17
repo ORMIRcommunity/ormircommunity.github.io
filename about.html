@@ -85,15 +85,15 @@
                     <img src="_images/ormir_logo.png" alt="ORMIR Logo" style="padding-right: 15px; width:100px">
                 </a>
                 <div id="navbar" class="mr-auto">
-                    <a class="mr-sm-2 nav-header" href="index.html">Home</a>
-                    <a class="mr-sm-2 nav-header" href="#">About</a>
-                    <a class="mr-sm-2 nav-header" href="projects.html">Projects</a>
-                    <a class="mr-sm-2 nav-header" href="nb_gallery.html">Notebooks</a>
+                    <!-- <a class="mr-sm-2 nav-header" href="index.html">Home</a> -->
+                    <a class="mr-sm-2 nav-header current" href="#">About</a> <!-- current highlights when on selected page-->
+                    <!-- <a class="mr-sm-2 nav-header" href="projects.html">Projects</a> -->
                     <a class="mr-sm-2 nav-header" href="packages.html">Packages</a>
+                    <a class="mr-sm-2 nav-header" href="nb_gallery.html">Notebooks</a>
                     <a class="mr-sm-2 nav-header" href="datasets.html">Datasets</a>
+                    <a class="mr-sm-2 nav-header" href="guidelines.html">Guidelines</a>
                     <a class="mr-sm-2 nav-header" href="learning.html">Learning</a>
-                    <a class="mr-sm-2 nav-header" href="for_contributors.html">Guidelines</a>
-                    <a class="mr-sm-2 nav-header" href="faq.html">FAQ</a>
+                    <!-- <a class="mr-sm-2 nav-header" href="faq.html">FAQ</a> -->
                 </div>
             </div>
         </nav>
@@ -102,141 +102,27 @@
 
 
 
+<!-- Navigation bar (top) -->
     <div class="container-xl">
         <div class="row">
 
             <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
 
+
+<!-- Table of contents -->
                 <div class="topbar container-xl position-fixed">
                     <div class="topbar-contents row">
-
-                        <!-- Table of contents -->
                         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-
-                            <form class="bd-search d-flex align-items-center pb-xl-4" action="search.html" method="get">
-                                <i class="icon fas fa-search"></i>
-                                <input type="search" class="form-control" name="q" id="search-input"
-                                    placeholder="Search this book..." aria-label="Search this book..."
-                                    autocomplete="off">
-                            </form>
-
                             <div class="tocsection onthispage pt-5 pb-3">
-                                <i class="fas fa-list"></i> Contents
+                                <!-- <i class="fas fa-list"></i> Contents -->
                             </div>
                             <nav id="bd-toc-nav" aria-label="Page">
                                 <ul class="visible nav section-nav flex-column">
-                                    <li class="toc-h2 nav-item toc-entry">
-                                        <a class="reference internal nav-link"
-                                            href="#workflows-in-quantitative-musculoskeletal-imaging">
-                                            Workflows in quantitative musculoskeletal imaging
+                                    
+                                    <li class="toc-h1 nav-item toc-entry">
+                                        <a class="reference internal nav-link" href="#about">
+                                            Motivation and vision
                                         </a>
-                                    </li>
-                                    <li class="toc-h2 nav-item toc-entry">
-                                        <a class="reference internal nav-link"
-                                            href="#why-a-community-for-open-and-reproducible-research">
-                                            Why a community for open and reproducible research?
-                                        </a>
-                                    </li>
-                                    <li class="toc-h2 nav-item toc-entry">
-                                        <a class="reference internal nav-link" href="#how-did-the-community-start">
-                                            How did the community start?
-                                        </a>
-                                    </li>
-
-                                    <li class="toc-h2 nav-item toc-entry">
-                                        <a class="reference internal nav-link" href="#who-we-are">
-                                            Who we are
-                                        </a>
-                                        <ul class="visible nav section-nav flex-column">
-                                            <li class="toc-h3 nav-item toc-entry">
-                                                <a class="reference internal nav-link" href="#community-advisory-board">
-                                                    Community Advisory Board
-                                                </a>
-                                            </li>
-                                            <li class="toc-h3 nav-item toc-entry">
-                                                <a class="reference internal nav-link" href="#technical-advisory-board">
-                                                    Technical Advisory Board
-                                                </a>
-                                            </li>
-                                            <li class="toc-h3 nav-item toc-entry">
-                                                <a class="reference internal nav-link" href="#all-members">
-                                                    All members
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-
-                            </nav>
-                        </div>
-
-                        <div class="col pl-md-4 topbar-main mr-5">
-
-                            <div class="dropdown-buttons-trigger">
-                                <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-                                    aria-label="Download this page"><i class="fas fa-download"></i></button>
-
-                                <div class="dropdown-buttons">
-                                    <!-- ipynb file if we had a myst markdown file -->
-
-                                    <!-- Download raw file -->
-                                    <a class="dropdown-buttons" href="_sources/manifesto.ipynb"><button type="button"
-                                            class="btn btn-secondary topbarbtn" title="Download source file"
-                                            data-toggle="tooltip" data-placement="left">.ipynb</button></a>
-                                    <!-- Download PDF via print -->
-                                    <button type="button" id="download-print" class="btn btn-secondary topbarbtn"
-                                        title="Print to PDF" onclick="printPdf(this)" data-toggle="tooltip"
-                                        data-placement="left">.pdf</button>
-                                </div>
-                            </div>
-
-                            <!-- Source interaction buttons -->
-
-                            <!-- Full screen (wrap in <a> to have style consistency -->
-
-                            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn"
-                                    data-toggle="tooltip" data-placement="bottom" onclick="toggleFullScreen()"
-                                    aria-label="Fullscreen mode" title="Fullscreen mode"><i
-                                        class="fas fa-expand"></i></button></a>
-
-                            <!-- Launch buttons -->
-
-                            <div class="dropdown-buttons-trigger">
-                                <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-                                    aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-                                <div class="dropdown-buttons">
-
-                                    <a class="binder-button"
-                                        href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/manifesto.ipynb"><button
-                                            type="button" class="btn btn-secondary topbarbtn" title="Launch Binder"
-                                            data-toggle="tooltip" data-placement="left"><img class="binder-button-logo"
-                                                src="_static/images/logo_binder.svg"
-                                                alt="Interact on binder">Binder</button></a>
-
-
-
-
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-                <div id="main-content" class="row">
-                    <div id="whitespace" class="col-2 invisible"></div>
-                    <div class="col-11 col-md-8 pl-md-5 pr-md-0">
-                        <!-- Table of contents that is only displayed when printing the page -->
-                        <div id="jb-print-docs-body" class="onlyprint">
-                            <h1>About</h1>
-                            <!-- Table of contents -->
-                            <div id="print-main-content">
-                                <div id="jb-print-toc">
-
-                                    <div>
-                                        <h2> Contents </h2>
-                                    </div>
-                                    <nav aria-label="Page">
                                         <ul class="visible nav section-nav flex-column">
                                             <li class="toc-h2 nav-item toc-entry">
                                                 <a class="reference internal nav-link"
@@ -251,117 +137,123 @@
                                                 </a>
                                             </li>
                                             <li class="toc-h2 nav-item toc-entry">
-                                                <a class="reference internal nav-link"
-                                                    href="#how-did-the-community-start">
-                                                    How did the community start?
+                                                <a class="reference internal nav-link" href="#what-do-we-do">
+                                                    What do we do?
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="toc-h1 nav-item toc-entry">
+                                        <a class="reference internal nav-link" href="#who-we-are">
+                                            Who we are
+                                        </a>
+                                        <ul class="visible nav section-nav flex-column">
+                                            <li class="toc-h2 nav-item toc-entry">
+                                                <a class="reference internal nav-link" href="#technical-advisory-board">
+                                                    Technical Advisory Board
                                                 </a>
                                             </li>
                                             <li class="toc-h2 nav-item toc-entry">
-                                                <a class="reference internal nav-link" href="#who-we-are">
-                                                    Who we are
+                                                <a class="reference internal nav-link" href="#community-advisory-board">
+                                                    Community Advisory Board
                                                 </a>
-                                                <ul class="nav section-nav flex-column">
-                                                    <li class="toc-h3 nav-item toc-entry">
-                                                        <a class="reference internal nav-link"
-                                                            href="#community-advisory-board">
-                                                            Community Advisory Board
-                                                        </a>
-                                                    </li>
-                                                    <li class="toc-h3 nav-item toc-entry">
-                                                        <a class="reference internal nav-link"
-                                                            href="#technical-advisory-board">
-                                                            Technical Advisory Board
-                                                        </a>
-                                                    </li>
-                                                    <li class="toc-h3 nav-item toc-entry">
-                                                        <a class="reference internal nav-link" href="#all-members">
-                                                            All members
-                                                        </a>
-                                                    </li>
-                                                </ul>
                                             </li>
                                         </ul>
-
-                                    </nav>
-                                </div>
-                            </div>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
+                    </div>
+                </div>
 
+
+<!-- Page content -->
+
+                <div id="main-content" class="row">
+                    <div id="whitespace" class="col-2 invisible">
+                    </div>
+                    <div class="col-11 col-md-8 pl-md-5 pr-md-0">
                         <div>
 
+
+<!-- Motivation and vision -->
                             <section class="tex2jax_ignore mathjax_ignore" id="about">
-                                <h1>About<a class="headerlink d-none" href="#about"
+                                <h1>Motivation and Vision<a class="headerlink d-none" href="#about"
                                         title="Permalink to this headline">¶</a>
                                 </h1>
-                                <p>This page contains our motivations, how we got here, and who we are</p>
+                                
+
                                 <section id="workflows-in-quantitative-musculoskeletal-imaging">
-                                    <h2>Workflows in quantitative musculoskeletal imaging<a class="headerlink d-none"
+                                    <h2>Computational workflows in MSK imaging<a class="headerlink d-none"
                                             href="#workflows-in-quantitative-musculoskeletal-imaging"
                                             title="Permalink to this headline">¶</a></h2>
-                                    <p>In quantitative musculoskeletal imaging, we aim to extract quantitative
-                                        information from medical images of bones and joints to investigate
-                                        musculoskeletal diseases such as osteoporosis and osteoarthritis.</p>
-                                    <p>Our <strong>computational workflows have a common structure</strong>:</p>
-                                    <p><img alt="" src="_images/workflow.png" /></p>
+                                    <p>In quantitative MSK imaging, we extract quantitative information from medical images of bones, muscles, and joints 
+                                        to investigate diseases such as osteoporosis and osteoarthritis.</p>
+                                    <p>Our computational workflows have a <strong>similar structure</strong>:</p>
+                                    <p><center>
+                                        <img alt="" src="_images/workflow.png" height="280px"/>
+                                        </center>
+                                    </p>
                                     <ul class="simple">
-                                        <li>
-                                            <p>We acquire (or are provided) <strong>medical images of the
-                                                    musculoskeletal system</strong>, either at the organ level
-                                                (resolution in the order of mm) or tissue level (resolution in the order
-                                                or µm). Images are mainly acquired with computed tomography (CT)
-                                                techniques or magnetic resonance (MR) techniques</p>
-                                        </li>
-                                        <li>
-                                            <p>We <strong>preprocess</strong> images to extract their characteristics
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <p>We <strong>segment</strong> (i.e. label) images to extract the organ/s of
-                                                interest, including bones and cartilages. Often, we register images
-                                                (i.e. warp to a template) to find correspondences within or between
-                                                subjects</p>
-                                        </li>
-                                        <li>
-                                            <p>We <strong>calculate metrics to quantify organ or tissue morphology,
-                                                    structure, chemical composition, and mechanical response</strong>.
-                                                Common metrics include tissue thicknesses, calcium or xxx content, and
-                                                stresses and strains. Depending on the research question we want to
-                                                answer, we use these metrics to analyze subjects’ longitudinal changes
-                                                or differences across populations, or to compare or validate new
-                                                algorithms.</p>
-                                        </li>
+                                        <li> <strong> Acquisition of medical images </strong> using magnetic resonance or computed tomography</li>
+                                        <li> <strong> Segmentation</strong> (i.e. labeling) of images to extract the organ/s of interest </li>
+                                        <li> <strong> Computation of metrics</strong> to quantify organ or tissue morphology,
+                                                structure (e.g. cartilage thickness), chemical composition (e.g. calcium content), 
+                                                and mechanical response (e.g. strains and stresses) </li>
                                     </ul>
-                                    <p>Our final aims are to answer specific biological questions that help us
-                                        understand musculoskeletal diseases, and to create computational tools that
-                                        allow us to investigate diseases in a reliable and robust way. Variations in
-                                        workflow structures are mainly due to computational parameters in algorithms,
-                                        methodological techniques, and choice of metrics.</p>
+                                    <p>Our <strong>goal</strong> is to <strong>create computational tools to investigate diseases</strong> in a reliable and robust way
+                                
                                 </section>
+
+
                                 <section id="why-a-community-for-open-and-reproducible-research">
                                     <h2>Why a community for open and reproducible research?<a class="headerlink d-none"
                                             href="#why-a-community-for-open-and-reproducible-research"
                                             title="Permalink to this headline">¶</a></h2>
-                                    <p>Although we share the same research interests and similar workflow structures,
-                                        <strong>we experience an extreme computational fragmentation at a community
-                                            level</strong>. Very often, workflows in our labs consist of a combination
-                                        of proprietary software, mainly provided by scanner producers, and in-house
-                                        algorithms, written either in proprietary languages (e.g. Matlab) or open source
-                                        languages (e.g. C++, Python). This code fragmentation translates into
-                                        <strong>several challenges</strong>. When using <strong>proprietary
-                                            software</strong>, we often do not have access to algorithm implementations
-                                        and parameter values. This can limit not only our knowledge of the computational
-                                        procedures and outcome, but also the adaptation of methodologies to specific
-                                        cases or the extension to new studies. In addition, the use of <strong>different
-                                            programming languages</strong> creates challenges when combining code from
-                                        different laboratories or when dealing with file format compatibility.
-                                        Consequences include limited reuse of existing code, absence of common metric
-                                        implementations, and thus challenges in creating long term collaborations, which
-                                        can lead to potential deceleration of discoveries.
+                                    <p> Although we share a similar workflow structures, we experience several challenges: </p>
+
+                                        <ul class="simple">
+                                            <li> 
+                                                Created <strong>code is usually fragmented</strong>, as it mainly consists of a combination of proprietary software and in-house algorithms
+                                            </li>
+                                            <li> 
+                                                When dealing with proprietary software, it is <strong>impossible to verify parameters and implementations</strong> and adapt the code to new images or anatomies
+                                            </li>
+                                            <li>       
+                                                The life of in-house code is strictly linked to the employment of the code creators, <strong>restricting code reuse and expansion</strong> by newer lab members   
+                                            </li>
+                                            <li> 
+                                                <strong>In our research field, software is usually not open</strong> and, when open, it is often hard to reuse because of <strong>lack of documentation</strong> 
+                                        </ul>
+                                        
+
+                                        To overcome these issues, we create the ORMIR community. 
+                                        Our main aim is to <strong>create open, reproducible, well-tested, and well-documented software to analyze musculoskeletal (MSK) images</strong>.
+                                        To know more about our story, read the  <a class="reference external" href="">manifesto paper</a> </li> (coming soon!) 
+                                        
                                     </p>
                                 </section>
-                                <section id="how-did-the-community-start">
+
+                                <section id="what-do-we-do">
+                                    <h2>What do we do?<a class="headerlink d-none"
+                                            href="#what-do-we-do" title="Permalink to this headline">¶</a>
+                                    </h2>
+                                    <p> <ul class="simple">
+                                        <li> 
+                                            <strong>We write code!</strong> We create Python packages with Jupyter Notebooks as user-interface, focusing on application 
+                                            related to our research interest (see our <a href="projects.html">projects</a>) 
+                                        </li>
+                                        <li>
+                                            <strong>We promote open and reproducible research</strong> with workshops and talks. 
+                                            See the  <a href="https://github.com/JCMSK/2022_JCW/blob/main/README.md#numfocus-blog-post">report</a> of our latest workshop
+                                        </li>   
+                                    </p>
+                                </section>
+
+                                <!-- <section id="what-do-we-do">
                                     <h2>How did the community start?<a class="headerlink d-none"
-                                            href="#how-did-the-community-start" title="Permalink to this headline">¶</a>
+                                            href="#what-do-we-do" title="Permalink to this headline">¶</a>
                                     </h2>
                                     <p>We have started formal discussions to look for pragmatic solutions . During the
                                         22nd International Workshop on Quantitative Musculoskeletal Imaging (QMSKI) held
@@ -382,153 +274,21 @@
                                         From these workshops, it emerged that <strong>it is becoming more and more
                                             crucial to develop tools to create, organize, and maintain common software
                                             and data in the musculoskeletal community</strong>.</p>
-                                </section>
+                                </section> -->
                                 <section id="who-we-are">
                                     <h2>Who we are<a class="headerlink d-none" href="#who-we-are"
                                             title="Permalink to this headline">¶</a></h2>
-                                    <p>We are a group of researchers in musculoskeletal imaging who are committed to
-                                        create tools for open and reproducible research.</p>
-                                    <section id="community-advisory-board">
-                                        <h3>Community Advisory Board<a class="headerlink d-none"
-                                                href="#community-advisory-board"
-                                                title="Permalink to this headline">¶</a></h3>
-                                        <div class="sphinx-bs container pb-4 docutils">
-                                            <div class="row docutils">
-                                                <div class="d-flex col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2 docutils">
-                                                    <div class="card w-100 text-center docutils">
-                                                        <div class="card-header bg-white docutils">
-                                                            <p class="card-text"><img alt=""
-                                                                    src="_images/francesco_santini.png" /></p>
-                                                        </div>
-                                                        <div class="card-body docutils">
-                                                            <p class="card-text"><a class="reference external"
-                                                                    href="https://www.francescosantini.com/wp/">Francesco
-                                                                    Santini
-                                                                    University of Basel
-                                                                    Switzerland</a></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2 docutils">
-                                                    <div class="card w-100 text-center docutils">
-                                                        <div class="card-header bg-white docutils">
-                                                            <p class="card-text"><img alt=""
-                                                                    src="_images/kathryn_stok.png" /></p>
-                                                        </div>
-                                                        <div class="card-body docutils">
-                                                            <p class="card-text"><a class="reference external"
-                                                                    href="https://findanexpert.unimelb.edu.au/profile/778607-kathryn-stok">Kathryn
-                                                                    Stok
-                                                                    University of Melbourne<br />
-                                                                    Australia</a></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2 docutils">
-                                                    <div class="card w-100 text-center docutils">
-                                                        <div class="card-header bg-white docutils">
-                                                            <p class="card-text"><img alt=""
-                                                                    src="_images/martino_pani.png" /></p>
-                                                        </div>
-                                                        <div class="card-body docutils">
-                                                            <p class="card-text"><a class="reference external"
-                                                                    href="https://www.port.ac.uk/about-us/structure-and-governance/our-people/our-staff/martino-pani">Martino
-                                                                    Pani<br />
-                                                                    University of Portsmouth<br />
-                                                                    UK</a></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2 docutils">
-                                                    <div class="card w-100 text-center docutils">
-                                                        <div class="card-header bg-white docutils">
-                                                            <p class="card-text"><img alt=""
-                                                                    src="_images/serena_bonaretti.png" /></p>
-                                                        </div>
-                                                        <div class="card-body docutils">
-                                                            <p class="card-text"><a class="reference external"
-                                                                    href="https://sbonaretti.github.io/">Serena
-                                                                    Bonaretti<br />
-                                                                    tMSKr<br />
-                                                                    The Netherlands</a></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </section>
-                                    <section id="technical-advisory-board">
-                                        <h3>Technical Advisory Board<a class="headerlink d-none"
-                                                href="#technical-advisory-board"
-                                                title="Permalink to this headline">¶</a></h3>
-                                        <div class="sphinx-bs container pb-4 docutils">
-                                            <div class="row docutils">
-                                                <div class="d-flex col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2 docutils">
-                                                    <div class="card w-100 text-center docutils">
-                                                        <div class="card-header bg-white docutils">
-                                                            <p class="card-text"><img alt=""
-                                                                    src="_images/donnie_cameron.png" /></p>
-                                                        </div>
-                                                        <div class="card-body docutils">
-                                                            <p class="card-text"><a class="reference external"
-                                                                    href="https://www.linkedin.com/in/donnie-cameron-b76bbb63/?originalSubdomain=uk">Donnie
-                                                                    Cameron<br />
-                                                                    Leiden UMC<br />
-                                                                    The Netherlands</a></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2 docutils">
-                                                    <div class="card w-100 text-center docutils">
-                                                        <div class="card-header bg-white docutils">
-                                                            <p class="card-text"><img alt=""
-                                                                    src="_images/gianluca_iori.png" /></p>
-                                                        </div>
-                                                        <div class="card-body docutils">
-                                                            <p class="card-text"><a class="reference external"
-                                                                    href="https://github.com/gianthk">Gianluca
-                                                                    Iori<br />
-                                                                    SESAME<br />
-                                                                    Jordan</a></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2 docutils">
-                                                    <div class="card w-100 text-center docutils">
-                                                        <div class="card-header bg-white docutils">
-                                                            <p class="card-text"><img alt=""
-                                                                    src="_images/michelle_espinosa.png" /></p>
-                                                        </div>
-                                                        <div class="card-body docutils">
-                                                            <p class="card-text"><a class="reference external"
-                                                                    href="https://www.linkedin.com/in/michelleaespinosah/">Michelle
-                                                                    Alejandra Espinosa Hernandez
-                                                                    University of Toronto
-                                                                    Canada</a></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2 docutils">
-                                                    <div class="card w-100 text-center docutils">
-                                                        <div class="card-header bg-white docutils">
-                                                            <p class="card-text"><img alt=""
-                                                                    src="_images/serena_bonaretti.png" /></p>
-                                                        </div>
-                                                        <div class="card-body docutils">
-                                                            <p class="card-text"><a class="reference external"
-                                                                    href="https://sbonaretti.github.io/">Serena
-                                                                    Bonaretti<br />
-                                                                    tMSKr<br />
-                                                                    The Netherlands</a></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </section>
+                                    <p> We are a group of scientist in musculoskeletal imaging from academia and industry. 
+                                        Our aim is to create tools to make our research outputs open and reproducible.</p>
+
+
+
+                                    
+                                    
+<!-- All members -->
                                     <section id="all-members">
-                                        <h3>All members<a class="headerlink d-none" href="#all-members"
-                                                title="Permalink to this headline">¶</a></h3>
+                                        <!-- <h3>All members<a class="headerlink d-none" href="#all-members"
+                                                title="Permalink to this headline">¶</a></h3> -->
                                         <div class="sphinx-bs container pb-4 docutils">
                                             <div class="row docutils">
                                                 <div class="d-flex col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2 docutils">
@@ -1002,30 +762,178 @@
 
                             </section>
 
+<!-- Technical Advisory Board -->
+                            <section id="technical-advisory-board">
+                                <h3>Technical Advisory Board<a class="headerlink d-none"
+                                        href="#technical-advisory-board"
+                                        title="Permalink to this headline">¶</a></h3>
+                                <p> Our role is to create tools and provide directions for code standardization and homogenization
+                                </p>
+                                <div class="sphinx-bs container pb-4 docutils">
+                                    <div class="row docutils">
+                                        <div class="d-flex col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2 docutils">
+                                            <div class="card w-100 text-center docutils">
+                                                <div class="card-header bg-white docutils">
+                                                    <p class="card-text"><img alt=""
+                                                            src="_images/donnie_cameron.png" /></p>
+                                                </div>
+                                                <div class="card-body docutils">
+                                                    <p class="card-text"><a class="reference external"
+                                                            href="https://www.linkedin.com/in/donnie-cameron-b76bbb63/?originalSubdomain=uk">Donnie
+                                                            Cameron<br />
+                                                            Leiden UMC<br />
+                                                            The Netherlands</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2 docutils">
+                                            <div class="card w-100 text-center docutils">
+                                                <div class="card-header bg-white docutils">
+                                                    <p class="card-text"><img alt=""
+                                                            src="_images/gianluca_iori.png" /></p>
+                                                </div>
+                                                <div class="card-body docutils">
+                                                    <p class="card-text"><a class="reference external"
+                                                            href="https://github.com/gianthk">Gianluca
+                                                            Iori<br />
+                                                            SESAME<br />
+                                                            Jordan</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2 docutils">
+                                            <div class="card w-100 text-center docutils">
+                                                <div class="card-header bg-white docutils">
+                                                    <p class="card-text"><img alt=""
+                                                            src="_images/michelle_espinosa.png" /></p>
+                                                </div>
+                                                <div class="card-body docutils">
+                                                    <p class="card-text"><a class="reference external"
+                                                            href="https://www.linkedin.com/in/michelleaespinosah/">Michelle
+                                                            Alejandra Espinosa Hernandez
+                                                            University of Toronto
+                                                            Canada</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2 docutils">
+                                            <div class="card w-100 text-center docutils">
+                                                <div class="card-header bg-white docutils">
+                                                    <p class="card-text"><img alt=""
+                                                            src="_images/serena_bonaretti.png" /></p>
+                                                </div>
+                                                <div class="card-body docutils">
+                                                    <p class="card-text"><a class="reference external"
+                                                            href="https://sbonaretti.github.io/">Serena
+                                                            Bonaretti<br />
+                                                            tMSKr<br />
+                                                            The Netherlands</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+<!-- Community Advisory Board -->
+                            <section id="community-advisory-board">
+                                
+                                <h3>Community Advisory Board<a class="headerlink d-none"
+                                        href="#community-advisory-board"
+                                        title="Permalink to this headline">¶</a></h3>
+                                <p> Our role is to coordinate community directions and outreach activities
+                                </p>
+                                
+                                <div class="sphinx-bs container pb-4 docutils">
+                                    <div class="row docutils">
+                                        <div class="d-flex col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2 docutils">
+                                            <div class="card w-100 text-center docutils">
+                                                <div class="card-header bg-white docutils">
+                                                    <p class="card-text"><img alt=""
+                                                            src="_images/francesco_santini.png" /></p>
+                                                </div>
+                                                <div class="card-body docutils">
+                                                    <p class="card-text"><a class="reference external"
+                                                            href="https://www.francescosantini.com/wp/">Francesco
+                                                            Santini
+                                                            University of Basel
+                                                            Switzerland</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2 docutils">
+                                            <div class="card w-100 text-center docutils">
+                                                <div class="card-header bg-white docutils">
+                                                    <p class="card-text"><img alt=""
+                                                            src="_images/kathryn_stok.png" /></p>
+                                                </div>
+                                                <div class="card-body docutils">
+                                                    <p class="card-text"><a class="reference external"
+                                                            href="https://findanexpert.unimelb.edu.au/profile/778607-kathryn-stok">Kathryn
+                                                            Stok
+                                                            University of Melbourne<br />
+                                                            Australia</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2 docutils">
+                                            <div class="card w-100 text-center docutils">
+                                                <div class="card-header bg-white docutils">
+                                                    <p class="card-text"><img alt=""
+                                                            src="_images/martino_pani.png" /></p>
+                                                </div>
+                                                <div class="card-body docutils">
+                                                    <p class="card-text"><a class="reference external"
+                                                            href="https://www.port.ac.uk/about-us/structure-and-governance/our-people/our-staff/martino-pani">Martino
+                                                            Pani<br />
+                                                            University of Portsmouth<br />
+                                                            UK</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2 docutils">
+                                                <div class="card w-100 text-center docutils">
+                                                    <div class="card-header bg-white docutils">
+                                                        <p class="card-text"><img alt=""
+                                                                src="_images/serena_bonaretti.png" /></p>
+                                                    </div>
+                                                    <div class="card-body docutils">
+                                                        <p class="card-text"><a class="reference external"
+                                                                href="https://sbonaretti.github.io/">Serena
+                                                                Bonaretti<br />
+                                                                tMSKr<br />
+                                                                The Netherlands</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
                             <script type="text/x-thebe-config">
-    {
-        requestKernel: true,
-        binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
-            ref: "master",
-        },
-        codeMirrorConfig: {
-            theme: "abcdef",
-            mode: "python"
-        },
-        kernelOptions: {
-            kernelName: "python3",
-            path: "./."
-        },
-        predefinedOutput: true
-    }
-    </script>
+                            {
+                                requestKernel: true,
+                                binderOptions: {
+                                    repo: "binder-examples/jupyter-stacks-datascience",
+                                    ref: "master",
+                                },
+                                codeMirrorConfig: {
+                                    theme: "abcdef",
+                                    mode: "python"
+                                },
+                                kernelOptions: {
+                                    kernelName: "python3",
+                                    path: "./."
+                                },
+                                predefinedOutput: true
+                            }
+                            </script>
                             <script>kernelName = 'python3'</script>
 
                         </div>
 
 
-                        <!-- Previous / next buttons -->
+                        <!-- Previous / next buttons
                         <div class='prev-next-area'>
                             <a class='left-prev' id="prev-link" href="index.html" title="previous page">
                                 <i class="fas fa-angle-left"></i>
@@ -1041,16 +949,14 @@
                                 </div>
                                 <i class="fas fa-angle-right"></i>
                             </a>
-                        </div>
+                        </div> -->
 
                     </div>
                 </div>
+                <br>
                 <footer class="footer">
                     <p>
-
-                        By ORMIR<br />
-
-                        &copy; Copyright 2021.<br />
+                        Website by the ORMIR community, modified from <a href="https://jupyterbook.org/en/stable/intro.html" > Jupyter Book</a>
                     </p>
                 </footer>
             </main>
