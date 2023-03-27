@@ -1,5 +1,15 @@
 [
     {
+        "name" : "Technical Advisory Board",
+        "description" : "Meeting",
+        "year" : 2023,
+        "month" : 6,
+        "day" : 15,
+        "start" : "15:00 CET",
+        "end" : "15:00 CET",
+        "group" : "Technical Advisory Board"
+    },
+    {
         "name" : "ORMIR Community Meeting",
         "description" : "Quarterly meeting",
         "year" : 2023,
