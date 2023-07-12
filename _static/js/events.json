@@ -3,6 +3,26 @@
         "name" : "ORMIR Community Meeting",
         "description" : "Quarterly meeting",
         "year" : 2023,
+        "month" : 10,
+        "day" : 5,
+        "start" : "21:00 CET",
+        "end" : "21:00 CET",
+        "group" : "ORMIR community"
+    },
+    {
+        "name" : "Technical Advisory Board",
+        "description" : "Meeting",
+        "year" : 2023,
+        "month" : 9,
+        "day" : 12,
+        "start" : "15:00 CET",
+        "end" : "15:00 CET",
+        "group" : "Technical Advisory Board"
+    },
+    {
+        "name" : "ORMIR Community Meeting",
+        "description" : "Quarterly meeting",
+        "year" : 2023,
         "month" : 7,
         "day" : 8,
         "start" : "15:00 CET",
