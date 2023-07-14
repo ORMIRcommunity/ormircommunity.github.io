@@ -33,6 +33,9 @@
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="_static/accordion.css" />
+
+
 
     <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
 
@@ -119,9 +122,9 @@
                                     autocomplete="off">
                             </form> -->
 
-                            <div class="tocsection onthispage pt-5 pb-3">
-                                <!-- <i class="fas fa-list"></i> Contents -->
-                            </div>
+                            <!-- <div class="tocsection onthispage pt-5 pb-3">
+                                 <i class="fas fa-list"></i> Contents -->
+                            <!-- </div> 
                             <nav id="bd-toc-nav" aria-label="Page">
                                 <ul class="visible nav section-nav flex-column">
                                     <li class="toc-h1 nav-item toc-entry">
@@ -171,14 +174,14 @@
                                             Notebook narrative
                                         </a>
                                     </li>
-                                    <!-- <li class="toc-h1 nav-item toc-entry">
+                                    <li class="toc-h1 nav-item toc-entry">
                                         <a class="reference internal nav-link" href="#sending-your-contribution">
                                             Sending your contribution
                                         </a>
                                     </li> -->
-                                </ul>
+                                <!-- </ul> 
 
-                            </nav>
+                            </nav> -->
                         </div>
 
                         <!-- <div class="col pl-md-4 topbar-main">
@@ -241,10 +244,10 @@
                     <div id="whitespace" class="col-2 invisible"></div>
                     <div class="col-11 col-md-8 pl-md-5 pr-md-0">
                         <!-- Table of contents that is only displayed when printing the page -->
-                        <div id="jb-print-docs-body" class="onlyprint">
-                            <h1>Guidelines for contributors</h1>
+                        <!-- <div id="jb-print-docs-body" class="onlyprint">
+                            <h1>Guidelines for contributors</h1> -->
                             <!-- Table of contents -->
-                            <div id="print-main-content">
+                            <!-- <div id="print-main-content">
                                 <div id="jb-print-toc">
 
                                     <div>
@@ -299,67 +302,45 @@
                                                 <a class="reference internal nav-link" href="#notebook-narrative">
                                                     Notebook narrative
                                                 </a>
-                                            </li>
+                                            </li> -->
                                             <!-- <li class="toc-h nav-item toc-entry">
                                                 <a class="reference internal nav-link"
                                                     href="#sending-your-contribution">
                                                     Sending your contribution
                                                 </a>
                                             </li> -->
-                                        </ul>
+                                        <!-- </ul>
 
                                     </nav>
                                 </div>
-                            </div>
-                        </div>
+                            </div> 
+                        </div>-->
 
 
 <!-- Page content -->
                         <div>
 
                             <section class="tex2jax_ignore mathjax_ignore" id="guidelines-for-contributors">
-                                <h1>Guidelines for contributors<a class="headerlink d-none"
+                                <h1>Guidelines for coders and programmers<a class="headerlink d-none"
                                         href="#guidelines-for-contributors" title="Permalink to this headline">¶</a>
                                 </h1>
-                                <p>Thank you for willing to contribute with your work and time to the community!</p>
-                                <p>In this page, you will find guidelines for 
-                                    <a class="reference external" href="#coding-guidelines">coding</a>,
-                                    <a class="reference external" href="#data-types">data types</a>, and
-                                    <a class="reference external" href="#notebook-narrative">Jupyter notebook narrative</a>,
-                                    so that we can make our code consistent across workflows </p>
+                                <p>Thank you for contributing your work and time to the ORMIR community!</p>
+                                <p>On this page, you will find coding guidelines, templates, and tips and tricks. 
+                                    Please, follow them to ensure that <strong>your code aligns with the existing code in the community and future contributions</strong>.<br> 
+                                </p>  
+                                <p>
+                                    Don't forget to write code documentation! Code without documentation is rarely reused and hard to understand.  
+                                    <strong>Documentation is just as important as code itself!</strong>
+                                </p>
                                 
-                                <p><strong>Take the time to document your code</strong>! 
-                                    Code without documentation is rarely reused and hard to understand.  
-                                    <strong>Documentation is as important as code itself</strong>! </p>
                                 
-                                <hr class="docutils" />
-
-<!-- Coding guidelines -->
-                                <section id="coding-guidelines">
-                                    <h2>Coding guidelines<a class="headerlink d-none" href="#coding-guidelines"
-                                            title="Permalink to this headline">¶</a></h2>
-                                    <ul class="simple">
-                                        <li>
-                                            <p>In this page, you will find a summary of our coding guidelines. They are
-                                                derived from established coding guidelines:</p>
-                                            <ul>
-                                                <li>
-                                                    <p>For variable naming and style, we follow the <a
-                                                            class="reference external"
-                                                            href="https://www.python.org/dev/peps/pep-0008/">coding
-                                                            guidelines of the Python community</a></p>
-                                                </li>
-                                                <li>
-                                                    <p>For function and class documentation, we follow the <a
-                                                            class="reference external"
-                                                            href="https://numpydoc.readthedocs.io/en/latest/format.html">NumPy
-                                                            guidelines</a></p>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
+<!-- Accordion Section -->
+<!-- Python code style ---------------------------------------------------------------->
+                                <button class="accordion"><span style="font-size: 21px;">What Python code style do I use?</span> </button>
+                                <div class="panel">
+                                    We follow the <a class="reference external" href="https://www.python.org/dev/peps/pep-0008/"> Style Guide for Python Code</a>. In short:
                                     <section id="naming-style">
-                                        <h3>Naming Style<a class="headerlink d-none" href="#naming-style"
+                                        <h4>Naming Style<a class="headerlink d-none" href="#naming-style"
                                                 title="Permalink to this headline">¶</a></h3>
                                         <ul>
                                             <li>
@@ -392,7 +373,7 @@
                                         </ul>
                                     </section>
                                     <section id="indentation">
-                                        <h3>Indentation<a class="headerlink d-none" href="#indentation"
+                                        <h4>Indentation<a class="headerlink d-none" href="#indentation"
                                                 title="Permalink to this headline">¶</a></h3>
                                         <ul class="simple">
                                             <li>
@@ -401,7 +382,7 @@
                                         </ul>
                                     </section>
                                     <section id="space">
-                                        <h3>Space<a class="headerlink d-none" href="#space"
+                                        <h4>Space<a class="headerlink d-none" href="#space"
                                                 title="Permalink to this headline">¶</a></h3>
                                         <ul>
                                             <li>
@@ -427,14 +408,13 @@
                                         </ul>
                                     </section>
                                     <section id="comments">
-                                        <h3>Comments<a class="headerlink d-none" href="#comments"
+                                        <h4>Comments<a class="headerlink d-none" href="#comments"
                                                 title="Permalink to this headline">¶</a></h3>
                                         <ul>
                                             <li>
                                                 <p>Comments are introduced by <code
                                                         class="docutils literal notranslate"><span class="pre">#</span></code>,
-                                                    are above the code they refer to, and are indented as the code they
-                                                    refer to:</p>
+                                                    positioned above the code they refer to, and indented to align with the code are commenting on:</p>
                                                 <div class="highlight-python notranslate">
                                                     <div class="highlight">
                                                         <pre><span></span><span class="c1"># assign variable</span>
@@ -448,10 +428,19 @@
                                             As part of a community we want to write code that can be readable and
                                             reusable by others. Be generous and precise with your comments!</p>
                                     </section>
+                                </div>
+
+
+<!-- Python code documentation ---------------------------------------------------------------->
+                                <button class="accordion">What Python code documentation do I use?</button>
+                                <div class="panel">
+                                    We use docstrings (documentation strings), which are strings that describes a module, function, class, or method definition). We follow the <a class="reference external" href="https://numpydoc.readthedocs.io/en/latest/format.html"> NumPy guidelines</a>. 
+                                    
+                                    <br>
+                                    <i>Example</i>: docstring for functions (for modules, classes, and methods, refer to the <a class="reference external" href="https://numpydoc.readthedocs.io/en/latest/format.html"> NumPy guidelines</a>): 
+                                    
                                     <section id="functions">
-                                        <h3>Functions<a class="headerlink d-none" href="#functions"
-                                                title="Permalink to this headline">¶</a></h3>
-                                        <p>Explanations below the example:</p>
+                                        
                                         <div class="highlight-python notranslate">
                                             <div class="highlight">
                                                 <pre><span></span><span class="k">def</span> <span class="nf">my_function</span> <span class="p">(</span><span class="n">input1</span><span class="p">,</span> <span class="n">input2</span><span class="p">):</span>
@@ -460,10 +449,10 @@
 <span class="sd">    </span>
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
-<span class="sd">    x : type</span>
-<span class="sd">        Description of the parameter `x`.</span>
-<span class="sd">    y : type</span>
-<span class="sd">        Description of the parameter `y`.</span>
+<span class="sd">    input_1 : type</span>
+<span class="sd">        Description of the parameter `input_1`.</span>
+<span class="sd">    input_2 : type</span>
+<span class="sd">        Description of the parameter `input_2`.</span>
 <span class="sd">    </span>
 <span class="sd">    Returns</span>
 <span class="sd">    -------</span>
@@ -477,7 +466,7 @@
 </pre>
                                             </div>
                                         </div>
-                                        <p>The function documentation is right below the function header, and it is in
+                                        <p><i>Explanation</i>: The function documentation is right below the function header, and it is
                                             between three opening and three closing single quotes <code
                                                 class="docutils literal notranslate"><span class="pre">'''</span></code>
                                             or double quotes: <code
@@ -547,10 +536,8 @@
                                         </div>
                                         <ul class="simple">
                                             <li>
-                                                <p><em>Why is documentation important?</em><br />
-                                                    These comments decleared in between triple double quotes (<code
-                                                        class="docutils literal notranslate"><span class="pre">&quot;&quot;&quot;</span></code>)
-                                                    are called <em>docstrings</em>. And they are used:</p>
+                                                <p><em>Why is documentation important?</em>
+                                                    Because docstrings are used:</p>
                                                 <ul>
                                                     <li>
                                                         <p>By users to know what the function does by typing <code
@@ -569,17 +556,167 @@
                                             </li>
                                         </ul>
                                     </section>
-                                    <section id="classes-modules-packages">
-                                        <h3>Classes, Modules, Packages<a class="headerlink d-none"
-                                                href="#classes-modules-packages"
-                                                title="Permalink to this headline">¶</a></h3>
-                                        <p>Coming soon!</p>
-                                    </section>
-                                </section>
-                                <hr class="docutils" />
+
+
+
+                                </div>
+
+
+<!-- How do I write docstrings fast? ---------------------------------------------------------------->
+                                <button class="accordion">How do I create documentation fast?</button>
+                                <div class="panel">
+                                    ChatGPT! Example of command: 
+                                    <br>
+                                    <code class="docutils literal notranslate"><span class="pre">
+                                    write docstrings  in Numpy style for the following function: [paste your function]
+                                    </span></code>
+                                    <br>
+                                    <i>Important</i>: Double-check the content of the ChatGPT output!
+
+
+
+
+                                </div>
+<!-- Narrative in Jupyter notebook---------------------------------------------------------------->
+                                <button class="accordion">How do I structure a Jupyter notebook?</button>
+                                <div class="panel">
+                                    We created a Jupyter notebook <i>template</i> that you can download
+                                    <a class="reference external" href="https://github.com/ORMIRcommunity/templates/blob/main/ORMIR_nb_template.ipynb">here</a>. 
+                                 
+                                    Just like when you write a paper, you fill out a journal template with your content, you can fill out the ORMIR community notebook template with your narrative and code.
+                                    
+                                    <br>
+                                    <i>Why should I use the template?</i> We usually use notebooks to create use-cases for our Python packages. 
+                                    Using the template allows us to homogenize and harmonize our use-cases and to make sure we remember to include authors, licenses, references, etc.
+                                
+                                </div>
+
+
+<!-- GitHub readme file---------------------------------------------------------------->
+                                <button class="accordion">How do I structure the readme file of a GitHub repository?</button>
+                                <div class="panel">
+                                    We created a GitHub readme <i>template</i> that you can download
+                                    <a class="reference external" href="https://github.com/ORMIRcommunity/templates/blob/main/ORMIR_readme_template.md">here</a>. 
+                                
+                                    Just like for Jupyter notebooks, a readme file template allows us to harmonize our repositories and make sure we remember to include authors, licenses, use-cases, references, etc.
+                                </div>
+
+
+<!-- What data types shall I use? ---------------------------------------------------------------->
+                                <button class="accordion">What data types do I use?</button>
+                                <div class="panel">
+                                    <ul class="simple">
+                                        <li>
+                                            <p>Images:</p>
+                                            <ul>
+                                                <li>
+                                                    <p>Our pipelines usually start with <code
+                                                            class="docutils literal notranslate"><span class="pre">.dcm</span></code>
+                                                        images for CT/MR acquisitions or <code
+                                                            class="docutils literal notranslate"><span class="pre">.isq</span></code>
+                                                        images for µCT/HR-pQCT acquisitions</p>
+                                                </li>
+                                                <li>
+                                                    <p>Images are then transformed into other file formats for
+                                                        simplicity</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p>Meshes and point clouds:</p>
+                                            <ul>
+                                                <li>
+                                                    <p>From images, we often extract point clouds and/or meshes</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="simple">
+                                        <li>
+                                            <p>Here are the recommended types for images, meshes, and point clouds:</p>
+                                        </li>
+                                    </ul>
+                                    <table class="colwidths-auto table">
+                                        <thead>
+                                            <tr class="row-odd">
+                                                <th class="text-align:left head">
+                                                    <p>Data type</p>
+                                                </th>
+                                                <th class="text-align:left head">
+                                                    <p>Data representation</p>
+                                                </th>
+                                                <th class="text-align:left head">
+                                                    <p>File Format</p>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="row-even">
+                                                <td class="text-align:left">
+                                                    <p>Image</p>
+                                                </td>
+                                                <td class="text-align:left">
+                                                    <p>ITK / SimpleITK / VTK / Numpy array / Zarr</p>
+                                                </td>
+                                                <td class="text-align:left">
+                                                    <p>.dcm / .mha / .isq (more to be added)</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="row-odd">
+                                                <td class="text-align:left">
+                                                    <p>Mesh</p>
+                                                </td>
+                                                <td class="text-align:left">
+                                                    <p>VTK</p>
+                                                </td>
+                                                <td class="text-align:left">
+                                                    <p>.vtk</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="row-even">
+                                                <td class="text-align:left">
+                                                    <p>Points</p>
+                                                </td>
+                                                <td class="text-align:left">
+                                                    <p>VTKPoints / Numpy array</p>
+                                                </td>
+                                                <td class="text-align:left">
+                                                    <p>.vtk</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+
+
+
+
+
+<!-- Narrative in Jupyter notebook-->
+<!-- <button class="accordion">Narrative in Jupyter notebook</button>
+<div class="panel">
+    <p>Narrative in Jupyter notebook</p>
+</div> -->
+
+
+<!-- Narrative in Jupyter notebook -->
+<!-- <button class="accordion">Narrative in Jupyter notebook</button>
+<div class="panel">
+    <p>Narrative in Jupyter notebook</p>
+</div> --> 
+
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+  
 
 <!-- Data types -->
-                                <section id="data-types">
+                                <!-- <section id="data-types">
                                     <h2>Data types<a class="headerlink d-none" href="#data-types"
                                             title="Permalink to this headline">¶</a></h2>
                                     <ul class="simple">
@@ -664,24 +801,24 @@
                                         </tbody>
                                     </table>
                                 </section>
-                                <hr class="docutils" />
+                                <hr class="docutils" /> -->
 
 <!-- Notebook narrative -->
-                                <section id="notebook-narrative">
+                                <!-- <!-- <section id="notebook-narrative">
                                     <h2>Notebook narrative<a class="headerlink d-none" href="#notebook-narrative"
                                             title="Permalink to this headline">¶</a></h2>
                                     <!-- <ul class="simple">
                                         <li> -->
-                                            <p>One of the main strengths of Jupyter notebook is the integration of code
+                                            <!-- <p>One of the main strengths of Jupyter notebook is the integration of code
                                                 with narrative. Sharing notebooks without narrative highly reduces the
                                                 understanding of a workflow</p>
                                                 <p>We recommend using the  
                                                 <a class="reference external" href="https://github.com/ORMIRcommunity/templates/blob/main/ORMIR_nb_template.ipynb">ORMIR notebook template</a>,
-                                                which is based on the following structure: 
+                                                which is based on the following structure:  -->
                                         <!-- </li>
                                         <li>
                                             <p>Here is an example of narrative outline of a research Notebook:</p> -->
-                                            <ol class="simple">
+                                            <!-- <ol class="simple">
                                                 <li>
                                                     <p><em>Title section</em>: It can contain:</p>
                                                     <ul>
@@ -754,21 +891,21 @@
                                                         </li>
                                                     </ul>
                                                 </li>
-                                            </ol>
+                                            </ol> --> 
                                         <!-- </li> -->
                                     <!-- </ul> -->
-                                </section>
-                                <hr class="docutils" />
+                                <!-- </section>
+                                <hr class="docutils" />  -->
                                 <!-- <section id="sending-your-contribution">
                                     <h2>Sending your contribution<a class="headerlink d-none"
                                             href="#sending-your-contribution" title="Permalink to this headline">¶</a>
                                     </h2>
                                     <p>Coming soon!</p>
                                 </section> -->
-                            </section>
+                            <!-- </section> -->
 
-                            <script type="text/x-thebe-config">
-    {
+    <!-- <script type="text/x-thebe-config"> -->
+    <!-- {
         requestKernel: true,
         binderOptions: {
             repo: "binder-examples/jupyter-stacks-datascience",
@@ -783,7 +920,11 @@
             path: "./."
         },
         predefinedOutput: true
-    }
+    } -->
+
+    <!-- JavaScript to toggle accordion -->
+    <script src="_static/accordion.js"></script>
+
     </script>
                             <script>kernelName = 'python3'</script>
 

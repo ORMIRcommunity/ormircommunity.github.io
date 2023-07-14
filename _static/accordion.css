@@ -1,0 +1,55 @@
+/* Accordion container */
+.accordion {
+    background-color: #f7f7f7;
+    color: #333;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 21px;
+    transition: 0.4s;
+    margin-top: 8px; /* Add space between accordion elements */
+    margin-bottom: 8px; /* Add space between accordion elements */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+}
+
+/* #0071bc */
+
+/* Active (open) accordion */
+.accordion.active {
+    background-color: #f7f7f7; /* Same color when active */
+    border: 1px solid #0071bc; /* Add border color when active */
+    /* color: #0071bc; */
+}
+
+/* Accordion panel */
+.panel {
+    padding: 0 18px;
+    background-color: #fff; /* Default panel color */
+    display: none;
+    overflow: hidden;
+}
+
+/* Active (open) panel */
+.accordion.active + .panel {
+    background-color: #fbfbfb; /* Change panel color when active */
+}
+
+/* Arrow icon */
+.accordion::after {
+    content: '\25BC'; /* Unicode character for downward arrow */
+    float: right;
+    margin-left: 5px;
+}
+
+/* Active (open) arrow */
+.accordion.active::after {
+    transform: rotate(180deg);
+}
+
+/* Remove blue border when toggle off */
+.accordion:not(.active):focus {
+    outline: none;
+}
