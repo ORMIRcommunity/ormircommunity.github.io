@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Learning material &#8212; ORMIR</title>
+    <link rel="icon" type="image/x-icon" href="/_images/ormir_favicon.ico">
+    
+    <link href="_static/css/theme.css" rel="stylesheet">
+    <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css"
+        href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+
+    <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output, .cell_output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Guidelines for contributors" href="guidelines.html" />
+    <link rel="prev" title="Open MSK images" href="datasets.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+
+
+    <!-- Google Analytics -->
+
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script>
+        window.ga = window.ga || function () {
+            (ga.q = ga.q || []).push(arguments)
+        };
+        ga.l = +new Date;
+        ga('create', 'xxx', 'auto');
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview');
+    </script>
+
+</head>
+
+<body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+
+    <div class="container-fluid" id="banner">
+        <nav class="navbar navbar-dark navbar-expand-lg bd-navbar bg-light shadow fixed-top">
+            <div class="container-xl">
+                <a id="logo" href="index.html">
+                    <img src="_images/ormir_logo.png" alt="ORMIR Logo" style="padding-right: 15px; width:100px">
+                </a>
+                <div id="navbar" class="mr-auto">
+                    <!-- <a class="mr-sm-2 nav-header" href="index.html">Home</a> -->
+                    <a class="mr-sm-2 nav-header" href="about.html">About</a>
+                    <!-- <a class="mr-sm-2 nav-header" href="projects.html">Projects</a> -->
+                    <a class="mr-sm-2 nav-header" href="packages.html">Packages</a>
+                    <a class="mr-sm-2 nav-header" href="nb_gallery.html">Notebooks</a>
+                    <a class="mr-sm-2 nav-header" href="datasets.html">Datasets</a>
+                    <a class="mr-sm-2 nav-header" href="guidelines.html">Guidelines</a>
+                    <a class="mr-sm-2 nav-header" href="learning.html">Learning</a>
+                    <a class="mr-sm-2 " href="#">Publications and Funding</a> 
+                    
+                    <!-- <a class="mr-sm-2 nav-header" href="faq.html">FAQ</a> -->
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div>&nbsp</div>
+
+    <div class="container-xl">
+        <div class="row">
+
+            <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+
+                <div class="topbar container-xl position-fixed">
+                    <div class="topbar-contents row">
+                        <!-- Table of contents -->
+                        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+                            <div class="tocsection onthispage pt-5 pb-3">
+                            </div>
+                            <nav id="bd-toc-nav" aria-label="Page">
+                                <ul class="visible nav section-nav flex-column">
+                                    <li class="toc-h1 nav-item toc-entry">
+                                        <a class="reference internal nav-link" href="#publications">
+                                            Publications
+                                        </a>
+                                        <ul class="visible nav section-nav flex-column">
+                                            <li class="toc-h2 nav-item toc-entry">
+                                                <a class="reference internal nav-link" href="#pre-print">
+                                                    Pre-prints
+                                                </a>
+                                            </li>
+                                            <li class="toc-h2 nav-item toc-entry">
+                                                <a class="reference internal nav-link" href="#peer-reviewed">
+                                                    Peer-reviewed publications
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="toc-h1 nav-item toc-entry">
+                                        <a class="reference internal nav-link" href="#funding">
+                                            Funding
+                                        </a>
+                                    </li>
+                                    <!-- <li class="toc-h1 nav-item toc-entry">
+                                        <a class="reference internal nav-link" href="#cheat-sheets">
+                                            Cheat sheets
+                                        </a>
+                                    </li> -->
+                                </ul>
+
+                            </nav>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="main-content" class="row">
+                    <div id="whitespace" class="col-2 invisible"></div>
+                    <div class="col-11 col-md-8 pl-md-5 pr-md-0">
+                        
+
+
+                        
+ <!-- Intro -->                    
+                        <div>
+
+                            <section class="tex2jax_ignore mathjax_ignore" id="learning-material">
+                                <h1>Publications and Funding<a class="headerlink d-none" href="#learning-material"
+                                        title="Permalink to this headline">¶</a></h1>
+                                <p>Here are a our pre-print and peer-review publications and our applications for funding (both accepted and not accepted)</p>
+                                <section id="tutorials">
+
+<!-- Publications --------------------->
+                                <section id="publications">              
+                                    <h2>Publications<a class="headerlink d-none" href="#publications"></a></h2>
+
+    <!-- Pre-prints ---------------------> 
+                                    <section id="pre-print">
+                                        <h3>Pre-prints<a class="headerlink d-none"></a></h3>
+                                                
+                                                <section id="table">
+                                                    <br>
+                                                    <table class="colwidths-auto table" style="font-size: 14px;">
+                                                        <thead>
+                                                            <tr class="row-odd"><th class="text-align:left head"><p>Title</p></th>
+                                                            <th class="text-align:left head"><p>Authors</p></th>
+                                                            <th class="text-align:left head"><p>Cite as</p></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="row-even">
+                                                                <td class="text-align:left"><p>
+                                                                    <a href="https://www.doi.org/10.5281/zenodo.8119062">Introducing the Open and Reproducible Musculoskeletal Imaging Research (ORMIR) community</a>
+                                                                </p></td>
+                                                                <td class="text-align:left"><p>Serena Bonaretti, Leonardo Barzaghi, Mojtaba Barzegari, Andrew J. Burghardt, Donnie Cameron, Julio Carballido-Gamio,
+                                                                    Gianluigi Crimi, Pholpat Durongbhan, Michelle Espinosa Hernandez, Giulia Fraterrigo, Lorenzo Grassi, Hastings Greer,
+                                                                    Gianluca Iori, Michael Kuczynski, Sarah Manske, Matthew McCormick, Nathan Neeteson, Marc Niethammer, Martino Pani,
+                                                                    Jilmen Quintiens, Majid Mohammad Sadeghi, Francesco Santini, Enrico Schileo, Kathryn S. Stok, Fulvia Taddei,
+                                                                    Justin J. Tse, Jared Vicory, Mariska Wesseling, Andy Kin On Wong, Dženan Zukić</p></td>
+                                                                <td class="text-align:left"><p>Bonaretti Serena, Barzaghi Leonardo, Barzegari Mojtaba, Burghardt Andrew J., Cameron Donnie, Carballido-Gamio Julio, et al. 
+                                                                    Introducing the Open and Reproducible Musculoskeletal Imaging Research (ORMIR) community. 2023. https://www.doi.org/10.5281/zenodo.8119062</p></td>
+                                                            </tr>
+                                                        </tbody>
+                                                        </table>
+                                                </section>
+                                    </section>
+    
+
+    <!-- Peer-reviewed ---------------------> 
+
+                                    <section id="peer-reviewed">
+                                        <h3>Peer-reviewed publications<a class="headerlink d-none"
+                                                title="Permalink to this headline">¶</a></h3>
+                                            <section id="table">
+                                
+                                                <br>
+                                                
+                                                <table class="colwidths-auto table" style="font-size: 14px,">
+                                                    <thead>
+                                                        <tr class="row-odd"><th class="text-align:left head"><p>Title</p></th>
+                                                        <th class="text-align:left head"><p>Authors</p></th>
+                                                        <th class="text-align:left head"><p>Cite as</p></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="row-even">
+                                                            <td class="text-align:left"><p>
+                                                                <a href="https://www.doi.org/10.21105/joss.04952">Ciclope: micro Computed Tomography to Finite Elements</a>
+                                                                </p></td>
+                                                            <td class="text-align:left"><p>Gianluca Iori, Gianluigi Crimi, Enrico Schileo, Fulvia Taddei, Giulia Fraterrigo, and Martino Pani</p></td>
+                                                            <td class="text-align:left"><p>Iori et al., (2023). Ciclope: micro Computed Tomography to Finite Elements. Journal of Open Source Software, 8(84), 4952, https://doi.org/10.21105/joss.04952</p></td>
+                                                        </tr>
+                                                    </tbody>
+                                                    </table>
+                                            </section>
+                                    </section>
+                                </section>
+
+ <!-- Funding --------------------->
+                                <section id="funding">
+                                    <h2>Funding<a class="headerlink d-none" href="#funding"
+                                            title="Permalink to this headline">¶</a></h2>
+
+
+                                           
+                                    <section id="pre-print">
+                                        <!-- <h3>Pre-prints<a class="headerlink d-none"></a></h3> -->
+                                                
+                                                <section id="table">
+                                                    <br>
+                                                    <table class="colwidths-auto table" style="font-size: 14px;">
+                                                        <thead>
+                                                            <tr class="row-odd"><th class="text-align:left head"><p>Title</p></th>
+                                                            <th class="text-align:left head"><p>Authors</p></th>
+                                                            <th class="text-align:left head"><p>Cite as</p></th>
+                                                            <th class="text-align:left head"><p>Founded</p></th>
+                                                            <th class="text-align:left head"><p>Outcomes</p></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="row-even">
+
+                                                                <!-- CZI -->
+                                                                <td class="text-align:left"><p>
+                                                                    <a href="https://www.doi.org/10.5281/zenodo.7019810">Unifying and disseminating musculoskeletal imaging software</a>
+                                                                </p></td>
+                                                                <td class="text-align:left"><p>Serena Bonaretti, Andrew Burghardt, Andy Kin On Wong, Donni Cameron, Francesco Santini, Fulvia Taddei, Gianluca Iori, 
+                                                                    Kathryn Stok, Marc Niethammer, Martino Pani, Sarah Manske 
+                                                                </p></td>
+                                                                <td class="text-align:left"><p>Bonaretti, Serena, Burghardt, Andrew, Wong, Andy Kin On, Cameron, Donni, Santini, Francesco, Taddei, Fulvia, Iori, Gianluca, Stok, Kathryn, Niethammer, Marc, Pani, Martino, & Manske, Sarah. (2023). Unifying and disseminating musculoskeletal imaging software. Zenodo. https://doi.org/10.5281/zenodo.7545441
+                                                                </p></td>
+                                                                <td class="text-align:left"><p>No</p></td>
+                                                                <td class="text-align:left"><p>-</p></td>
+                                                            </tr>
+
+                                                                <!-- Jupyter Community Workshop -->
+                                                            <tr>
+                                                                <td class="text-align:left"><p>
+                                                                    <a href="https://www.doi.org/10.5281/zenodo.7019810">Building the Jupyter Community in Musculoskeletal Imaging Research</a>
+                                                                </p></td>
+                                                                <td class="text-align:left"><p>Serena Bonaretti, Andrew Burghardt, Kathryn Stok, Sarah Manske, Mojtaba Barzegari, 
+                                                                    Lorenzo Grassi, Enrico Schileo,  Fulvia Taddei, and Julio Carballido-Gamio
+                                                                </p></td>
+                                                                <td class="text-align:left"><p>Serena Bonaretti, Andrew Burghardt, Kathryn Stok, Sarah Manske, Mojtaba Barzegari, 
+                                                                    Lorenzo Grassi, Enrico Schileo,  Fulvia Taddei, and Julio Carballido-Gamio. (2022). Building the Jupyter Community in Musculoskeletal Imaging Research - Proposal for the 3rd round of the Jupyter Community Workshop. Zenodo. https://doi.org/10.5281/zenodo.7019899
+                                                                </p></td>
+                                                                <td class="text-align:left"><p>Yes</p></td>
+                                                                <td class="text-align:left"><p>Python packages: 
+                                                                                                <a href="https://github.com/gianthk/ciclope">Ciclope</a>, 
+                                                                                                <a href="https://github.com/SpectraCollab/ORMIR_XCT">ormir_xct</a>; 
+                                                                                            Tutorials: 
+                                                                                                <a href="https://github.com/sbonaretti/2022_JCWMSK_tutorials">Basic Python</a>, 
+                                                                                                <a href="https://github.com/KitwareMedical/CourseInBiomedicalImageAnalysisAndVisualization">ITK</a>;
+                                                                                            <a href="https://github.com/JCMSK/2022_JCW/blob/main/README.md">Report</a>
+
+                                                                                                
+                                                                                                 
+                                                            </tr>
+                                                        </tbody>
+                                                        </table>
+                                                </section>
+                                    </section>
+
+
+                           
+                            </section> 
+
+                            <script type="text/x-thebe-config">
+                            {
+                                requestKernel: true,
+                                binderOptions: {
+                                    repo: "binder-examples/jupyter-stacks-datascience",
+                                    ref: "master",
+                                },
+                                codeMirrorConfig: {
+                                    theme: "abcdef",
+                                    mode: "python"
+                                },
+                                kernelOptions: {
+                                    kernelName: "python3",
+                                    path: "./."
+                                },
+                                predefinedOutput: true
+                            }
+                            </script>
+                            <script>kernelName = 'python3'</script>
+                        </div>
+
+
+                        <!-- Previous / next buttons
+                        <div class='prev-next-area'>
+                            <a class='left-prev' id="prev-link" href="datasets.html" title="previous page">
+                                <i class="fas fa-angle-left"></i>
+                                <div class="prev-next-info">
+                                    <p class="prev-next-subtitle">previous</p>
+                                    <p class="prev-next-title">Open MSK images</p>
+                                </div>
+                            </a>
+                            <a class='right-next' id="next-link" href="guidelines.html" title="next page">
+                                <div class="prev-next-info">
+                                    <p class="prev-next-subtitle">next</p>
+                                    <p class="prev-next-title">Guidelines for contributors</p>
+                                </div>
+                                <i class="fas fa-angle-right"></i>
+                            </a>
+                        </div> -->
+
+                    </div>
+                </div>
+                <br>
+                <footer class="footer">
+                    <p>
+                        Website by the ORMIR community. Template modified from <a href="https://jupyterbook.org/en/stable/intro.html" > Jupyter Book</a>
+                    </p>
+                </footer>
+            </main>
+
+
+        </div>
+    </div>
+
+    <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+</body>
+
+</html>
