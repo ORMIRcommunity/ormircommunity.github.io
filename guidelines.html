@@ -739,22 +739,25 @@
 
                                 </div>
 
+    <!-- Publishing code ---------------------------------------------------------------->
+                                <button class="accordion">In what journal can I publish my Python package?</button>
+                                <div class="panel">
+                                    Consider publishing in the <a class="reference external" href="https://joss.theoj.org/">Journal of Open Source Software (JOSS)</a>. 
+                                    The paper is only a few pages and reviewers check your repository, helping you improve it. 
+                                </div>
+
+    <!-- DOI for code ---------------------------------------------------------------->
+    <button class="accordion">How do I get a DOI for my code?</button>
+    <div class="panel">
+        To get a permanent Digital Object Identifier for your code so that it can be referenced, you can link your GitHub repository to Zenodo. You can find instructions on 
+        <a class="reference external" href="https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content">this webpage </a>
+        or in 
+        <a class="reference external" href="https://www.youtube.com/watch?v=gp3D4mf6MHQ">this video</a>.  
+    </div>
 
 
 
 
-<!-- Narrative in Jupyter notebook-->
-<!-- <button class="accordion">Narrative in Jupyter notebook</button>
-<div class="panel">
-    <p>Narrative in Jupyter notebook</p>
-</div> -->
-
-
-<!-- Narrative in Jupyter notebook -->
-<!-- <button class="accordion">Narrative in Jupyter notebook</button>
-<div class="panel">
-    <p>Narrative in Jupyter notebook</p>
-</div> --> 
 
                                 
                                 
@@ -765,218 +768,12 @@
                                 
   
 
-<!-- Data types -->
-                                <!-- <section id="data-types">
-                                    <h2>Data types<a class="headerlink d-none" href="#data-types"
-                                            title="Permalink to this headline">¶</a></h2>
-                                    <ul class="simple">
-                                        <li>
-                                            <p>Images:</p>
-                                            <ul>
-                                                <li>
-                                                    <p>Our pipelines usually start with <code
-                                                            class="docutils literal notranslate"><span class="pre">.dcm</span></code>
-                                                        images for CT/MR acquisitions or <code
-                                                            class="docutils literal notranslate"><span class="pre">.isq</span></code>
-                                                        images for µCT/HR-pQCT acquisitions</p>
-                                                </li>
-                                                <li>
-                                                    <p>Images are then transformed into other file formats for
-                                                        simplicity</p>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <p>Meshes and point clouds:</p>
-                                            <ul>
-                                                <li>
-                                                    <p>From images, we often extract point clouds and/or meshes</p>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                    <ul class="simple">
-                                        <li>
-                                            <p>Here are the recommended types for images, meshes, and point clouds:</p>
-                                        </li>
-                                    </ul>
-                                    <table class="colwidths-auto table">
-                                        <thead>
-                                            <tr class="row-odd">
-                                                <th class="text-align:left head">
-                                                    <p>Data type</p>
-                                                </th>
-                                                <th class="text-align:left head">
-                                                    <p>Data representation</p>
-                                                </th>
-                                                <th class="text-align:left head">
-                                                    <p>file format</p>
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="row-even">
-                                                <td class="text-align:left">
-                                                    <p>Image</p>
-                                                </td>
-                                                <td class="text-align:left">
-                                                    <p>ITK / SimpleITK / VTK / Numpy array / Zarr</p>
-                                                </td>
-                                                <td class="text-align:left">
-                                                    <p>.dcm / .mha /. (more to be added)</p>
-                                                </td>
-                                            </tr>
-                                            <tr class="row-odd">
-                                                <td class="text-align:left">
-                                                    <p>Mesh</p>
-                                                </td>
-                                                <td class="text-align:left">
-                                                    <p>VTK</p>
-                                                </td>
-                                                <td class="text-align:left">
-                                                    <p>.vtk</p>
-                                                </td>
-                                            </tr>
-                                            <tr class="row-even">
-                                                <td class="text-align:left">
-                                                    <p>Points</p>
-                                                </td>
-                                                <td class="text-align:left">
-                                                    <p>VTKPoints / Numpy array</p>
-                                                </td>
-                                                <td class="text-align:left">
-                                                    <p>.vtk</p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </section>
-                                <hr class="docutils" /> -->
-
-<!-- Notebook narrative -->
-                                <!-- <!-- <section id="notebook-narrative">
-                                    <h2>Notebook narrative<a class="headerlink d-none" href="#notebook-narrative"
-                                            title="Permalink to this headline">¶</a></h2>
-                                    <!-- <ul class="simple">
-                                        <li> -->
-                                            <!-- <p>One of the main strengths of Jupyter notebook is the integration of code
-                                                with narrative. Sharing notebooks without narrative highly reduces the
-                                                understanding of a workflow</p>
-                                                <p>We recommend using the  
-                                                <a class="reference external" href="https://github.com/ORMIRcommunity/templates/blob/main/ORMIR_nb_template.ipynb">ORMIR notebook template</a>,
-                                                which is based on the following structure:  -->
-                                        <!-- </li>
-                                        <li>
-                                            <p>Here is an example of narrative outline of a research Notebook:</p> -->
-                                            <!-- <ol class="simple">
-                                                <li>
-                                                    <p><em>Title section</em>: It can contain:</p>
-                                                    <ul>
-                                                        <li>
-                                                            <p>Notebook title</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>Author name(s) and year</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>Text and code license (If you are not familiar with
-                                                                licenses, watch <a class="reference external"
-                                                                    href="https://www.youtube.com/watch?v=GlAnKGBnhFY">this
-                                                                    video</a>)</p>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <p><em>Aims</em>: Description of the notebook purpose. It can
-                                                        include aims, table of content, description of data, etc.</p>
-                                                </li>
-                                                <li>
-                                                    <p><em>Imports</em>: List of package and module imports</p>
-                                                </li>
-                                                <li>
-                                                    <p><em>Constants and variables</em>: List of constants and variables
-                                                        used in the code</p>
-                                                </li>
-                                                <li>
-                                                    <p><em>Reading, processing, and saving data</em>: Computational core
-                                                        of the workflow. Use:</p>
-                                                    <ul>
-                                                        <li>
-                                                            <p>Markdown narrative to indicate what each step does and to
-                                                                comment results</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>Python comments to describe what the code does</p>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <p><em>Dependencies</em>: Print out of computer characteristics and
-                                                        software versions to favor reproducibility</p>
-                                                    <ul>
-                                                        <li>
-                                                            <p>If using <a class="reference external"
-                                                                    href="https://github.com/rasbt/watermark">watermark</a>
-                                                                (installation: <code
-                                                                    class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">watermark</span></code>),
-                                                                convenient commands are:</p>
-                                                            <ul>
-                                                                <li>
-                                                                    <p><code
-                                                                            class="docutils literal notranslate"><span class="pre">%load_ext</span> <span class="pre">watermark</span></code>:
-                                                                        to load the extension</p>
-                                                                </li>
-                                                                <li>
-                                                                    <p><code
-                                                                            class="docutils literal notranslate"><span class="pre">%watermark</span></code>:
-                                                                        to print out your computer characteristics</p>
-                                                                </li>
-                                                                <li>
-                                                                    <p><code
-                                                                            class="docutils literal notranslate"><span class="pre">%watermark</span> <span class="pre">--iversions</span></code>:
-                                                                        to print out the versions of the used packages
-                                                                    </p>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ol> --> 
-                                        <!-- </li> -->
-                                    <!-- </ul> -->
-                                <!-- </section>
-                                <hr class="docutils" />  -->
-                                <!-- <section id="sending-your-contribution">
-                                    <h2>Sending your contribution<a class="headerlink d-none"
-                                            href="#sending-your-contribution" title="Permalink to this headline">¶</a>
-                                    </h2>
-                                    <p>Coming soon!</p>
-                                </section> -->
-                            <!-- </section> -->
-
-    <!-- <script type="text/x-thebe-config"> -->
-    <!-- {
-        requestKernel: true,
-        binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
-            ref: "master",
-        },
-        codeMirrorConfig: {
-            theme: "abcdef",
-            mode: "python"
-        },
-        kernelOptions: {
-            kernelName: "python3",
-            path: "./."
-        },
-        predefinedOutput: true
-    } -->
-
     <!-- JavaScript to toggle accordion -->
     <script src="_static/accordion.js"></script>
 
     </script>
-                            <script>kernelName = 'python3'</script>
+    
+    <script>kernelName = 'python3'</script>
 
                         </div>
 
