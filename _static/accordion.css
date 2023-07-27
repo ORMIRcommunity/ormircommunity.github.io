@@ -21,13 +21,15 @@
 /* Active (open) accordion */
 .accordion.active {
     background-color: #f7f7f7; /* Same color when active */
-    border: 1px solid #0071bc; /* Add border color when active */
+    /* border: 1px solid #0071bc; Add border color when active */
     /* color: #0071bc; */
+    outline: none; /* Remove blue border when clicking*/
 }
 
 /* Accordion panel */
 .panel {
     padding: 0 18px;
+    border-radius: 5px;
     background-color: #fff; /* Default panel color */
     display: none;
     overflow: hidden;
@@ -35,7 +37,8 @@
 
 /* Active (open) panel */
 .accordion.active + .panel {
-    background-color: #fbfbfb; /* Change panel color when active */
+    background-color: #fff; /* Change panel color when active */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* Arrow icon */
@@ -54,7 +57,7 @@
 
 
 /* Remove blue border when toggle off */
-.accordion:not(.active):focus {
+/* .accordion:not(.active):focus {
     outline: none;
-}
+} */
 
