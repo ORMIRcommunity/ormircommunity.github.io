@@ -1,667 +1,353 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Guidelines &#8212; ORMIR</title>
-    <link rel="icon" type="image/x-icon" href="/_images/ormir_favicon.ico">
+  <title>ORMIR - Guidelines</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    <link href="_static/css/theme.css" rel="stylesheet">
-    <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
-    <link rel="preload" as="font" type="font/woff2" crossorigin
-        href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-    <link rel="preload" as="font" type="font/woff2" crossorigin
-        href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <!-- CSS Files for Python code -->
+  <link rel="stylesheet" type="text/css" href="assets/css/pygments.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/sphinx-book-theme.css" />
 
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
-
-
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css"
-        href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
-    <link rel="stylesheet" type="text/css" href="_static/accordion.css" />
-
-
-
-    <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
-
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-        const thebe_selector = ".thebe,.cell"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output, .cell_output"
-    </script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="FAQ" href="faq.html" />
-    <link rel="prev" title="Learning material" href="learning.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-
-
-    <!-- Google Analytics -->
-
-    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
-    <script>
-        window.ga = window.ga || function () {
-            (ga.q = ga.q || []).push(arguments)
-        };
-        ga.l = +new Date;
-        ga('create', 'xxx', 'auto');
-        ga('set', 'anonymizeIp', true);
-        ga('send', 'pageview');
-    </script>
-
+  <!-- =======================================================
+  * Template Name: Tempo
+  * Updated: Jan 09 2024 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/tempo-free-onepage-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
-<body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+<body>
 
-<!-- WEBSITE NAVIGATION BAR -->
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top header-inner-pages">
+        <div class="container d-flex align-items-center justify-content-between">
 
-    <div class="container-fluid" id="banner">
-        <nav class="navbar navbar-dark navbar-expand-lg bd-navbar bg-light shadow fixed-top">
-            <div class="container-xl">
-                <a id="logo" href="index.html">
-                    <img src="_images/ormir_logo.png" alt="ORMIR Logo" style="padding-right: 15px; width:100px">
-                </a>
-                <div id="navbar" class="mr-auto">
-                    <!-- <a class="mr-sm-2 nav-header" href="index.html">Home</a> -->
-                    <a class="mr-sm-2 nav-header" href="about.html">About</a>
-                    <a class="mr-sm-2 nav-header" href="packages.html">Packages</a>
-                    <a class="mr-sm-2 nav-header" href="nb_gallery.html">Notebooks</a>
-                    <a class="mr-sm-2 " href="#">Templates/Guidelines</a>
-                    <a class="mr-sm-2 nav-header" href="datasets.html">Datasets</a>
-                    <a class="mr-sm-2 nav-header" href="learning.html">Learning</a>
-                    <a class="mr-sm-2 nav-header" href="publications_funding.html">Publications/Funding/Events</a> 
-                </div>
-            </div>
-        </nav>
-    </div>
-    <div>&nbsp</div>
+        <h1 class="logo"><a href="index.html">ORMIR</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-
-
-    <div class="container-xl">
-        <div class="row">
-            <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-
-                <div class="topbar container-xl position-fixed">
-                    <div class="topbar-contents row">
-
-<!-- CURRENT PAGE NAVIGATION BAR -->
-                        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-                            <div class="tocsection onthispage pt-5 pb-3">
-                            </div>
-                            <nav id="bd-toc-nav" aria-label="Page">
-                                <ul class="visible nav section-nav flex-column">
-                                    <li class="toc-h1 nav-item toc-entry">
-                                        <a class="reference internal nav-link" href="#templates">
-                                            Templates
-                                        </a>
-                                    </li>
-                                    <li class="toc-h1 nav-item toc-entry">
-                                        <a class="reference internal nav-link" href="#guidelines">
-                                            Guidelines
-                                        </a>
-                                    </li>
-                                    
-                                </ul>
-
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-
-
-
-<!-- PAGE CONTENT -->
-                <div id="main-content" class="row">
-                    <div id="whitespace" class="col-2 invisible"></div>
-                    <div class="col-11 col-md-8 pl-md-5 pr-md-0">
-                        <div>
-
-
-<!-- PAGE TITLE AND INTRO -->
-                            <section class="tex2jax_ignore mathjax_ignore" id="">
-                                
-                                <h1>Templates and guidelines for coders<a class="headerlink d-none" href="#" title="Permalink to this headline">¶</a>
-                                </h1>
-
-                                <p>Thank you for contributing your work and time to the ORMIR community!</p>
-                                <p>On this page, you will find templates, coding guidelines, and tips and tricks. 
-                                    Please, follow them to ensure that <strong>your code aligns with the existing code in the community and future contributions</strong>.<br> 
-                                </p>  
-                                <p>Don't forget to write code documentation! Code without documentation is rarely reused and hard to understand.  
-                                    <strong>Documentation is just as important as code itself!</strong>
-                                </p>
-                                
-
-<!-- Horizontal line -->
-<div class="d-flex col-12 p-2 docutils"></div> <!-- Need this to create the horizontal line -->
-<hr>
-
-
-<!-- TEMPLATES -->                                    
-                                    <section class="tex2jax_ignore mathjax_ignore" id="templates">
-                                        <h2>Templates<a class="headerlink d-none"
-                                                href="#templates" title="Permalink to this headline">¶</a>
-                                        </h2>
-                                        <p>Download the templates for coding and documentation. 
-                                            We are working on creating more and more!</p>
-                                        
-                                            <ul class="simple">
-                                                <li>Jupyter Notebook: 
-                                                    <a class="reference external" href="https://github.com/ORMIRcommunity/templates/blob/main/ORMIR_nb_template.ipynb">view</a>, 
-                                                    <a class="reference external" href="https://github.com/ORMIRcommunity/templates">download</a>
-                                                </li>
-                                                <li>GitHub ReadMe file: 
-                                                    <a class="reference external" href="https://github.com/ORMIRcommunity/templates/blob/main/ORMIR_readme_template.md">view</a>, 
-                                                    <a class="reference external" href="https://github.com/ORMIRcommunity/templates">download</a>
-                                                </li>
-                                                
-                                            </ul>
-                                    </section>
-        
-                                
-
-
-<!-- Horizontal line -->
-<div class="d-flex col-12 p-2 docutils"></div> <!-- Need this to create the horizontal line -->
-<hr>
-
-      
-<!-- GUIDELINES -->   
-
-                                    <section class="tex2jax_ignore mathjax_ignore" id="guidelines">
-                                        <h2>Guidelines<a class="headerlink d-none"
-                                                href="#guidelines" title="Permalink to this headline">¶</a>
-                                        </h2>
-
-                                        <p>Here are the coding guidelines of the ORMIR community: </p>
-
-<!-- Accordion -->
-
-
-<!-- Python code style ---------------------------------------------------------------->
-                                        <button class="accordion"><span style="font-size: 21px;">What Python code style do I use?</span> </button>
-                                        <div class="panel">
-                                        We follow the <a class="reference external" href="https://www.python.org/dev/peps/pep-0008/"> Style Guide for Python Code</a>. In short:
-                                        <section id="naming-style">
-                                            <h4>Naming Style<a class="headerlink d-none" href="#naming-style"
-                                                    title="Permalink to this headline">¶</a></h3>
-                                            <ul>
-                                                <li>
-                                                    <p>Variables, functions, methods, modules, packages:</p>
-                                                    <div class="highlight-python notranslate">
-                                                        <div class="highlight">
-                                                            <pre><span></span><span class="n">lower_case_with_underscores</span>
-                                                            </pre>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <p>Constants:</p>
-                                                    <div class="highlight-python notranslate">
-                                                        <div class="highlight">
-                                                            <pre><span></span><span class="n">ALL_CAPS_WITH_UNDERSCORES</span>
-                                                            </pre>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <p>Classes and exceptions:</p>
-                                                    <div class="highlight-python notranslate">
-                                                        <div class="highlight">
-                                                            <pre><span></span><span class="n">CapWords</span>
-                                                            </pre>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </section>
-                                        <section id="indentation">
-                                            <h4>Indentation<a class="headerlink d-none" href="#indentation"
-                                                    title="Permalink to this headline">¶</a></h3>
-                                            <ul class="simple">
-                                                <li>
-                                                    <p>4 spaces or 1 tab</p>
-                                                </li>
-                                            </ul>
-                                        </section>
-                                        <section id="space">
-                                            <h4>Space<a class="headerlink d-none" href="#space"
-                                                    title="Permalink to this headline">¶</a></h3>
-                                            <ul>
-                                                <li>
-                                                    <p>Leave space between operators in case of assignment and arithmetic
-                                                        operations:</p>
-                                                    <div class="highlight-python notranslate">
-                                                        <div class="highlight">
-                                                            <pre><span></span><span class="n">var</span> <span class="o">=</span> <span class="mi">4</span> <span class="n">result</span> <span class="o">=</span> <span class="n">var</span> <span class="o">*</span> <span class="mi">5</span>
-                                                            </pre>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <p>Leave space after a comma:</p>
-                                                    <div class="highlight-python notranslate">
-                                                        <div class="highlight">
-                                                            <pre><span></span><span class="n">var1</span><span class="p">,</span> <span class="n">var2</span> <span class="o">=</span> <span class="n">get_values</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">)</span>
-                                                            </pre>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </section>
-                                        <section id="comments">
-                                            <h4>Comments<a class="headerlink d-none" href="#comments"
-                                                    title="Permalink to this headline">¶</a></h3>
-                                            <ul>
-                                                <li>
-                                                    <p>Comments are introduced by <code
-                                                            class="docutils literal notranslate"><span class="pre">#</span></code>,
-                                                        positioned above the code they refer to, and indented to align with the code are commenting on:</p>
-                                                    <div class="highlight-python notranslate">
-                                                        <div class="highlight">
-                                                            <pre><span></span><span class="c1"># assign variable</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
-                                                            </pre>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                            <p><em>Why are comments important?</em>
-                                                As part of a community we want to write code that can be readable and
-                                                reusable by others. Be generous and precise with your comments!</p>
-                                        </section>
-                                        </div>
-
-
-<!-- Python code documentation ---------------------------------------------------------------->
-                                        <button class="accordion">What Python code documentation do I use?</button>
-                                        <div class="panel">
-                                            We use docstrings (documentation strings), which are strings that describes a module, function, class, or method definition). We follow the <a class="reference external" href="https://numpydoc.readthedocs.io/en/latest/format.html"> NumPy guidelines</a>. 
-                                            
-                                            <br>
-                                            <i>Example</i>: docstring for functions (for modules, classes, and methods, refer to the <a class="reference external" href="https://numpydoc.readthedocs.io/en/latest/format.html"> NumPy guidelines</a>): 
-                                            
-                                            <section id="functions">
-                                                
-                                                <div class="highlight-python notranslate">
-                                                    <div class="highlight">
-                                                        <pre><span></span><span class="k">def</span> <span class="nf">my_function</span> <span class="p">(</span><span class="n">input1</span><span class="p">,</span> <span class="n">input2</span><span class="p">):</span>
-            
-                                                        <span class="sd">&quot;&quot;&quot;This functions does ... .</span>
-                                                        <span class="sd">    </span>
-                                                        <span class="sd">    Parameters</span>
-                                                        <span class="sd">    ----------</span>
-                                                        <span class="sd">    input_1 : type</span>
-                                                        <span class="sd">        Description of the parameter `input_1`.</span>
-                                                        <span class="sd">    input_2 : type</span>
-                                                        <span class="sd">        Description of the parameter `input_2`.</span>
-                                                        <span class="sd">    </span>
-                                                        <span class="sd">    Returns</span>
-                                                        <span class="sd">    -------</span>
-                                                        <span class="sd">    output: int</span>
-                                                        <span class="sd">        Description of the variable `output`</span>
-                                                        <span class="sd">    &quot;&quot;&quot;</span>
-                                                            
-                                                            <span class="c1"># function body</span>
-                                                            
-                                                            <span class="k">return</span> <span class="n">output</span>
-                                                        </pre>
-                                                    </div>
-                                                </div>
-                                                <p><i>Explanation</i>: The function documentation is right below the function header, and it is
-                                                    between three opening and three closing single quotes <code
-                                                        class="docutils literal notranslate"><span class="pre">'''</span></code>
-                                                    or double quotes: <code
-                                                        class="docutils literal notranslate"><span class="pre">&quot;&quot;&quot;</span></code>.
-                                                    It is composed of 3 parts:</p>
-                                                <ol class="simple">
-                                                    <li>
-                                                        <p>Description of what the function does. It is written right next to
-                                                            the opening quotes</p>
-                                                    </li>
-                                                    <li>
-                                                        <p>Parameters, i.e. inputs of the function. It contains:</p>
-                                                        <ul class="simple">
-                                                            <li>
-                                                                <p><em>Parameters</em> as a title, underlined by minuses</p>
-                                                            </li>
-                                                            <li>
-                                                                <p>A list of parameters. For each parameter, we write:</p>
-                                                                <ul>
-                                                                    <li>
-                                                                        <p>Parameter name, colon (:), and parameter type
-                                                                            (string, list, ITKimage, etc.)</p>
-                                                                    </li>
-                                                                    <li>
-                                                                        <p>On the following line, indented description of the
-                                                                            parameter</p>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>
-                                                        <p>Returns, i.e. outputs of the function. It contains:</p>
-                                                        <ul class="simple">
-                                                            <li>
-                                                                <p><em>Returns</em> as a title, underlined by minuses</p>
-                                                            </li>
-                                                            <li>
-                                                                <p>The list of returns, using the same structure as for
-                                                                    parameters</p>
-                                                            </li>
-                                                            <li>
-                                                                <p>Special cases:</p>
-                                                                <ul>
-                                                                    <li>
-                                                                        <p>It the function does not return any variable, we omit
-                                                                            the whole <em>Returns</em> section</p>
-                                                                    </li>
-                                                                    <li>
-                                                                        <p>If the function does not return a variable but the
-                                                                            output of another function, we omit the variable
-                                                                            name, as in this example:</p>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                </ol>
-                                                <div class="highlight-default notranslate">
-                                                    <div class="highlight">
-                                                        <pre><span></span>    <span class="n">Returns</span> <span class="o">-------</span> <span class="nb">int</span>
-                                                            <span class="n">Integer</span> <span class="n">component</span> <span class="n">of</span> <span class="n">the</span> <span class="n">variable</span> <span class="n">float_variable</span>
-                                                            </pre>
-                                                    </div>
-                                                </div>
-                                                <ul class="simple">
-                                                    <li>
-                                                        <p><em>Why is documentation important?</em>
-                                                            Because docstrings are used:</p>
-                                                        <ul>
-                                                            <li>
-                                                                <p>By users to know what the function does by typing <code
-                                                                        class="docutils literal notranslate"><span class="pre">help</span> <span class="pre">(my_function)</span></code>
-                                                                </p>
-                                                            </li>
-                                                            <li>
-                                                                <p>To create whole code documentation using, for example, <code
-                                                                        class="docutils literal notranslate"><span class="pre">pydoc</span></code>
-                                                                    or <code
-                                                                        class="docutils literal notranslate"><span class="pre">Sphinx</span></code>,
-                                                                    where you get a list of all the functions in a package, and
-                                                                    their documentation</p>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </section>
-                                        </div>
-
-
-<!-- How do I write docstrings fast? ---------------------------------------------------------------->
-                                        <button class="accordion">How do I create documentation fast?</button>
-                                        <div class="panel">
-                                            ChatGPT! Example of command: 
-                                            <br>
-                                            <code class="docutils literal notranslate"><span class="pre">
-                                            write docstrings  in Numpy style for the following function: [paste your function]
-                                            </span></code>
-                                            <br>
-                                            <i>Important</i>: Double-check the content of the ChatGPT output!
-                                        </div>
-
-<!-- How do I write docstrings fast? ---------------------------------------------------------------->
-                                        <button class="accordion">What license do I use?</button>
-                                        <div class="panel">
-                                            For code: 
-                                            <ul>
-                                                <li>
-                                                    You can choose a permissive license (e.g. BDS, MIT, Apache) or a copyleft license (e.g. GNU GPL, Mozilla). 
-                                                    If you are not familiar with open-source licenses, you can browse 
-                                                    <a class="reference external" href="https://choosealicense.com/licenses/">choosealicense.com</a>, 
-                                                    read the paper
-                                                    <a class="reference external" href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002598">A Quick Guide to Software Licensing for the Scientist-Programmer</a>, 
-                                                    or watch 
-                                                    <a class="reference external" href="https://www.youtube.com/watch?v=GlAnKGBnhFY">this video</a> (from minute 4)
-                                                </li>
-                                            </ul>
-
-                                            For data or publications: 
-                                            <ul>
-                                                <li>
-                                                    You can use a Creative Commons license. Possibilities are: CC0, CC-BY, CC-BY-NC, CC-BY-NC-SA, and their combinations. 
-                                                    If you are not familiar with Creative Commons licenses, 
-                                                    you can browse the 
-                                                    <a class="reference external" href="https://creativecommons.org/about/cclicenses/">Creative Commons website </a> 
-                                                    or watch 
-                                                    <a class="reference external" href="https://www.youtube.com/watch?v=GlAnKGBnhFY">this video</a> (up to minute 4)
-
-                                                    
-                                                </li>
-                                            </ul>
-                                        </div>
-
-
-<!-- Narrative in Jupyter notebook---------------------------------------------------------------->
-                                        <button class="accordion">How do I structure a Jupyter notebook?</button>
-                                        <div class="panel">
-                                            We created a Jupyter notebook <i>template</i> that you can download
-                                            <a class="reference external" href="https://github.com/ORMIRcommunity/templates/blob/main/ORMIR_nb_template.ipynb">here</a>. 
-                                        
-                                            Just like when you write a paper, you fill out a journal template with your content, you can fill out the ORMIR community notebook template with your narrative and code.
-                                            
-                                            <br>
-                                            <i>Why should I use the template?</i> We usually use notebooks to create use-cases for our Python packages. 
-                                            Using the template allows us to harmonize our use-cases and to make sure we remember to include authors, licenses, references, etc.
-                                        
-                                        </div>
-
-
-<!-- GitHub readme file---------------------------------------------------------------->
-                                        <button class="accordion">How do I structure the readme file of a GitHub repository?</button>
-                                        <div class="panel">
-                                            We created a GitHub readme <i>template</i> that you can download
-                                            <a class="reference external" href="https://github.com/ORMIRcommunity/templates/blob/main/ORMIR_readme_template.md">here</a>. 
-                                        
-                                            Just like for Jupyter notebooks, a readme file template allows us to harmonize our repositories and make sure we remember to include authors, licenses, use-cases, references, etc.
-                                        </div>
-
-
-<!-- Translating to Python---------------------------------------------------------------->
-                                        <button class="accordion">How do I quickly translate existing code to Python?</button>
-                                        <div class="panel">
-                                            If you already know Python: ChatGPT! Example of command: 
-                                            <br>
-                                            <code class="docutils literal notranslate"><span class="pre">
-                                            translate the following code from Matlab to Python: [paste your code]
-                                            </span></code>
-                                            <br>
-                                            <i>Important</i>: Double-check the content of the ChatGPT output, preferably with test functions.
-
-                                            <br>
-                                            If you don't know Python: team up with some community members who know Python and work on the translation together!
-                                        </div>
-
-
-<!-- What data types shall I use? ---------------------------------------------------------------->
-                                        <button class="accordion">What data types do I use?</button>
-                                        <div class="panel">
-                                            <ul class="simple">
-                                                <!-- <li> -->
-                                                    <!-- <p>Images:</p>
-                                                    <ul> -->
-                                                        <li>
-                                                            Our pipelines usually start with <code
-                                                                    class="docutils literal notranslate"><span class="pre">.dcm</span></code>
-                                                                images for CT/MR acquisitions or <code
-                                                                    class="docutils literal notranslate"><span class="pre">.isq</span></code>
-                                                                images for µCT/HR-pQCT acquisitions. 
-                                                        </li>
-                                                        <li>Images are then transformed into other file formats for
-                                                            simplicity (e.g. nifti, metafile, etc.)
-                                                        </li>
-                                                    <!-- </ul> -->
-                                                <!-- </li> -->
-                                                <!-- <li>
-                                                    <p>Meshes and point clouds:</p>
-                                                    <ul>
-                                                        <li>
-                                                            <p>From images, we often extract point clouds and/or meshes</p>
-                                                        </li>
-                                                    </ul>
-                                                </li> -->
-                                            </ul>
-                                            <!-- <ul class="simple">
-                                                <li>
-                                                    <p>Here are the recommended types for images, meshes, and point clouds:</p>
-                                                </li>
-                                            </ul>
-                                            <table class="colwidths-auto table">
-                                                <thead>
-                                                    <tr class="row-odd">
-                                                        <th class="text-align:left head">
-                                                            <p>Data type</p>
-                                                        </th>
-                                                        <th class="text-align:left head">
-                                                            <p>Data representation</p>
-                                                        </th>
-                                                        <th class="text-align:left head">
-                                                            <p>File Format</p>
-                                                        </th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr class="row-even">
-                                                        <td class="text-align:left">
-                                                            <p>Image</p>
-                                                        </td>
-                                                        <td class="text-align:left">
-                                                            <p>ITK / SimpleITK / VTK / Numpy array / Zarr</p>
-                                                        </td>
-                                                        <td class="text-align:left">
-                                                            <p>.dcm / .mha / .isq (more to be added)</p>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="row-odd">
-                                                        <td class="text-align:left">
-                                                            <p>Mesh</p>
-                                                        </td>
-                                                        <td class="text-align:left">
-                                                            <p>VTK</p>
-                                                        </td>
-                                                        <td class="text-align:left">
-                                                            <p>.vtk</p>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="row-even">
-                                                        <td class="text-align:left">
-                                                            <p>Points</p>
-                                                        </td>
-                                                        <td class="text-align:left">
-                                                            <p>VTKPoints / Numpy array</p>
-                                                        </td>
-                                                        <td class="text-align:left">
-                                                            <p>.vtk</p>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table> -->
-
-                                        </div>
-
-    <!-- Publishing code ---------------------------------------------------------------->
-                                        <button class="accordion">In what journal can I publish my Python package?</button>
-                                        <div class="panel">
-                                            Consider publishing in the <a class="reference external" href="https://joss.theoj.org/">Journal of Open Source Software (JOSS)</a>. 
-                                            The paper is only a few pages and reviewers check your repository, helping you improve it. 
-                                        </div>
-
-    <!-- DOI for code ---------------------------------------------------------------->
-                                        <button class="accordion">How do I get a DOI for my code?</button>
-                                        <div class="panel">
-                                            To get a permanent Digital Object Identifier for your code so that it can be referenced, you can link your GitHub repository to Zenodo. You can find instructions on 
-                                            <a class="reference external" href="https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content">this webpage </a>
-                                            or in 
-                                            <a class="reference external" href="https://www.youtube.com/watch?v=gp3D4mf6MHQ">this video</a>.  
-                                        </div>
-
-
-
-
-    <!-- JavaScript to toggle accordion -->
-    <script src="_static/accordion.js"></script>
-
-    </script>
-    
-    <script>kernelName = 'python3'</script>
-
-                        </div>
-
-
-                        <!-- Previous / next buttons -->
-                        <!-- <div class='prev-next-area'>
-                            <a class='left-prev' id="prev-link" href="learning.html" title="previous page">
-                                <i class="fas fa-angle-left"></i>
-                                <div class="prev-next-info">
-                                    <p class="prev-next-subtitle">previous</p>
-                                    <p class="prev-next-title">Learning material</p>
-                                </div>
-                            </a>
-                            <a class='right-next' id="next-link" href="faq.html" title="next page">
-                                <div class="prev-next-info">
-                                    <p class="prev-next-subtitle">next</p>
-                                    <p class="prev-next-title">FAQ</p>
-                                </div>
-                                <i class="fas fa-angle-right"></i>
-                            </a>
-                        </div> -->
-
-                    </div>
-                </div>
-                <br>
-                <footer class="footer">
-                    <p>
-                        Website by the ORMIR community. Template modified from <a href="https://jupyterbook.org/en/stable/intro.html" > Jupyter Book</a>
-                    </p>
-                </footer>
-            </main>
-
+        <nav id="navbar" class="navbar">
+          <ul>   
+              <li class="dropdown"><a href="#"><span>About us</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                  <li><a href="motivation.html">Why a community</a></li>
+                  <li><a href="members.html">Who we are</a></li>
+                  <li><a href="groups.html#">Working groups</a></li>
+                  <li><a href="boards.html">Advisory boards</a></li>
+                  
+              </ul>
+              </li>
+  
+              <li class="dropdown"><a class="nav-link" href="#">
+              <span>Code</span> 
+              <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                  <li><a href="software.html">Software</a></li>
+                  <li><a href="templates.html">Templates</a></li>
+                  <li><a href="guidelines.html">Guidelines</a></li>
+                  
+                  
+              </ul>
+              </li>
+  
+              <li class="dropdown"><a class="nav-link" href="#">
+              <span>Data</span> 
+              <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="datasets.html">Datasets</a></li>
+                <li><a href="policies.html">Policies</a></li>   
+              </ul>
+              </li>
+  
+              <li><a class="nav-link scrollto" href="newcomers.html">I want to join!</a></li>
+  
+              <li class="dropdown"><a class="nav-link" href="#">
+              <span>More</span> 
+              <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                  <li><a href="publications.html">Publications</a></li>
+                  <li><a href="funding.html#">Funding</a></li>
+                  <li><a href="events.html">Events</a></li>
+              </ul>
+              </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
 
         </div>
-    </div>
+    </header><!-- End Header -->
 
-    <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
-</body>
+
+      <!-- ======= accordion ======= -->
+    <section>
+        <div class="container">
+          
+            <div class="section-title">
+              <div class="col-md-10 offset-md-1">
+              <h2>Coding guidelines</h2>
+              </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+
+                    <!-- Python code style ----------------------------------->
+
+                    <div class="accordion-container">
+                        <button class="accordion">
+                          What Python code style do I use?
+                        </button>
+                        <div class="answer">
+                          [add answer here]
+                        </div>
+                    </div>
+                
+                    <!-- Python code documentation ----------------------------------->
+                    <div class="accordion-container">
+                        <button class="accordion">
+                          What Python code documentation do I use?
+                        </button>
+                        <div class="answer">
+                          [add existing documentation here]
+                          With ChatGPT! Example of command: 
+                        <br>
+                        <br>
+
+                        <code class="docutils literal notranslate"><span class="pre">
+                          write docstrings  in Numpy style for the following function: [paste your function]
+                        </span></code>
+
+                        <br>
+                        <br>
+                        <i>Important</i>: Double-check the content of ChatGPT output!
+                        </div>
+                    </div>
+
+                    <!-- How do I create documentation manually using Sphynx? ----------------------------------->
+                    <div class="accordion-container">
+                      <button class="accordion">
+                        How do I create documentation manually using Sphynx?
+                      </button>
+                      <div class="answer">
+                        [Add Donnie's documentation here]
+
+                      </div>
+                    </div>
+
+                     <!-- How do I create documentation automatically using read the docs?  ----------------------------------->
+                     <div class="accordion-container">
+                      <button class="accordion">
+                        How do I create documentation automatically using read the docs? 
+                      </button>
+                      <div class="answer">
+                        [Link to the website]
+
+                      </div>
+                    </div>
+
+                    <!-- What license do I use? ----------------------------------->
+                    <div class="accordion-container">
+                      <button class="accordion">
+                        What license do I use?
+                      </button>
+                      <div class="answer">
+                        You can choose a permissive license (e.g. BDS, MIT, Apache) or a copyleft license (e.g. GNU GPL, Mozilla). 
+                        If you are not familiar with open-source licenses, you can browse 
+                        <a class="reference external" href="https://choosealicense.com/licenses/">choosealicense.com</a>, 
+                        read the paper
+                        <a class="reference external" href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002598">A Quick Guide to Software Licensing for the Scientist-Programmer</a>, 
+                        or watch 
+                        <a class="reference external" href="https://www.youtube.com/watch?v=GlAnKGBnhFY">this video</a> (from minute 4)
+                      </div>
+                    </div>
+
+                    <!-- How do I structure a Jupyter notebook? ----------------------------------->
+                    <div class="accordion-container">
+                      <button class="accordion">
+                        How do I structure a Jupyter notebook?
+                      </button>
+                      <div class="answer">
+                        We created a Jupyter notebook <i>template</i> that you can download
+                        <a class="reference external" href="https://github.com/ORMIRcommunity/templates/blob/main/ORMIR_nb_template.ipynb">here</a>. 
+                    
+                        Just like when you write a paper, you fill out a journal template with your content, you can fill out the ORMIR community notebook template with your narrative and code.
+                        
+                        <br>
+                        <br>
+                        <i>Why should I use the template?</i> We usually use notebooks to create use-cases for our Python packages. 
+                        Using the template allows us to harmonize our use-cases and to make sure we remember to include authors, licenses, references, etc.
+                      </div>
+                    </div>
+
+                    <!-- How do I structure the readme file of a GitHub repository? ----------------------------------->
+                    <div class="accordion-container">
+                      <button class="accordion">
+                        How do I structure the readme file of a GitHub repository?
+                      </button>
+                      <div class="answer">
+                        We created a GitHub readme <i>template</i> that you can download
+                        <a class="reference external" href="https://github.com/ORMIRcommunity/templates/blob/main/ORMIR_readme_template.md">here</a>. 
+                    
+                        Just like for Jupyter notebooks, a readme file template allows us to harmonize our repositories and make sure we remember to include authors, licenses, use-cases, references, etc.
+                      </div>
+                    </div>
+
+                    <!-- How do I quickly translate existing code to Python? ----------------------------------->
+                    <div class="accordion-container">
+                      <button class="accordion">
+                        How do I quickly translate existing code to Python?
+                      </button>
+                      <div class="answer">
+                        If you already know Python: ChatGPT! Example of command: 
+                        <br>
+                        <code class="docutils literal notranslate"><span class="pre">
+                        translate the following code from Matlab to Python: [paste your code]
+                        </span></code>
+                        <br>
+                        <i>Important</i>: Double-check the content of the ChatGPT output, preferably with test functions.
+
+                        <br>
+                        If you don't know Python: team up with some community members who know Python and work on the translation together!
+                      </div>
+                    </div>
+
+                    <!--  What data types should I use? ----------------------------------->
+                    <div class="accordion-container">
+                      <button class="accordion">
+                        What data types should I use?
+                      </button>
+                      <div class="answer">
+                        Our pipelines usually start with <code class="docutils literal notranslate"><span class="pre">.dcm</span></code>
+                        images for CT/MR acquisitions or <code class="docutils literal notranslate"><span class="pre">.isq</span></code>
+                        images for µCT/HR-pQCT acquisitions. 
+                        Images are then transformed into other file formats for
+                        simplicity (e.g. nifti, metafile, etc.)
+                      </div>
+                    </div>
+
+                    <!-- In what journal can I publish my Python package?  ----------------------------------->
+                    <div class="accordion-container">
+                      <button class="accordion">
+                        In what journal can I publish my Python package?
+                      </button>
+                      <div class="answer">
+                        Consider publishing in the <a class="reference external" href="https://joss.theoj.org/">Journal of Open Source Software (JOSS)</a>. 
+                        The paper is only a few pages and reviewers check your repository, helping you improve it. 
+                      </div>
+                    </div>
+
+
+                    <!-- How do I get a DOI for my code? ----------------------------------->
+                    <div class="accordion-container">
+                      <button class="accordion">
+                        How do I get a DOI for my code?
+                      </button>
+                      <div class="answer">
+                        To get a permanent Digital Object Identifier for your code so that it can be referenced, you can link your GitHub repository to Zenodo. You can find instructions on 
+                        <a class="reference external" href="https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content">this webpage </a>
+                        or in 
+                        <a class="reference external" href="https://www.youtube.com/watch?v=gp3D4mf6MHQ">this video</a>.  
+                      </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= accordion-end ======= -->
+
+
+                <!-- In the python code below, the indentation of the html code is reflected on the indentation of the rendered python code in the webpage. Don't change it! -->
+                
+                
+                <!-- <div class="highlight-python notranslate">
+                    <div class="highlight">
+                            <pre><span></span><span class="k">def</span> <span class="gt">my_function</span> <span class="p">(</span><span class="n">input1</span><span class="p">,</span> <span class="n">input2</span><span class="p">):</span>
+                    
+        <span class="gd">&quot;&quot;&quot;This functions does ... .</span>
+    <span class="gd">    </span>
+    <span class="gd">    Parameters</span>
+    <span class="gd">    ----------</span>
+    <span class="gd">    input_1 : type</span>
+    <span class="gd">        Description of the parameter `input_1`.</span>
+    <span class="gd">    input_2 : type</span>
+    <span class="gd">        Description of the parameter `input_2`.</span>
+    <span class="gd">    </span>
+    <span class="gd">    Returns</span>
+    <span class="gd">    -------</span>
+    <span class="gd">    output: int</span>
+    <span class="gd">        Description of the variable `output`</span>
+    <span class="gd">    &quot;&quot;&quot;</span>
+                
+        <span class="c1"># function body</span>
+        <span class="k">return</span> <span class="n">output</span>
+                      </pre>
+                    </div>
+                </div>
+                <p>Explanation: The function documentation is right below the function header, and it is
+                  between three opening and three closing single quotes <code
+                      class="docutils literal notranslate"><span class="pre">'''</span></code>
+                  or double quotes: <code
+                      class="docutils literal notranslate"><span class="pre">&quot;&quot;&quot;</span></code>.
+                  It is composed of 3 parts:</p> -->
+
+
+                
+                
+                
+                
+           
+              </div>
+            </li>
+
+
+
+
+
+
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- JavaScript to toggle accordion -->
+    <script src="assets/js/accordion.js"></script>
+
+    </script>
+
+  </body>
 
 </html>
