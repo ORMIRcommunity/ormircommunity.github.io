@@ -43,9 +43,9 @@
     <header id="header" class="fixed-top header-inner-pages">
         <div class="container d-flex align-items-center justify-content-between">
 
-        <h1 class="logo"><a href="index.html">ORMIR</a></h1>
+        <!-- <h1 class="logo"><a href="index.html">ORMIR</a></h1> -->
         <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
 
         <nav id="navbar" class="navbar">
           <ul>   
@@ -103,114 +103,102 @@
     <!-- ======= Section ======= -->
     <section>
         
-      <div class="container">
-        
-        
-      
-      
-      <div class="row">
-        <!-- <div class="col-lg-6"> -->
-          <div class="col-md-8 offset-md-2">
+      <div class="container">   
+        <div class="row">
+          <div class="col-md-12 offset-md-0">
 
+        
             <div class="section-title">
               <h2>Why a community</h2>
             </div>
 
-          <!-- <h4>Computational workflows in MSK imaging</h4> -->
-          <h3>What is our research about?</h3>
+      
+            <h3>What is our research about?</h3>
 
-          <p>
-            As musculoskeletal (MSK) imaging scientists, we extract quantitative information from medical images of bones, muscles, and joints to investigate diseases such as osteoporosis, osteoarthritis, and muscular dystrophies. 
-          </p>
-          <p>
-            We use computational workflows that have a <strong>similar structure</strong>:
-            <ul class="custom-list">
-              <li class="custom-list">
-                <strong> Acquisition of medical images </strong> using magnetic resonance or computed tomography
-              </li>
-              <li>
-                <strong> Segmentation</strong> (i.e. labeling) of images to extract the organ/s of interest 
-              </li>
-              <li>
-                <strong> Quantification</strong> of organ or tissue morphology, structure (e.g. cartilage thickness), chemical composition (e.g. calcium content), and mechanical response (e.g. strains and stresses) 
-              </li>
-            </ul>
-          </p>
-          <p>
-            Our <strong>goal</strong> is to <strong>create computational tools to investigate diseases</strong> in a reliable and robust way
-          </p>
+            <p>
+              As musculoskeletal (MSK) imaging scientists, we extract quantitative information from medical images of bones, muscles, and joints to investigate diseases such as osteoporosis, osteoarthritis, and muscular dystrophies.  
+            </p>
 
-        </div>
+            <p>
+              We use computational workflows that have a <strong>similar structure</strong>:
+              <ul class="custom-list-tight">
+                <li class="custom-list-tight">
+                  <strong> Acquisition of medical images </strong> using magnetic resonance or computed tomography
+                </li>
+                <li>
+                  <strong> Segmentation</strong> (i.e. labeling) of images to extract the organ/s of interest 
+                </li>
+                <li>
+                  <strong> Quantification</strong> of organ or tissue morphology, structure (e.g. cartilage thickness), chemical composition (e.g. calcium content), and mechanical response (e.g. strains and stresses) 
+                </li>
+              </ul>
+            </p>
+            
+            <p>
+              Our <strong>goal</strong> is to <strong>create computational tools to investigate diseases</strong> in a reliable and robust way
+            </p>
+
+                  <!-- <p>
+                    <div class="image-container">
+                      <img alt="" src="assets/img/general/workflow.png" height="150px">
+                    </div>
+                  </p> -->
+                <!-- </div>
+              </div> -->
+
+
+            <hr>
+
+
+            <h3>Why a community for open and reproducible research?</h3>
+            
+            <p> 
+              Although we share similar workflows, we experience several challenges when dealing with code: 
+              <ul class="custom-list-tight">
+                <li class="custom-list-tight">
+                  Existing <strong>code is usually fragmented</strong> because it mainly consists of a combination of proprietary software and in-house algorithms
+                </li>
+                <li>
+                  When dealing with proprietary software, it is <strong>impossible to verify parameters and implementations</strong> and adapt the code to new images or anatomies
+                </li>
+                <li>       
+                  The life of in-house code is strictly linked to the employment of the code creators (e.g., PhD students or PostDocs), <strong>restricting code reuse and expansion</strong> by newer lab members   
+                </li>
+                <li>
+                  Existing open software is hard to reuse because of <strong>lack of documentation</strong> and dishomogenization of coding language and guidelines
+                </li>
+              </ul>  
+            </p>
+            <p>
+              To overcome these issues, we created the ORMIR community. 
+              Our main aim is to <strong>create open, reproducible, well-tested, and well-documented software to analyze musculoskeletal (MSK) images</strong>.   
+            </p>
         
-        
-        <div class="col-md-8 offset-md-2">
-        <!-- <div class="col-lg-6 pt-4 pt-lg-0"> -->
-          <p>
-            <div class="image-container">
-              <img alt="" src="assets/img/general/workflow.png" height="150px">
-            </div>
-          </p>
-        <!-- </div>
-      </div> -->
 
+            <hr>
 
-      <hr>
+            <h3>What do we do?</h3>
+            <p>
+              <ul>
+                <li>
+                    <strong>We write code!</strong> We create Python packages with Jupyter Notebooks as user-interface, focusing on application related to our research interest (see our <a href="packages.html">packages</a>) 
+                </li>
+                <li>
+                    <strong>We promote open and reproducible research</strong> with workshops and talks. 
+                    See the  <a href="https://github.com/JCMSK/2022_JCW/blob/main/README.md#numfocus-blog-post">report</a> of our latest workshop
+                </li>  
+              </ul>
+            </p>
+            
+            <hr>
+            
+            <h3>How did we start?</h3>
 
-      <!-- <div class="row">
-        <div class="col-md-8 offset-md-2"> -->
-          <h3>Why a community for open and reproducible research?</h3>
-          <p> 
-            Although we share similar workflows, we experience several challenges when dealing with code: 
-          </p>
-          <p>
-            <ul>
-              <li>
-                Existing <strong>code is usually fragmented</strong> because it mainly consists of a combination of proprietary software and in-house algorithms
-              </li>
-              <li>
-                When dealing with proprietary software, it is <strong>impossible to verify parameters and implementations</strong> and adapt the code to new images or anatomies
-              </li>
-              <li>       
-                The life of in-house code is strictly linked to the employment of the code creators (e.g., PhD students or PostDocs), <strong>restricting code reuse and expansion</strong> by newer lab members   
-              </li>
-              <li>
-                Existing open software is hard to reuse because of <strong>lack of documentation</strong> and dishomogenization of coding language and guidelines
-              </li>
-            </ul>  
-          </p>
-          <p>
-            To overcome these issues, we created the ORMIR community. 
-            Our main aim is to <strong>create open, reproducible, well-tested, and well-documented software to analyze musculoskeletal (MSK) images</strong>.   
-          </p>
-        <!-- </div>
-      </div> -->
-
-      <hr>
-
-      <!-- <div class="row">
-        <div class="col-md-8 offset-md-2">
-        <div class="col-lg-12"> -->
-          <h3>What do we do?</h3>
-          <p>
-            <ul>
-              <li>
-                  <strong>We write code!</strong> We create Python packages with Jupyter Notebooks as user-interface, focusing on application 
-                  related to our research interest (see our <a href="packages.html">packages</a>) 
-              </li>
-              <li>
-                  <strong>We promote open and reproducible research</strong> with workshops and talks. 
-                  See the  <a href="https://github.com/JCMSK/2022_JCW/blob/main/README.md#numfocus-blog-post">report</a> of our latest workshop
-              </li>  
-            </ul>
-          </p>
-        
-          <hr>
-        
-          To know more about our story, read the  <a class="reference external" href="">manifesto paper</a> </li> (coming soon!) 
+            To know more about our story, read the  <a class="reference external" href="">manifesto paper</a> </li> (coming soon!) 
 
         </div>
       </div>
-      
+    </div>
 
        
 

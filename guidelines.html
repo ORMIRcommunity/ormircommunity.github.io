@@ -47,9 +47,9 @@
     <header id="header" class="fixed-top header-inner-pages">
         <div class="container d-flex align-items-center justify-content-between">
 
-        <h1 class="logo"><a href="index.html">ORMIR</a></h1>
+        <!-- <h1 class="logo"><a href="index.html">ORMIR</a></h1> -->
         <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
 
         <nav id="navbar" class="navbar">
           <ul>   
@@ -109,13 +109,13 @@
         <div class="container">
           
             <div class="section-title">
-              <div class="col-md-10 offset-md-1">
+              <div class="col-md-12 offset-md-0">
               <h2>Coding guidelines</h2>
               </div>
             </div>
 
             <div class="row">
-                <div class="col-md-10 offset-md-1">
+                <div class="col-md-12 offset-md-0">
 
                     <!-- Python code style ----------------------------------->
 
@@ -124,7 +124,94 @@
                           What Python code style do I use?
                         </button>
                         <div class="answer">
-                          [add answer here]
+                          We follow the <a class="reference external" href="https://www.python.org/dev/peps/pep-0008/"> Style Guide for Python Code</a>. In short:
+                                        <section id="naming-style">
+                                            <h4>Naming Style<a class="headerlink d-none" href="#naming-style"
+                                                    title="Permalink to this headline">¶</a></h3>
+                                            <ul>
+                                                <li>
+                                                    <p>Variables, functions, methods, modules, packages:</p>
+                                                    <div class="highlight-python notranslate">
+                                                        <div class="highlight">
+                                                            <pre><span></span><span class="n">lower_case_with_underscores</span>
+                                                            </pre>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <p>Constants:</p>
+                                                    <div class="highlight-python notranslate">
+                                                        <div class="highlight">
+                                                            <pre><span></span><span class="n">ALL_CAPS_WITH_UNDERSCORES</span>
+                                                            </pre>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <p>Classes and exceptions:</p>
+                                                    <div class="highlight-python notranslate">
+                                                        <div class="highlight">
+                                                            <pre><span></span><span class="n">CapWords</span>
+                                                            </pre>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                        <section id="indentation">
+                                            <h4>Indentation<a class="headerlink d-none" href="#indentation"
+                                                    title="Permalink to this headline">¶</a></h3>
+                                            <ul class="simple">
+                                                <li>
+                                                    <p>4 spaces or 1 tab</p>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                        <section id="space">
+                                            <h4>Space<a class="headerlink d-none" href="#space"
+                                                    title="Permalink to this headline">¶</a></h3>
+                                            <ul>
+                                                <li>
+                                                    <p>Leave space between operators in case of assignment and arithmetic
+                                                        operations:</p>
+                                                    <div class="highlight-python notranslate">
+                                                        <div class="highlight">
+                                                            <pre><span></span><span class="n">var</span> <span class="o">=</span> <span class="mi">4</span> <span class="n">result</span> <span class="o">=</span> <span class="n">var</span> <span class="o">*</span> <span class="mi">5</span>
+                                                            </pre>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <p>Leave space after a comma:</p>
+                                                    <div class="highlight-python notranslate">
+                                                        <div class="highlight">
+                                                            <pre><span></span><span class="n">var1</span><span class="p">,</span> <span class="n">var2</span> <span class="o">=</span> <span class="n">get_values</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">)</span>
+                                                            </pre>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                        <section id="comments">
+                                            <h4>Comments<a class="headerlink d-none" href="#comments"
+                                                    title="Permalink to this headline">¶</a></h3>
+                                            <ul>
+                                                <li>
+                                                    <p>Comments are introduced by <code
+                                                            class="docutils literal notranslate"><span class="pre">#</span></code>,
+                                                        positioned above the code they refer to, and indented to align with the code are commenting on:</p>
+                                                    <div class="highlight-python notranslate">
+                                                        <div class="highlight">
+                                                            <pre><span></span><span class="c1"># assign variable</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+                                                            </pre>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <p><em>Why are comments important?</em>
+                                                As part of a community we want to write code that can be readable and
+                                                reusable by others. Be generous and precise with your comments!</p>
+                                        </section>
                         </div>
                     </div>
                 
@@ -134,7 +221,39 @@
                           What Python code documentation do I use?
                         </button>
                         <div class="answer">
-                          [add existing documentation here]
+                          
+                          <!-- In the python code below, the indentation of the html code is reflected on the indentation of the rendered python code in the webpage. Don't change it!  -->
+              
+                          <div class="highlight-python notranslate"> 
+                              <div class="highlight">
+                                      <pre><span></span><span class="k">def</span> <span class="gt">my_function</span> <span class="p">(</span><span class="n">input1</span><span class="p">,</span> <span class="n">input2</span><span class="p">):</span>
+                    
+        <span class="gd">&quot;&quot;&quot;This functions does ... .</span>
+    <span class="gd">    </span>
+    <span class="gd">    Parameters</span>
+    <span class="gd">    ----------</span>
+    <span class="gd">    input_1 : type</span>
+    <span class="gd">        Description of the parameter `input_1`.</span>
+    <span class="gd">    input_2 : type</span>
+    <span class="gd">        Description of the parameter `input_2`.</span>
+    <span class="gd">    </span>
+    <span class="gd">    Returns</span>
+    <span class="gd">    -------</span>
+    <span class="gd">    output: int</span>
+    <span class="gd">        Description of the variable `output`</span>
+    <span class="gd">    &quot;&quot;&quot;</span>
+                
+        <span class="c1"># function body</span>
+        <span class="k">return</span> <span class="n">output</span>
+                      </pre>
+                    </div>
+                </div>
+                <p>Explanation: The function documentation is right below the function header, and it is
+                  between three opening and three closing single quotes <code
+                      class="docutils literal notranslate"><span class="pre">'''</span></code>
+                  or double quotes: <code
+                      class="docutils literal notranslate"><span class="pre">&quot;&quot;&quot;</span></code>.
+                  It is composed of 3 parts:</p>
                           With ChatGPT! Example of command: 
                         <br>
                         <br>
@@ -166,7 +285,7 @@
                         How do I create documentation automatically using read the docs? 
                       </button>
                       <div class="answer">
-                        [Link to the website]
+                        Go to the Read the Docs website and 
 
                       </div>
                     </div>
@@ -214,7 +333,7 @@
                         We created a GitHub readme <i>template</i> that you can download
                         <a class="reference external" href="https://github.com/ORMIRcommunity/templates/blob/main/ORMIR_readme_template.md">here</a>. 
                     
-                        Just like for Jupyter notebooks, a readme file template allows us to harmonize our repositories and make sure we remember to include authors, licenses, use-cases, references, etc.
+                        A readme file template allows us to harmonize our repositories and make sure we remember to include all sections, such as authors, licenses, use-cases, references, etc.
                       </div>
                     </div>
 
@@ -232,6 +351,7 @@
                         <br>
                         <i>Important</i>: Double-check the content of the ChatGPT output, preferably with test functions.
 
+                        <br>
                         <br>
                         If you don't know Python: team up with some community members who know Python and work on the translation together!
                       </div>
@@ -269,7 +389,7 @@
                         How do I get a DOI for my code?
                       </button>
                       <div class="answer">
-                        To get a permanent Digital Object Identifier for your code so that it can be referenced, you can link your GitHub repository to Zenodo. You can find instructions on 
+                        To get a permanent Digital Object Identifier (DOI) for your code so that it can be referenced, you can link your GitHub repository to Zenodo. You can find instructions on 
                         <a class="reference external" href="https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content">this webpage </a>
                         or in 
                         <a class="reference external" href="https://www.youtube.com/watch?v=gp3D4mf6MHQ">this video</a>.  
@@ -284,39 +404,7 @@
     <!-- ======= accordion-end ======= -->
 
 
-                <!-- In the python code below, the indentation of the html code is reflected on the indentation of the rendered python code in the webpage. Don't change it! -->
-                
-                
-                <!-- <div class="highlight-python notranslate">
-                    <div class="highlight">
-                            <pre><span></span><span class="k">def</span> <span class="gt">my_function</span> <span class="p">(</span><span class="n">input1</span><span class="p">,</span> <span class="n">input2</span><span class="p">):</span>
-                    
-        <span class="gd">&quot;&quot;&quot;This functions does ... .</span>
-    <span class="gd">    </span>
-    <span class="gd">    Parameters</span>
-    <span class="gd">    ----------</span>
-    <span class="gd">    input_1 : type</span>
-    <span class="gd">        Description of the parameter `input_1`.</span>
-    <span class="gd">    input_2 : type</span>
-    <span class="gd">        Description of the parameter `input_2`.</span>
-    <span class="gd">    </span>
-    <span class="gd">    Returns</span>
-    <span class="gd">    -------</span>
-    <span class="gd">    output: int</span>
-    <span class="gd">        Description of the variable `output`</span>
-    <span class="gd">    &quot;&quot;&quot;</span>
-                
-        <span class="c1"># function body</span>
-        <span class="k">return</span> <span class="n">output</span>
-                      </pre>
-                    </div>
-                </div>
-                <p>Explanation: The function documentation is right below the function header, and it is
-                  between three opening and three closing single quotes <code
-                      class="docutils literal notranslate"><span class="pre">'''</span></code>
-                  or double quotes: <code
-                      class="docutils literal notranslate"><span class="pre">&quot;&quot;&quot;</span></code>.
-                  It is composed of 3 parts:</p> -->
+               
 
 
                 
