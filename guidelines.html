@@ -108,192 +108,232 @@
     <section>
         <div class="container">
           
+            <!-- Title -->
             <div class="section-title">
               <div class="col-md-12 offset-md-0">
               <h2>Coding guidelines</h2>
               </div>
             </div>
 
+            
+            <!-- Q&A - Accordion -->
             <div class="row">
                 <div class="col-md-12 offset-md-0">
 
                     <!-- Python code style ----------------------------------->
-
                     <div class="accordion-container">
                         <button class="accordion">
-                          What Python code style do I use?
+                          What Python <i>code</i> style do I use?
                         </button>
                         <div class="answer">
-                          We follow the <a class="reference external" href="https://www.python.org/dev/peps/pep-0008/"> Style Guide for Python Code</a>. In short:
-                                        <section id="naming-style">
-                                            <h4>Naming Style<a class="headerlink d-none" href="#naming-style"
-                                                    title="Permalink to this headline">¶</a></h3>
-                                            <ul>
-                                                <li>
-                                                    <p>Variables, functions, methods, modules, packages:</p>
-                                                    <div class="highlight-python notranslate">
-                                                        <div class="highlight">
-                                                            <pre><span></span><span class="n">lower_case_with_underscores</span>
-                                                            </pre>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <p>Constants:</p>
-                                                    <div class="highlight-python notranslate">
-                                                        <div class="highlight">
-                                                            <pre><span></span><span class="n">ALL_CAPS_WITH_UNDERSCORES</span>
-                                                            </pre>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <p>Classes and exceptions:</p>
-                                                    <div class="highlight-python notranslate">
-                                                        <div class="highlight">
-                                                            <pre><span></span><span class="n">CapWords</span>
-                                                            </pre>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </section>
-                                        <section id="indentation">
-                                            <h4>Indentation<a class="headerlink d-none" href="#indentation"
-                                                    title="Permalink to this headline">¶</a></h3>
-                                            <ul class="simple">
-                                                <li>
-                                                    <p>4 spaces or 1 tab</p>
-                                                </li>
-                                            </ul>
-                                        </section>
-                                        <section id="space">
-                                            <h4>Space<a class="headerlink d-none" href="#space"
-                                                    title="Permalink to this headline">¶</a></h3>
-                                            <ul>
-                                                <li>
-                                                    <p>Leave space between operators in case of assignment and arithmetic
-                                                        operations:</p>
-                                                    <div class="highlight-python notranslate">
-                                                        <div class="highlight">
-                                                            <pre><span></span><span class="n">var</span> <span class="o">=</span> <span class="mi">4</span> <span class="n">result</span> <span class="o">=</span> <span class="n">var</span> <span class="o">*</span> <span class="mi">5</span>
-                                                            </pre>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <p>Leave space after a comma:</p>
-                                                    <div class="highlight-python notranslate">
-                                                        <div class="highlight">
-                                                            <pre><span></span><span class="n">var1</span><span class="p">,</span> <span class="n">var2</span> <span class="o">=</span> <span class="n">get_values</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">)</span>
-                                                            </pre>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </section>
-                                        <section id="comments">
-                                            <h4>Comments<a class="headerlink d-none" href="#comments"
-                                                    title="Permalink to this headline">¶</a></h3>
-                                            <ul>
-                                                <li>
-                                                    <p>Comments are introduced by <code
-                                                            class="docutils literal notranslate"><span class="pre">#</span></code>,
-                                                        positioned above the code they refer to, and indented to align with the code are commenting on:</p>
-                                                    <div class="highlight-python notranslate">
-                                                        <div class="highlight">
-                                                            <pre><span></span><span class="c1"># assign variable</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
-                                                            </pre>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                            <p><em>Why are comments important?</em>
-                                                As part of a community we want to write code that can be readable and
-                                                reusable by others. Be generous and precise with your comments!</p>
-                                        </section>
+                          We follow the <a class="reference external" href="https://www.python.org/dev/peps/pep-0008/"> Style Guide for Python Code</a>. In summary:
+                          
+                          <br>
+                          <br>
+                          <h6 style="color:#90bc00">Naming Style</h6>
+                          <ul>
+                              <li>
+                                  Variables, functions, methods, modules, packages:
+                                  <br>
+                                  <code-text>lower_case_with_underscores</code-text>
+                              </li>
+                              <li>
+                                  Constants:
+                                  <br>
+                                  <code-text>ALL_CAPS_WITH_UNDERSCORES</code-text>
+                              </li>
+                              
+                              <li>
+                                  Classes and exceptions:
+                                  <br>
+                                  <code-text>CapWords</code-text>
+                              </li>
+                          </ul>
+                          
+                          <br>
+                          <h6 style="color:#90bc00">Indentation</h6>
+                          <ul>
+                            <li>
+                                4 spaces or 1 tab
+                            </li>
+                          </ul>
+
+                          <br>
+                          <h6 style="color:#90bc00">Space</h6>          
+                          <ul>
+                              <li>
+                                  Leave space between operators in case of assignment and arithmetic operations:
+                                  <br>
+                                  <code-text>var = 4</code-text>
+                              </li>
+                              <li>
+                                  Leave space after a comma:
+                                  <br>
+                                  <code-text>var_1, var_2 = get_values(num_1, num_2)</code-text>
+                              </li>
+                          </ul>
+
+                          <br>
+                          <h6 style="color:#90bc00">Comments</h6>                   
+                          <ul>
+                              <li>
+                                  Comments are introduced by <code-text>#</code-text> positioned above the code they refer to, and they are indented to align with the code are commenting on:
+                                  <br>
+                                  <code-text># assign variable</code-text>
+                                  <br>
+                                  <code-text>a = 5</code-text>
+
+                                  <br>
+                                  <i>Why are comments important?</i> As part of a community, we want to write code that can be readable and reusable by others. Let's be generous and precise with our comments!
+                              </li>
+                          </ul>
+                          
                         </div>
                     </div>
                 
-                    <!-- Python code documentation ----------------------------------->
+
+                    <!-- How do I quickly translate existing code to Python? ----------------------------------->
                     <div class="accordion-container">
-                        <button class="accordion">
-                          What Python code documentation do I use?
-                        </button>
-                        <div class="answer">
-                          
-                          <!-- In the python code below, the indentation of the html code is reflected on the indentation of the rendered python code in the webpage. Don't change it!  -->
-              
-                          <div class="highlight-python notranslate"> 
-                              <div class="highlight">
-                                      <pre><span></span><span class="k">def</span> <span class="gt">my_function</span> <span class="p">(</span><span class="n">input1</span><span class="p">,</span> <span class="n">input2</span><span class="p">):</span>
-                    
-        <span class="gd">&quot;&quot;&quot;This functions does ... .</span>
-    <span class="gd">    </span>
-    <span class="gd">    Parameters</span>
-    <span class="gd">    ----------</span>
-    <span class="gd">    input_1 : type</span>
-    <span class="gd">        Description of the parameter `input_1`.</span>
-    <span class="gd">    input_2 : type</span>
-    <span class="gd">        Description of the parameter `input_2`.</span>
-    <span class="gd">    </span>
-    <span class="gd">    Returns</span>
-    <span class="gd">    -------</span>
-    <span class="gd">    output: int</span>
-    <span class="gd">        Description of the variable `output`</span>
-    <span class="gd">    &quot;&quot;&quot;</span>
-                
-        <span class="c1"># function body</span>
-        <span class="k">return</span> <span class="n">output</span>
-                      </pre>
-                    </div>
-                </div>
-                <p>Explanation: The function documentation is right below the function header, and it is
-                  between three opening and three closing single quotes <code
-                      class="docutils literal notranslate"><span class="pre">'''</span></code>
-                  or double quotes: <code
-                      class="docutils literal notranslate"><span class="pre">&quot;&quot;&quot;</span></code>.
-                  It is composed of 3 parts:</p>
-                          With ChatGPT! Example of command: 
+                      <button class="accordion">
+                        How do I quickly translate existing code to Python?
+                      </button>
+                      <div class="answer">
+                        If you already know Python: ChatGPT! Example of command: 
                         <br>
                         <br>
-
-                        <code class="docutils literal notranslate"><span class="pre">
-                          write docstrings  in Numpy style for the following function: [paste your function]
-                        </span></code>
-
+                        <code-text>translate the following code from Matlab to Python: [paste your code]</code-text>
                         <br>
                         <br>
                         <i>Important</i>: Double-check the content of ChatGPT output!
+                        <br>
+                        <br>
+                        If you don't know Python, team up with some ORMIR community members who know Python and work on the translation together!
+                      </div>
+                    </div>
+
+
+                    <!-- Python documentation style (docstrings) ----------------------------------->
+                    <div class="accordion-container">
+                        <button class="accordion">
+                            What Python <i>documentation</i> style (docstrings) do I use?
+                        </button>
+                        <div class="answer">
+              
+                              We use <a class="reference external" href="https://numpydoc.readthedocs.io/en/latest/format.html">Numpy style docstrings</a> to document our code. 
+                              Docstrings describe functionalities and parameters of the subsequent code and are enclosed in triple quotes (<code-text>"""..."""</code-text>). 
+                              They are typically placed at the beginning of the module, class, function, or method they describe. Here is the example of Numpy style docstrings for functions:
+                            
+                            <br>
+
+                            <code-text>
+                              <br>
+                              def my_function (input1, input2):
+                              <br>
+                              <br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;"""This functions does ... 
+                              <br>
+                              <br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;Parameters
+                              <br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;----------
+                              <br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;input_1 : type
+                              <br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Description of the parameter `input_1`
+                              <br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;input_2 : type
+                              <br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Description of the parameter `input_2`
+                              <br>
+                              <br>
+                              
+                              &nbsp;&nbsp;&nbsp;&nbsp;Returns
+                              <br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;-------
+                              <br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;output: int
+                              <br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Description of the variable `output`
+                              <br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;"""
+                              <br>
+                              <br>      
+                              &nbsp;&nbsp;&nbsp;&nbsp;# function body
+                              <br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;return output
+                            </code-text>
+                            <br>
+                            <br>
+
+                            
+                              The documentation is between the header and the body, and it contains at least the following sections:
+                              <ul>
+                                
+                                <li>
+                                  Description: An explanation of what the function does
+                                </li>
+                                <li>
+                                  Parameters: A description of each parameter the function accepts, including name, data type, definition, and default values
+                                </li>
+                                <li>
+                                  Returns: A description of the values returned by the function, including name, data type, definition, and any special cases
+                                </li>  
+                              </ul>
+                              
+                              You can find a complete description of Numpy style docstrings on <a class="reference external" href="https://numpydoc.readthedocs.io/en/latest/format.html">the Numpy website</a>
+                            
+                        </div>
+                      </div>
+
+
+                    <!-- How do I create Numpy-style documentation fast?----------------------------------->
+                    <div class="accordion-container">
+                      <button class="accordion">
+                        How do I create Numpy-style documentation (docstrings) fast?
+                      </button>
+                      <div class="answer">
+                          
+                            With ChatGPT! Example of command: 
+                            <br>
+                            <br>
+                            <code-text>write docstrings  in Numpy style for the following function: [paste your function]</code-text>
+                            <br>
+                            <br>
+                            <i>Important</i>: Double-check the content of ChatGPT output and correct wherever needed!
+                          
                         </div>
                     </div>
 
-                    <!-- How do I create documentation manually using Sphynx? ----------------------------------->
+                    <!-- How do I publish documentation automatically using Read the Docs?  ----------------------------------->
                     <div class="accordion-container">
                       <button class="accordion">
-                        How do I create documentation manually using Sphynx?
+                        How do I publish documentation <i>automatically</i> using Read the Docs? 
                       </button>
                       <div class="answer">
-                        [Add Donnie's documentation here]
-
+                        <a href="https://docs.readthedocs.io/en/stable/">Read the Docs</a> is a tool to genereate code from docstrings and to host and publish documentation on the web. 
+                        To learn how to use Read the Docs follow their step-by-step <a href="https://docs.readthedocs.io/en/stable/tutorial/index.html">tutorial</a>.
+                        An excellent example of Read the Docs is the <a href="https://ciclope.readthedocs.io/en/"> documentation</a> of Ciclope.
                       </div>
                     </div>
 
-                     <!-- How do I create documentation automatically using read the docs?  ----------------------------------->
-                     <div class="accordion-container">
+
+                    <!-- How do I publish documentation manually using Sphynx? ----------------------------------->
+                    <div class="accordion-container">
                       <button class="accordion">
-                        How do I create documentation automatically using read the docs? 
+                        How do I publish documentation <i>manually</i> using Sphynx?
                       </button>
                       <div class="answer">
-                        Go to the Read the Docs website and 
+                        <a href="https://www.sphinx-doc.org/en">Sphynx</a> is a tool to write and generate documentation from docstrings. 
+                        You can find guidelines on how to use Sphynx <a href="">here [add link to Donnie's guidelines]</a> 
 
                       </div>
                     </div>
+                    
 
                     <!-- What license do I use? ----------------------------------->
                     <div class="accordion-container">
                       <button class="accordion">
-                        What license do I use?
+                        What license do I use for my code?
                       </button>
                       <div class="answer">
                         You can choose a permissive license (e.g. BDS, MIT, Apache) or a copyleft license (e.g. GNU GPL, Mozilla). 
@@ -337,37 +377,15 @@
                       </div>
                     </div>
 
-                    <!-- How do I quickly translate existing code to Python? ----------------------------------->
+                    
+                    <!--  What image file formats should I use? ----------------------------------->
                     <div class="accordion-container">
                       <button class="accordion">
-                        How do I quickly translate existing code to Python?
+                        What image file formats and folder structure should I use?
                       </button>
                       <div class="answer">
-                        If you already know Python: ChatGPT! Example of command: 
-                        <br>
-                        <code class="docutils literal notranslate"><span class="pre">
-                        translate the following code from Matlab to Python: [paste your code]
-                        </span></code>
-                        <br>
-                        <i>Important</i>: Double-check the content of the ChatGPT output, preferably with test functions.
-
-                        <br>
-                        <br>
-                        If you don't know Python: team up with some community members who know Python and work on the translation together!
-                      </div>
-                    </div>
-
-                    <!--  What data types should I use? ----------------------------------->
-                    <div class="accordion-container">
-                      <button class="accordion">
-                        What data types should I use?
-                      </button>
-                      <div class="answer">
-                        Our pipelines usually start with <code class="docutils literal notranslate"><span class="pre">.dcm</span></code>
-                        images for CT/MR acquisitions or <code class="docutils literal notranslate"><span class="pre">.isq</span></code>
-                        images for µCT/HR-pQCT acquisitions. 
-                        Images are then transformed into other file formats for
-                        simplicity (e.g. nifti, metafile, etc.)
+                        Our pipelines usually start with <code-text>.dcm</code-text> images for CT/MR acquisitions or <code-text>.isq</code-text> images for µCT/HR-pQCT acquisitions. 
+                        We recommend to organize image files and folders following the <a href="https://ormir-mids.github.io/specs">ORMIR-MIDS specifications</a> implemented by the <a href="https://ormir-mids.github.io/package">ORMIR-MIDS Python package</a>. 
                       </div>
                     </div>
 
@@ -395,21 +413,20 @@
                         <a class="reference external" href="https://www.youtube.com/watch?v=gp3D4mf6MHQ">this video</a>.  
                       </div>
                     </div>
-
                 </div>
             </div>
+            <br>
+
+            <center>
+
+                <strong>Do you have some questions that we didn't address? <a href="mailto:ormircommunity@google.com">Contact us!</a> </strong>
+
+            </center>
         </div>
     </section>
 
     <!-- ======= accordion-end ======= -->
 
-
-               
-
-
-                
-                
-                
                 
            
               </div>

@@ -36,10 +36,11 @@ h5,
 h6 {
   font-family: "IBM Plex Mono", monospace;
   font-weight: 600;
-  font-style: normal;
   color: #111111;
   /* text-align: center; */
 }
+
+
 
 h2{
   text-transform: uppercase;
@@ -49,7 +50,12 @@ p {
   margin-bottom: 27px;
   font-size: 18px;
   line-height: 32px;
+}
 
+code-text{
+  font-size: 16px;
+  font-family: "IBM Plex Mono", monospace;
+  color: #c7e565;
 }
 
 hr {
@@ -119,7 +125,7 @@ ul li{
   border-radius: 19px; /* Border-radius for rounded corners; has to be 1px less than in .accordion-container to avoid visibility*/
   font-family: "IBM Plex Mono", monospace;
   letter-spacing: normal;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
   font-style: normal;
   color: #111111;
@@ -134,7 +140,7 @@ ul li{
 /* Active (open) question */
 .accordion.active {
   background-color: black; /* Same color when active */
-  color: #c7e565;
+  color: #90bc00;
   /* border: 1px solid #0071bc; Add border color when active */
   /* color: #0071bc; */
   outline: none; /* Remove blue border when clicking*/
@@ -182,6 +188,8 @@ ul li{
   font-family: "IBM Plex Mono", monospace;
   color: #c7e565;
 }
+
+
 
 /*--------------------------------------------------------------
 # tiles
@@ -629,10 +637,45 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
     margin: 15px;
   }
   
-  .navbar-mobile .dropdown ul {
+  /* .navbar-mobile .dropdown ul {
     position: static;
     display: none;
-  }
+  } */
+
+
+.navbar-mobile .dropdown ul {
+  position: static;
+  display: none;
+  margin: 10px 20px;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+
+.navbar-mobile .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar-mobile .dropdown ul a {
+  padding: 10px 20px;
+}
+
+.navbar-mobile .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul li:hover>a {
+  color: #90bc00;
+}
+
+.navbar-mobile .dropdown>.dropdown-active {
+  display: block;
+}
 
 
 /*--------------------------------------------------------------
