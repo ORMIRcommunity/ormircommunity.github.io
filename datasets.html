@@ -1,666 +1,305 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Datasets &#8212; ORMIR</title>
-    <link rel="icon" type="image/x-icon" href="/_images/ormir_favicon.ico">
+  <title>ORMIR - Datasets</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    <link href="_static/css/theme.css" rel="stylesheet">
-    <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-
-    <link rel="stylesheet" href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
-    <link rel="preload" as="font" type="font/woff2" crossorigin
-        href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-    <link rel="preload" as="font" type="font/woff2" crossorigin
-        href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans&display=swap" rel="stylesheet">
 
 
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
-
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css"
-        href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
-
-    <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
-
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-        const thebe_selector = ".thebe,.cell"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output, .cell_output"
-    </script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Learning material" href="learning.html" />
-    <link rel="prev" title="Python packages" href="packages.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-
-
-    <!-- Google Analytics -->
-
-    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
-    <script>
-        window.ga = window.ga || function () {
-            (ga.q = ga.q || []).push(arguments)
-        };
-        ga.l = +new Date;
-        ga('create', 'xxx', 'auto');
-        ga('set', 'anonymizeIp', true);
-        ga('send', 'pageview');
-    </script>
-
+  <!-- =======================================================
+  * Template Name: Tempo
+  * Updated: Jan 09 2024 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/tempo-free-onepage-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
-<body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+<body>
 
-    <div class="container-fluid" id="banner">
-        <nav class="navbar navbar-dark navbar-expand-lg bd-navbar bg-light shadow fixed-top">
-            <div class="container-xl">
-                <a id="logo" href="index.html">
-                    <img src="_images/ormir_logo.png" alt="ORMIR Logo" style="padding-right: 15px; width:100px">
-                </a>
-                <div id="navbar" class="mr-auto">
-                    <a class="mr-sm-2 nav-header" href="about.html">About</a>
-                    <a class="mr-sm-2 nav-header" href="packages.html">Packages</a>
-                    <a class="mr-sm-2 nav-header" href="nb_gallery.html">Notebooks</a>
-                    <a class="mr-sm-2 nav-header" href="guidelines.html">Templates/Guidelines</a>
-                    <a class="mr-sm-2 " href="#">Datasets</a>
-                    <a class="mr-sm-2 nav-header" href="learning.html">Learning</a>
-                    <a class="mr-sm-2 nav-header" href="publications_funding.html">Publications/Funding/Events</a> 
-                </div>
-            </div>
-        </nav>
-    </div>
-    <div>&nbsp</div>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top header-inner-pages">
+        <div class="container d-flex align-items-center justify-content-between">
 
+        <!-- <h1 class="logo"><a href="index.html">ORMIR</a></h1> -->
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
 
-<!-- Navigation bar (top) -->
-    <div class="container-xl">
-        <div class="row">
-
-            <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-
-<!-- Table of contents -->
-                <div class="topbar container-xl position-fixed">
-                    <div class="topbar-contents row">
-
-
-                        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-
-                            <!-- <form class="bd-search d-flex align-items-center pb-xl-4" action="search.html" method="get">
-                                <i class="icon fas fa-search"></i>
-                                <input type="search" class="form-control" name="q" id="search-input"
-                                    placeholder="Search this book..." aria-label="Search this book..."
-                                    autocomplete="off">
-                            </form> -->
-
-                            <div class="tocsection onthispage pt-5 pb-3">
-                                <!-- <i class="fas fa-list"></i> Contents -->
-                            </div>
-                            <nav id="bd-toc-nav" aria-label="Page">
-                                <ul class="visible nav section-nav flex-column">
-                                    <li class="toc-h1 nav-item toc-entry">
-                                        <a class="reference internal nav-link" href="#ormir-datasets">
-                                            ORMIR datasets
-                                        </a>
-                                    </li>
-                                    <li class="toc-h1 nav-item toc-entry">
-                                        <a class="reference internal nav-link" href="#more-datasets">
-                                            More datasets
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-                
-                <div id="main-content" class="row">
-                    <div id="whitespace" class="col-2 invisible"></div>
-                    <div class="col-11 col-md-8 pl-md-5 pr-md-0">
-                        <!-- Table of contents that is only displayed when printing the page -->
-                        <div id="jb-print-docs-body" class="onlyprint">
-                            <h1>Open MSK images</h1>
-                        </div>
-
-                        <div>
-
-                            <section class="tex2jax_ignore mathjax_ignore" id="ormir-datasets">
-                                <h1>ORMIR datasets<a class="headerlink d-none" href="#ormir-datasets"
-                                        title="Permalink to this headline">¶</a></h1>
-                                <p> Here are the datasest created by members of the ORMIR community 
-                                </p>
-
-                                <section id="table">
-                                    
-                                    <br>
-                                    
-                                    <table class="colwidths-auto table">
-                                        <thead>
-                                            <tr class="row-odd"><th class="text-align:left head"><p>Species</p></th>
-                                            <th class="text-align:left head"><p>Anatomy</p></th>
-                                            <th class="text-align:left head"><p>Image characteristics</p></th>
-                                            <th class="text-align:left head"><p>Corresponding paper</p></th>
-                                            <th class="text-align:center head"><p>Link to repository</p></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="row-even">
-                                                <td class="text-align:left"><p>Human</p></td>
-                                                <td class="text-align:left"><p>Radius and tibia (HR-pQCT)</p></td>
-                                                <td class="text-align:left"><p>1 radius and 1 tibia acquired with standard protocol (82µ)</p></td>
-                                                <td class="text-align:left"><p>No publication available</p></td>
-                                                <td class="text-align:center"><p><a href="https:www.doi.org/10.5281/zenodo.4072904">here</a></p></td>
-                                            </tr>
-                                            <tr class="row-odd">
-                                                <td class="text-align:left"><p>Human</p></td>
-                                                <td class="text-align:left"><p>Knee (MR)</p></td>
-                                                <td class="text-align:left"><p>About 100 OAI images with corresponding femoral cartilage masks, thicknesses, and relaxometry</p></td>
-                                                <td class="text-align:left"><p>Bonaretti S. et al.  <a href="https://doi.org/10.1371/journal.pone.0226501">pyKNEEr: An image analysis workflow for open and reproducible research on femoral knee cartilage</a></p></td>
-                                                <td class="text-align:center"><p><a href="https://www.doi.org/10.5281/zenodo.2530608">here</a></p></td>
-                                            </tr>
-                                            <tr class="row-odd">
-                                                <td class="text-align:left"><p>Synthetic data</p></td>
-                                                <td class="text-align:left"><p>Spheres, cylinders, and plates</p></td>
-                                                <td class="text-align:left"><p>Synthetic shapes for algorithm comparison</p></td>
-                                                <td class="text-align:left"><p>No publication available</p></td>
-                                                <td class="text-align:center"><p><a href="https://www.doi.org/10.5281/zenodo.7746338">here</a></p></td>
-                                            </tr>
-                                            <tr class="row-odd">
-                                                <td class="text-align:left"><p>Mouse</p></td>
-                                                <td class="text-align:left"><p>Knee (µCT)</p></td>
-                                                <td class="text-align:left"><p>22 images of trabecular bone at the proximal tibia</p></td>
-                                                <td class="text-align:left"><p>Lau A. et al. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4396845/">Joint bleeding in factor VIII deficient mice causes an acute loss of trabecular bone and calcification of joint soft tissues which is prevented with aggressive factor replacement</a></p></td>
-                                                <td class="text-align:center"><p><a href="https://www.doi.org/10.5281/zenodo.3890143">here</a></p></td>
-                                            </tr>
-                                            
-                                        </tbody>
-                                        </table>
-
-                                </section>
-                            </section>
-
-                            <br>
-                            <br>
-
-                            <section class="tex2jax_ignore mathjax_ignore" id="more-datasets">
-                                    <h1>More datasets<a class="headerlink d-none" href="#more-datasets"
-                                            title="Permalink to this headline">¶</a></h1>
-                                    <p> Here are more dataset with MSK images
-                                    </p>
+        <nav id="navbar" class="navbar">
+            
+            <ul>   
+                <li class="dropdown"><a href="#"><span>About us</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                    <li><a href="motivation.html">Why a community</a></li>
+                    <li><a href="members.html">Who we are</a></li>
+                    <li><a href="groups.html#">Working groups</a></li>
+                    <li><a href="boards.html">Advisory boards</a></li>
+                    
+                </ul>
+                </li>
     
-                                <section id="table">
-                                    
-                                    <br>
-                                    
-                                    <table class="colwidths-auto table">
-                                        <thead>
-                                            <tr class="row-odd"><th class="text-align:left head"><p>Species</p></th>
-                                            <th class="text-align:left head"><p>Anatomy</p></th>
-                                            <th class="text-align:left head"><p>Image characteristics</p></th>
-                                            <th class="text-align:left head"><p>Corresponding paper</p></th>
-                                            <th class="text-align:center head"><p>Link to repository</p></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="row-even">
-                                                <td class="text-align:left"><p>Human</p></td>
-                                                <td class="text-align:left"><p>Knee (MR)</p></td>
-                                                <td class="text-align:left"><p>Masks of bones and cartilages of about 600 images from the OAI dataset</p></td>
-                                                <td class="text-align:left"><p>Ambellan F. et al. <a href="https://pubmed.ncbi.nlm.nih.gov/30529224/">Automated segmentation of knee bone and cartilage combining statistical shape knowledge and convolutional neural networks: Data from the Osteoarthritis Initiative</a></p></td>
-                                                <td class="text-align:center"><p><a href="https://opus4.kobv.de/opus4-zib/frontdoor/index/index/docId/6995">here</a></p></td>
-                                            </tr>
-                                            <tr class="row-even">
-                                                <td class="text-align:left"><p>Human</p></td>
-                                                <td class="text-align:left"><p>Knee (MR)</p></td>
-                                                <td class="text-align:left"><p>1,370 knee MRI exams performed at Stanford University Medical Center.</p></td>
-                                                <td class="text-align:left"><p>Bien N. et al.  <a href="https://doi.org/10.1371/journal.pmed.1002699">Deep-learning-assisted diagnosis for knee magnetic resonance imaging: Development and retrospective validation of MRNet</a></p></td>
-                                                <td class="text-align:center"><p><a href="https://stanfordmlgroup.github.io/competitions/mrnet/">here</a></p></td>
-                                            </tr>
-                                            <tr class="row-odd">
-                                                <td class="text-align:left"><p>Human</p></td>
-                                                <td class="text-align:left"><p>Knee (MR)</p></td>
-                                                <td class="text-align:left"><p>46996 automated segmentations of bones and cartilages from the OAI dataset</p></td>
-                                                <td class="text-align:left"><p>Tack A. et al.  <a href="https://doi.org/10.1371/journal.pone.0258855">Towards novel osteoarthritis biomarkers: Multi-criteria evaluation of 46,996 segmented knee MRI data from the Osteoarthritis Initiative</a></p></td>
-                                                <td class="text-align:center"><p><a href="https://pubdata.zib.de/">here</a></p></td>
-                                            </tr>
-                                                <tr class="row-even">
-                                                <td class="text-align:left"><p>Human</p></td>
-                                                <td class="text-align:left"><p>Knee (MR)</p></td>
-                                                <td class="text-align:left"><p>2399 automated MR knee menisci</p></td>
-                                                <td class="text-align:left"><p>Tack A. et al.  <a href="https://www.frontiersin.org/articles/10.3389/fbioe.2021.747217">A deep multi-task learning method for detection of meniscal tears in MRI data from the Osteoarthritis Initiative database.</a></p></td>
-                                                <td class="text-align:center"><p><a href="https://pubdata.zib.de/">here</a></p></td>
-                                            </tr>
-                                                <tr class="row-odd">
-                                                <td class="text-align:left"><p>Human</p></td>
-                                                <td class="text-align:left"><p>Spine (CT)</p></td>
-                                                <td class="text-align:left"><p>160 CT image series of 141 patients with segmentation masks of 1725 vertebrae</p></td>
-                                                <td class="text-align:left"><p>Sekuboyina A. et al  <a href="https://pubmed.ncbi.nlm.nih.gov/34340104/">VerSe: A Vertebrae labelling and segmentation benchmark for multi-detector CT images</a></p></td>
-                                                <td class="text-align:center"><p><a href="https://osf.io/nqjyw/">here</a></p></td>
-                                            </tr>
-                                                <tr class="row-even">
-                                                <td class="text-align:left"><p>Human</p></td>
-                                                <td class="text-align:left"><p>Spine (MR)</p></td>
-                                                <td class="text-align:left"><p>Collection of single subject datasets across 19 centers and multi-subject datasets across 42 centers (for a total of 260 participants), spanning different MRI manufacturers</p></td>
-                                                <td class="text-align:left"><p>Cohen-Adad J. et al.  <a href="https://www.nature.com/articles/s41597-021-00941-8">Open-access quantitative MRI data of the spinal cord and reproducibility across participants, sites and manufacturers</a></p></td>
-                                                <td class="text-align:center"><p><a href="https://spine-generic.readthedocs.io/">here</a></p></td>
-                                            </tr>
-                                        </tbody>
-                                        </table>
+                <li class="dropdown"><a class="nav-link" href="#">
+                <span>Code</span> 
+                <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                    <li><a href="software.html">Software</a></li>
+                    <li><a href="templates.html">Templates</a></li>
+                    <li><a href="guidelines.html">Guidelines</a></li>
+                    
+                    
+                </ul>
+                </li>
+    
+                <li class="dropdown"><a class="nav-link" href="#">
+                <span>Data</span> 
+                <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                    <li><a href="datasets.html">Datasets</a></li>
+                    <li><a href="policies.html">Policies</a></li>       
+                </ul>
+                </li>
+    
+                <li><a class="nav-link scrollto" href="newcomers.html">I want to join!</a></li>
+    
+                <li class="dropdown"><a class="nav-link" href="#">
+                <span>More</span> 
+                <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="funding.html">Funding</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+                </li>
 
+                <li><a class="nav-link scrollto" href="contact.html">Questions?</a></li> 
 
-                                </section>
-                            </section>
-
-
-
-<!-- 
-                                    <div class="sphinx-bs container pb-4 docutils">
-                                        <div class="row docutils">
-                                            <div class="d-flex col-lg-6 col-md-4 col-sm-6 col-xs-12 p-2 docutils">
-                                                <div class="card w-100 text-center docutils">
-                                                    <div class="card-header bg-light docutils">
-                                                        <p class="card-text">Human</p>
-                                                    </div>
-                                                    <div class="card-body docutils">
-                                                        <p class="card-text">
-                                                            Radius and tibia (HR-pQCT): 1 radius and 1 tibia acquired
-                                                            with standard protocol (82µ)
-                                                        </p>
-                                                        <td class="text-align:center">
-                                                            <p><a href="https://zenodo.org/record/4073082">
-                                                                    <img src="_images/icon_link.png" width="30"
-                                                                        height="30">
-                                                                </a>
-                                                            </p>
-                                                        </td>
-                                                    </div>
-                                                    <div class="card-footer bg-white docutils">
-                                                        <p class="card-text">
-                                                            No publication available
-
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex col-lg-6 col-md-4 col-sm-6 col-xs-12 p-2 docutils">
-                                                <div class="card w-100 text-center docutils">
-                                                    <div class="card-header bg-light docutils">
-                                                        <p class="card-text">Mouse</p>
-                                                    </div>
-                                                    <div class="card-body docutils">
-                                                        <p class="card-text">
-                                                            Knee (µCT): 22 images of trabecular bone at the proximal
-                                                            tibia
-                                                        </p>
-                                                        <td class="text-align:center">
-                                                            <p><a href="https://zenodo.org/record/3909552">
-                                                                    <img src="_images/icon_link.png" width="30"
-                                                                        height="30"></a>
-                                                            </p>
-                                                        </td>
-                                                    </div>
-                                                    <div class="card-footer bg-white docutils">
-                                                        <p class="card-text">
-                                                            <td class="text-align:left">
-                                                                <p>Lau A. et al. <a
-                                                                        href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4396845/">Joint
-                                                                        bleeding in factor VIII deficient mice causes an
-                                                                        acute loss
-                                                                        of trabecular bone and calcification of joint
-                                                                        soft tissues
-                                                                        which is prevented with aggressive factor
-                                                                        replacement</a>
-                                                                </p>
-                                                            </td>
-
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> -->
-
-                                <!-- </section> -->
-                                <!-- <section id="organ-level-mr-ct">
-                                    <h2>Organ level: MR / CT<a class="headerlink d-none" href="#organ-level-mr-ct"
-                                            title="Permalink to this headline">¶</a></h2>
-                                    <ul class="simple">
-                                        <li>
-                                            <p>Human images</p>
-                                        </li>
-                                    </ul>
-
-                                    <div class="sphinx-bs container pb-4 docutils">
-                                        <div class="row docutils">
-                                            <div class="d-flex col-lg-6 col-md-4 col-sm-6 col-xs-12 p-2 docutils">
-                                                <div class="card w-100 text-center docutils">
-                                                    <div class="card-header bg-light docutils">
-                                                        <p class="card-text">Knee (MR)</p>
-                                                    </div>
-                                                    <div class="card-body docutils">
-                                                        <p class="card-text">
-                                                            Masks of bones and cartilages of about 600 images from the
-                                                            OAI dataset
-                                                        </p>
-                                                        <td class="text-align:center">
-                                                            <p><a
-                                                                    href="https://opus4.kobv.de/opus4-zib/frontdoor/index/index/docId/6995">
-                                                                    <img src="_images/icon_link.png" width="30"
-                                                                        height="30"></a>
-                                                            </p>
-                                                        </td>
-                                                    </div>
-                                                    <div class="card-footer bg-white docutils">
-                                                        <p class="card-text">
-                                                            <td class="text-align:left">
-                                                                <p>Ambellan F. et al. <a
-                                                                        href="https://pubmed.ncbi.nlm.nih.gov/30529224/">Automated
-                                                                        segmentation of knee bone and cartilage
-                                                                        combining
-                                                                        statistical shape knowledge and convolutional
-                                                                        neural
-                                                                        networks: Data from the Osteoarthritis
-                                                                        Initiative</a></p>
-                                                            </td>
-
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex col-lg-6 col-md-4 col-sm-6 col-xs-12 p-2 docutils">
-                                                <div class="card w-100 text-center docutils">
-                                                    <div class="card-header bg-light docutils">
-                                                        <p class="card-text">Knee (MR)</p>
-                                                    </div>
-                                                    <div class="card-body docutils">
-                                                        <p class="card-text">
-                                                            About 100 OAI images with corresponding femoral cartilage
-                                                            masks, thicknesses, and relaxometry
-                                                        </p>
-                                                        <td class="text-align:center">
-                                                            <p><a href="https://zenodo.org/record/2583184">
-                                                                    <img src="_images/icon_link.png" width="30"
-                                                                        height="30">
-                                                                </a>
-                                                            </p>
-                                                        </td>
-                                                    </div>
-                                                    <div class="card-footer bg-white docutils">
-                                                        <p class="card-text">
-                                                            <td class="text-align:left">
-                                                                <p>Bonaretti S. et al. <a
-                                                                        href="https://doi.org/10.1371/journal.pone.0226501">pyKNEEr:
-                                                                        An image analysis workflow for open and
-                                                                        reproducible
-                                                                        research on femoral knee cartilage</a></p>
-                                                            </td>
-
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="sphinx-bs container pb-4 docutils">
-                                        <div class="row docutils">
-                                            <div class="d-flex col-lg-6 col-md-4 col-sm-6 col-xs-12 p-2 docutils">
-                                                <div class="card w-100 text-center docutils">
-                                                    <div class="card-header bg-light docutils">
-                                                        <p class="card-text">Knee (MR)</p>
-                                                    </div>
-                                                    <div class="card-body docutils">
-                                                        <p class="card-text">
-                                                            1,370 knee MRI exams performed at Stanford University
-                                                            Medical Center.
-                                                        </p>
-                                                        <td class="text-align:center">
-                                                            <p><a
-                                                                    href="https://stanfordmlgroup.github.io/competitions/mrnet/">
-                                                                    <img src="_images/icon_link.png" width="30"
-                                                                        height="30"></a>
-                                                            </p>
-                                                        </td>
-                                                    </div>
-                                                    <div class="card-footer bg-white docutils">
-                                                        <p class="card-text">
-                                                            <td class="text-align:left">
-                                                                <p>Bien N. et al. <a
-                                                                        href="https://doi.org/10.1371/journal.pmed.1002699">Deep-learning-assisted
-                                                                        diagnosis for knee magnetic resonance imaging:
-                                                                        Development
-                                                                        and retrospective validation of MRNet</a></p>
-                                                            </td>
-
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex col-lg-6 col-md-4 col-sm-6 col-xs-12 p-2 docutils">
-                                                <div class="card w-100 text-center docutils">
-                                                    <div class="card-header bg-light docutils">
-                                                        <p class="card-text">Knee (MR)</p>
-                                                    </div>
-                                                    <div class="card-body docutils">
-                                                        <p class="card-text">
-                                                            46996 automated segmentations of bones and cartilages from
-                                                            the OAI dataset
-                                                        </p>
-                                                        <td class="text-align:center">
-                                                            <p><a href="https://pubdata.zib.de/">
-                                                                    <img src="_images/icon_link.png" width="30"
-                                                                        height="30">
-                                                                </a></p>
-                                                        </td>
-                                                    </div>
-                                                    <div class="card-footer bg-white docutils">
-                                                        <p class="card-text">
-                                                            <td class="text-align:left">
-                                                                <p>Tack A. et al. <a
-                                                                        href="https://doi.org/10.1371/journal.pone.0258855">Towards
-                                                                        novel osteoarthritis biomarkers: Multi-criteria
-                                                                        evaluation of 46,996 segmented knee MRI data
-                                                                        from the Osteoarthritis Initiative</a></p>
-                                                            </td>
-
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="sphinx-bs container pb-4 docutils">
-                                        <div class="row docutils">
-                                            <div class="d-flex col-lg-6 col-md-4 col-sm-6 col-xs-12 p-2 docutils">
-                                                <div class="card w-100 text-center docutils">
-                                                    <div class="card-header bg-light docutils">
-                                                        <p class="card-text">Knee (MR)</p>
-                                                    </div>
-                                                    <div class="card-body docutils">
-                                                        <p class="card-text">
-                                                            2399 automated MR knee menisci
-                                                        </p>
-                                                        <td class="text-align:center">
-                                                            <p><a href="https://pubdata.zib.de/">
-                                                                    <img src="_images/icon_link.png" width="30"
-                                                                        height="30">
-                                                                </a></p>
-                                                        </td>
-                                                    </div>
-                                                    <div class="card-footer bg-white docutils">
-                                                        <p class="card-text">
-                                                            <td class="text-align:left">
-                                                                <p>Tack A. et al. <a
-                                                                        href="https://www.frontiersin.org/articles/10.3389/fbioe.2021.747217">A
-                                                                        deep multi-task learning method for detection of
-                                                                        meniscal
-                                                                        tears in MRI data from the Osteoarthritis
-                                                                        Initiative
-                                                                        database.</a></p>
-                                                            </td>
-
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex col-lg-6 col-md-4 col-sm-6 col-xs-12 p-2 docutils">
-                                                <div class="card w-100 text-center docutils">
-                                                    <div class="card-header bg-light docutils">
-                                                        <p class="card-text">Spine (CT)</p>
-                                                    </div>
-                                                    <div class="card-body docutils">
-                                                        <p class="card-text">
-                                                            160 CT image series of 141 patients with segmentation masks
-                                                            of 1725 vertebrae
-                                                        </p>
-                                                        <td class="text-align:center">
-                                                            <p><a href="https://osf.io/nqjyw/">
-                                                                    <img src="_images/icon_link.png" width="30"
-                                                                        height="30">
-                                                                </a></p>
-                                                        </td>
-                                                    </div>
-                                                    <div class="card-footer bg-white docutils">
-                                                        <p class="card-text">
-                                                            <td class="text-align:left">
-                                                                <p>Sekuboyina A. et al <a
-                                                                        href="https://pubmed.ncbi.nlm.nih.gov/34340104/">VerSe:
-                                                                        A
-                                                                        Vertebrae labelling and segmentation benchmark
-                                                                        for
-                                                                        multi-detector CT images</a></p>
-                                                            </td>
-
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="sphinx-bs container pb-4 docutils">
-                                        <div class="row docutils">
-                                            <div class="d-flex col-lg-6 col-md-4 col-sm-6 col-xs-12 p-2 docutils">
-                                                <div class="card w-100 text-center docutils">
-                                                    <div class="card-header bg-light docutils">
-                                                        <p class="card-text">Spine (MR)</p>
-                                                    </div>
-                                                    <div class="card-body docutils">
-                                                        <p class="card-text">
-                                                            Collection of single subject datasets across 19 centers and
-                                                            multi-subject datasets across 42 centers (for a total of 260
-                                                            participants), spanning different MRI manufacturers
-                                                        </p>
-                                                        <td class="text-align:center">
-                                                            <p><a href="https://spine-generic.readthedocs.io/">
-                                                                    <img src="_images/icon_link.png" width="30"
-                                                                        height="30"></a>
-                                                            </p>
-                                                        </td>
-                                                    </div>
-                                                    <div class="card-footer bg-white docutils">
-                                                        <p class="card-text">
-                                                            <td class="text-align:left">
-                                                                <p>Cohen-Adad J. et al. <a
-                                                                        href="https://www.nature.com/articles/s41597-021-00941-8">Open-access
-                                                                        quantitative MRI data of the spinal cord and
-                                                                        reproducibility
-                                                                        across participants, sites and manufacturers</a>
-                                                                </p>
-                                                            </td>
-
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                            </section> -->
-
-                            <script type="text/x-thebe-config">
-    {
-        requestKernel: true,
-        binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
-            ref: "master",
-        },
-        codeMirrorConfig: {
-            theme: "abcdef",
-            mode: "python"
-        },
-        kernelOptions: {
-            kernelName: "python3",
-            path: "./."
-        },
-        predefinedOutput: true
-    }
-    </script>
-                            <script>kernelName = 'python3'</script>
-
-                        </div>
-
-
-                        <!-- Previous / next buttons -->
-                        <!-- <div class='prev-next-area'>
-                            <a class='left-prev' id="prev-link" href="packages.html" title="previous page">
-                                <i class="fas fa-angle-left"></i>
-                                <div class="prev-next-info">
-                                    <p class="prev-next-subtitle">previous</p>
-                                    <p class="prev-next-title">Python packages</p>
-                                </div>
-                            </a>
-                            <a class='right-next' id="next-link" href="learning.html" title="next page">
-                                <div class="prev-next-info">
-                                    <p class="prev-next-subtitle">next</p>
-                                    <p class="prev-next-title">Learning material</p>
-                                </div>
-                                <i class="fas fa-angle-right"></i>
-                            </a>
-                        </div> -->
-
-                    </div>
-                </div>
-                <br>
-                <footer class="footer">
-                    <p>
-                        Website by the ORMIR community. Template modified from <a href="https://jupyterbook.org/en/stable/intro.html" > Jupyter Book</a>
-                    </p>
-                </footer>
-            </main>
-
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+    
 
         </div>
-    </div>
+    </header><!-- End Header -->
 
-    <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
+    <!-- ======= Section ======= -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 offset-md-0">
+  
+                    <div class="section-title">
+                        <h2>Datasets</h2> 
+                    </div>
+
+                    <div class="section-sub-title">
+                        Here are <a href="#ORMIR-datasets">datasets shared and curated by member of the ORMIR community</a> and <a href="#other-datasets">other datasets</a> of MSK images available online
+                    </div>
+
+                    <!-- Trick to jump at the top of the title (not bottom) for internal links -->
+                    <span class="anchor" id="ORMIR-datasets"></span>
+                    <p>
+                        Datasets created by members of the ORMIR community:
+                    <p>
+    
+                    <!-- <div class="table-wrapper"> -->
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Species</th>
+                                <th>Anatomy</th>
+                                <th>Image characteristics</th>
+                                <th>Paper</th>
+                                <th>Link to repository</th>
+                            </tr>
+                        </thead>
+                        
+                        <tbody>
+                            
+                            <tr>
+                                <td>Human</td>
+                                <td>Trabecular bone (micro CT)</td>
+                                <td>Segmented trabecular bone samples and corresponding distance tranforms</td>
+                                <td>Abstract at QMSKI 2024</td>
+                                <td><a href="https:www.doi.org/10.5281/zenodo.11061946">Zenodo</a></td>
+                            </tr>
+
+                            <tr>
+                                <td>Human</td>
+                                <td>Radius and tibia (HR-pQCT)</td>
+                                <td>1 radius and 1 tibia acquired with standard protocol (82µ)</td>
+                                <td>No publication available</td>
+                                <td><a href="https:www.doi.org/10.5281/zenodo.4072904">Zenodo</a></td>
+                            </tr>
+
+                            <tr>
+                                <td>Human</td>
+                                <td>Knee (MR)</td>
+                                <td>About 100 OAI images with corresponding femoral cartilage masks, thicknesses, and relaxometry</td>
+                                <td>Bonaretti S. et al.  <a href="https://doi.org/10.1371/journal.pone.0226501">pyKNEEr: An image analysis workflow for open and reproducible research on femoral knee cartilage</a></td>
+                                <td><a href="https://www.doi.org/10.5281/zenodo.2530608">Zenodo</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Synthetic data</td>
+                                <td>Spheres, cylinders, and plates</td>
+                                <td>Synthetic shapes for algorithm comparison</td>
+                                <td>No publication available</td>
+                                <td><a href="https://www.doi.org/10.5281/zenodo.7746338">Zenodo</a></td>
+                            </tr>
+                            <tr>
+                                <td>Mouse</td>
+                                <td>Knee (µCT)</td>
+                                <td>22 images of trabecular bone at the proximal tibia</td>
+                                <td>Lau A. et al. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4396845/">Joint bleeding in factor VIII deficient mice causes an acute loss of trabecular bone and calcification of joint soft tissues which is prevented with aggressive factor replacement</a></td>
+                                <td><a href="https://www.doi.org/10.5281/zenodo.3890143">Zenodo</a></td>
+                            </tr>
+
+                        </tbody>
+                    </table>    
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+                
+
+            <div class="row">
+                <div class="col-md-12 offset-md-0">
+                    <!-- Trick to jump at the top of the title (not bottom) for internal links -->
+                    <span class="anchor" id="other-datasets"></span>
+                    <p>
+                        Dataset of MSK images available online:
+                    </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Species</th>
+                                <th>Anatomy</th>
+                                <th>Image characteristics</th>
+                                <th>Paper</th>
+                                <th>Link to repository</th>
+                            </tr>
+                        </thead>
+                        
+                        <tbody>
+                            <tr>
+                                <td>Human</td>
+                                <td>Knee (MR)</td>
+                                <td>Masks of bones and cartilages of about 500 images from the OAI dataset</td>
+                                <td>Ambellan F. et al. <a href="https://pubmed.ncbi.nlm.nih.gov/30529224/">Automated segmentation of knee bone and cartilage combining statistical shape knowledge and convolutional neural networks: Data from the Osteoarthritis Initiative</a></td>
+                                <td><a href="https://opus4.kobv.de/opus4-zib/frontdoor/index/index/docId/6995">ZIB</a></td>
+                            </tr>
+                            <tr>
+                                <td>Human</td>
+                                <td>Knee (MR)</td>
+                                <td>1,370 knee MRI exams performed at Stanford University Medical Center.</td>
+                                <td>Bien N. et al.  <a href="https://doi.org/10.1371/journal.pmed.1002699">Deep-learning-assisted diagnosis for knee magnetic resonance imaging: Development and retrospective validation of MRNet</a></td>
+                                <td><a href="https://stanfordmlgroup.github.io/competitions/mrnet/">Stanford repository</a></td>
+                            </tr>
+                            <tr class="row-odd">
+                                <td>Human</td>
+                                <td>Knee (MR)</td>
+                                <td>46996 automated segmentations of bones and cartilages from the OAI dataset</td>
+                                <td>Tack A. et al.  <a href="https://doi.org/10.1371/journal.pone.0258855">Towards novel osteoarthritis biomarkers: Multi-criteria evaluation of 46,996 segmented knee MRI data from the Osteoarthritis Initiative</a></td>
+                                <td><a href="https://pubdata.zib.de/">ZIB</a></td>
+                            </tr>
+                                <tr>
+                                <td>Human</td>
+                                <td>Knee (MR)</td>
+                                <td>2399 automated MR knee menisci</td>
+                                <td>Tack A. et al.  <a href="https://www.frontiersin.org/articles/10.3389/fbioe.2021.747217">A deep multi-task learning method for detection of meniscal tears in MRI data from the Osteoarthritis Initiative database.</a></td>
+                                <td><a href="https://pubdata.zib.de/">ZIB</a></td>
+                            </tr>
+                                <tr class="row-odd">
+                                <td>Human</td>
+                                <td>Spine (CT)</td>
+                                <td>160 CT image series of 141 patients with segmentation masks of 1725 vertebrae</td>
+                                <td>Sekuboyina A. et al  <a href="https://pubmed.ncbi.nlm.nih.gov/34340104/">VerSe: A Vertebrae labelling and segmentation benchmark for multi-detector CT images</a></td>
+                                <td><a href="https://osf.io/nqjyw/">OSF</a></td>
+                            </tr>
+                                <tr>
+                                <td>Human</td>
+                                <td>Spine (MR)</td>
+                                <td>Collection of single subject datasets across 19 centers and multi-subject datasets across 42 centers (for a total of 260 participants), spanning different MRI manufacturers</td>
+                                <td>Cohen-Adad J. et al.  <a href="https://www.nature.com/articles/s41597-021-00941-8">Open-access quantitative MRI data of the spinal cord and reproducibility across participants, sites and manufacturers</a></td>
+                                <td><a href="https://spine-generic.readthedocs.io/">Spine generic</a></td>
+                            </tr>
+
+                        </table>
+                    <!-- </div> -->
+                    
+    
+                </div>
+
+                
+
+        </div>
+        <br>
+        <br>
+        <center>
+
+            <strong>Is your dataset missing? <a href="mailto:ormircommunity@gmail.com">Contact us!</a> </strong>
+
+        </center>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+        
+        <div class="container d-md-flex py-4">
+
+        <div class="me-md-auto text-center text-md-start"></div>
+        <div class="social-links text-center text-md-right pt-3 pt-md-0">
+            <a href="https://github.com/ORMIRcommunity" class="github"><i class="bx bxl-github"></i></a>
+            <a href="https://www.linkedin.com/in/ormir-community-63b824307/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://twitter.com/ORMIR_Community" class="twitter"><i class="bx bxl-twitter"></i></a>
+        </div>
+        </div>
+    </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+
+
+ 
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
+

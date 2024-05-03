@@ -1,492 +1,284 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>ORMIR &#8212; ORMIR</title>
-    <link rel="icon" type="image/x-icon" href="/_images/ormir_favicon.ico">
+  <title>ORMIR community</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    <link href="_static/css/theme.css" rel="stylesheet">
-    <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-    <link rel="stylesheet" href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
-    <link rel="preload" as="font" type="font/woff2" crossorigin
-        href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-    <link rel="preload" as="font" type="font/woff2" crossorigin
-        href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css"
-        href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
-    <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
-
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-        const thebe_selector = ".thebe,.cell"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output, .cell_output"
-    </script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script src="_static/js/calendar.js" defer></script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="About" href="about.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-
-
-    <!-- Google Analytics -->
-
-    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
-    <script>
-        window.ga = window.ga || function () {
-            (ga.q = ga.q || []).push(arguments)
-        };
-        ga.l = +new Date;
-        ga('create', 'xxx', 'auto');
-        ga('set', 'anonymizeIp', true);
-        ga('send', 'pageview');
-    </script>
-
+  <!-- =======================================================
+  * Template Name: Tempo
+  * Updated: Jan 09 2024 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/tempo-free-onepage-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
-<body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+<body>
 
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
 
-<!-- Navigation bar (top) -->
-    <div class="container-fluid" id="banner">
-        <nav class="navbar navbar-dark navbar-expand-lg bd-navbar bg-light shadow fixed-top">
-            <div class="container-xl">
-                <a id="logo" href="#">
-                    <img src="_images/ormir_logo.png" alt="ORMIR Logo" style="padding-right: 15px; width:100px">
-                </a>
-                <div id="navbar" class="mr-auto">
-                    <!-- <a class="mr-sm-2 nav-header" href="#">Home</a> -->
-                    <a class="mr-sm-2 nav-header" href="about.html">About</a>
-                    <!-- <a class="mr-sm-2 nav-header" href="projects.html">Projects</a> -->
-                    <a class="mr-sm-2 nav-header" href="packages.html">Packages</a>
-                    <a class="mr-sm-2 nav-header" href="nb_gallery.html">Notebooks</a>
-                    <a class="mr-sm-2 nav-header" href="guidelines.html">Templates/Guidelines</a>
-                    <a class="mr-sm-2 nav-header" href="datasets.html">Datasets</a>
-                    <a class="mr-sm-2 nav-header" href="learning.html">Learning</a>
-                    <a class="mr-sm-2 nav-header" href="publications_funding.html">Publications/Funding/Events</a> 
-                    <!-- <a class="mr-sm-2 nav-header" href="faq.html">FAQ</a> -->
-                </div>
-            </div>
-        </nav>
+      <!-- <h1 class="logo"><a href="index.html">ORMIR</a></h1> -->
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar">
+        <ul>   
+          <li class="dropdown"><a href="#"><span>About us</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="motivation.html">Why a community</a></li>
+              <li><a href="members.html">Who we are</a></li>
+              <li><a href="groups.html#">Working groups</a></li>
+              <li><a href="boards.html">Advisory boards</a></li>
+              
+            </ul>
+          </li>
+
+          <li class="dropdown"><a class="nav-link" href="#">
+            <span>Code</span> 
+            <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="software.html">Software</a></li>
+              <li><a href="templates.html">Templates</a></li>
+              <li><a href="guidelines.html">Guidelines</a></li>
+              
+              
+            </ul>
+          </li>
+
+          <li class="dropdown"><a class="nav-link" href="#">
+            <span>Data</span> 
+            <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="datasets.html">Datasets</a></li>
+              <li><a href="policies.html">Policies</a></li>    
+            </ul>
+          </li>
+
+          <li><a class="nav-link scrollto" href="newcomers.html">I want to join!</a></li>
+
+          <li class="dropdown"><a class="nav-link" href="#">
+            <span>More</span> 
+            <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="publications.html">Publications</a></li>
+              <li><a href="funding.html">Funding</a></li>
+              <li><a href="events.html">Events</a></li>
+            </ul>
+          </li>
+
+          <li><a class="nav-link scrollto" href="contact.html">Questions?</a></li>
+
+      </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!-- .navbar -->
+
     </div>
-    <div>&nbsp</div>
+  </header><!-- End Header -->
 
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <!-- <h3>Welcome to <strong>Tempo</strong></h3> -->
+      <h1>ORMIR community</h1>
+      <h2>Open and Reproducible Musculoskeletal Imaging Research community</h2>
+      <a href="#about" class="btn-get-started scrollto"><i class="bi bi-arrow-down-short"></i></a> 
+      <!-- <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> -->
+    </div>
+  </section><!-- End Hero -->
 
-    <div class="container-xl">
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <!-- <div class="section-title"> -->
+          <!-- <h2>About</h2> -->
+          <!-- <h3>Our goals and values</h3>
+          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+        </div> -->
+
+        <div class="row content">
+          <div class="col-lg-6" id="goals">
+            <h3>Our goals</h3>
+            <br>
+            <ul>
+              <li><i class="ri-circle-fill"></i> <b>Create</b> open, reproducible, well-tested, and well-documented <b>code</b> to analyze musculoskeletal (MSK) images</li>
+              <li><i class="ri-circle-fill"></i> <b>Standardize</b> <b>data acquisition and management</b> to favor data sharing, algorithm comparison, and federated learning</li>
+              <li><i class="ri-circle-fill"></i> <b>Promote</b> a <b>culture of openness and reproducibility</b> in MSK imaging research for a faster advancement of the field</li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-6 pt-4 pt-lg-0" id="values">
+            <h3>Our values</h3>
+            <br>
+            <ul>
+              <li> <i class="ri-circle-fill"></i>Be <b>inclusive</b>, <b>friendly</b>, and <b>patient</b></li>
+              <li> <i class="ri-circle-fill"></i>Be <b>welcoming</b>, <b>considerate</b>, and <b>respectful</b></li>
+              <li> <i class="ri-circle-fill"></i>Be <b>careful</b> in the words you choose. Be <b>kind</b></li>
+              <li> <i class="ri-circle-fill"></i>Moderate your  <b>expectations</b>. We are all busy. Different people contribute differently</li>
+              <li> <i class="ri-circle-fill"></i>When we disagree, try to  <b>understand</b> why. A simple  <b>apology</b> can go a long way.</li>
+            </ul>
+            We adapted these principles from the <a href="https://jupyter.org/governance/conduct/code_of_conduct.html">Project Jupyter Code of Conduct</a>
+            <!-- <a href="#" class="btn-learn-more">Learn More</a> -->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>I want to..</h2>
+          <!-- <h3>I want to...</h3> -->
+          <!-- <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p> -->
+        </div>
+
         <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-user-plus"></i></div>
+              <h4 class="title">Join ORMIR!</h4>
+              <p class="description">Contribute to open and reproducible MSK research!</p>
+              <p class="view-more"><a href="newcomers.html">Read more &#10230;</a></p>
+            </div>
+          </div>
 
-            <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-laptop"></i></div>
+              <h4 class="title">Use  code</h4>
+              <p class="description">Find the Python packages that best fit your research needs!</p>
+                <p class="view-more"><a href="software.html">Read more &#10230;</a></p>
+            </div>
+          </div>
 
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-data"></i></div>
+              <h4 class="title">Access data</h4>
+              <p class="description">Get MSK imaging data to answer your research questions!</p>
+              <p class="view-more"><a href="datasets.html">Read more &#10230;</a></p>
+            </div>
+          </div>
 
-<!-- Table of contents (left)-->
-                <div class="topbar container-xl position-fixed">
-                    <div class="topbar-contents row">
-                        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-                            <div class="tocsection onthispage pt-5 pb-3">
-                                <!-- <i class="fas fa-list"></i> Contents -->
-                            </div>
-                            <nav id="bd-toc-nav" aria-label="Page">
-                                <ul class="visible nav section-nav flex-column">
-                                    
-                                    
-                                    <li class="toc-h1 nav-item toc-entry">
-                                        <a class="reference internal nav-link" href="#our-goals">
-                                            Our Goals
-                                        </a>
-                                    </li>
-                                    <!-- <li class="toc-h1 nav-item toc-entry">
-                                        <a class="reference internal nav-link" href="#">
-                                            ORMIR
-                                        </a>
-                                        <ul class="visible nav section-nav flex-column">
-                                            <li class="toc-h2 nav-item toc-entry">
-                                                <a class="reference internal nav-link" href="#our-goals">
-                                                    Our Goals
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li> -->
-
-                                    <li class="toc-h1 nav-item toc-entry">
-                                        <a class="reference internal nav-link" href="#our-values">
-                                            Our values
-                                        </a>
-                                    </li>
-
-                                    <li class="toc-h1 nav-item toc-entry">
-                                        <a class="reference internal nav-link" href="#i-want-to">
-                                            I want to...
-                                        </a>
-                                    </li>
-
-                                    <li class="toc-h1 nav-item toc-entry">
-                                        <a class="reference internal nav-link" href="#news">
-                                            News
-                                        </a>
-                                        <!-- <ul class="visible nav section-nav flex-column">
-                                            <li class="toc-h2 nav-item toc-entry">
-                                                <a class="reference internal nav-link"  
-                                                    href="#jnb-template">
-                                                    ORMIR Jupyter Notebook template
-                                                </a>
-                                            </li>
-                                            <li class="toc-h2 nav-item toc-entry">
-                                                <a class="reference internal nav-link"
-                                                    href="#JCW2022">
-                                                    Jupyter Community Workshop 2022
-                                                </a>
-                                            </li>
-                                        </ul> -->
-                                    </li>
-                                    
-                                    <li class="toc-h1 nav-item toc-entry">
-                                        <a class="reference internal nav-link" href="#event-calendar">
-                                            Calendar
-                                        </a>
-                                    </li>
-
-                                </ul>
-
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-
-
-<!-- Page content -->
-                <div id="main-content" class="row">
-                    <div id="whitespace" class="col-2 invisible"></div>
-                    <div class="col-11 col-md-8 pl-md-5 pr-md-0">
-
-                        <div>
-                            
-                            <!-- Title -->
-                            <section class="tex2jax_ignore mathjax_ignore" id="ormir">
-                                <h1>ORMIR<a class="headerlink d-none" href="#ormir" title="Permalink to this headline">¶</a></h1>
-                                <p>
-                                    The community for Open and Reproducible Musculoskeletal Imaging Research<br/>
-                                </p>
-                               
-                              
-                            </section>
-
-                            <!-- Goals and content -->
-                            <section class="tex2jax_ignore mathjax_ignore" id="goal-content">
-                                
-                                <!-- Goals -->
-                                <section id="our-goals" class="float-left col-6 d-block">
-                                        <h2 >Our Goals</h2>
-                                    <ul class="simple">
-                                        <li> <b>Create</b> open, reproducible, well-tested, and well-documented software to analyze musculoskeletal (MSK) images</li>
-                                        <li> <b>Standardize</b> data acquisition and storage to favor data sharing, algorithm comparison, and federated learning</a></li>
-                                        <li> <b>Promote</b> a culture of openness and reproducibility in MSK imaging research for a faster advancement of the field</a></li>
-                                    </ul>
-                                </section>
-
-                                <!-- Content -->
-                                <section class="col-6 float-sm-left d-block">
-                                    
-                                    <h3><a class="headerlink d-none" href="#content" title="Permalink to this headline">¶</a></h3>
-                                    <img src="_images/ormir_summary.png" alt="Dynamic Image" class="dynamic-image">
-
-
-                                   <!-- <button class="btn btn-outline-secondary col-10 m-sm-1"
-                                        onclick="window.location.href='about.html'">
-                                        Discover our community
-                                    </button>
-                                    <br>
-                                    <button class="btn btn-outline-secondary col-10 m-sm-1"
-                                        onclick="window.location.href='packages.html'">
-                                        Python packages
-                                    </button>
-                                    <br>
-                                    <button class="btn btn-outline-secondary col-10 m-sm-1"
-                                        onclick="window.location.href='nb_gallery.html'">
-                                        Workflows in Jupyter notebook
-                                    </button>
-                                    <br>
-                                    <button class="btn btn-outline-secondary col-10 m-sm-1"
-                                        onclick="window.location.href='datasets.html'">
-                                        Repositories with MSK images
-                                    </button>
-                                    <br>
-                                    <button class="btn btn-outline-secondary col-10 m-sm-1"
-                                        onclick="window.location.href='guidelines.html'">
-                                        Guidelines on how to contribute
-                                    </button>
-                                    <br>
-                                    <button class="btn btn-outline-secondary col-10 m-sm-1"
-                                        onclick="window.location.href='learning.html'">
-                                        Learn the Jupyter/Python environment
-                                    </button>
-                                    <br>
-                                     -->
-                                </section>
-                            </section>
-                        
-                            <div class="d-flex col-12 p-2 docutils"></div> <!-- Need this to create the horizontal line -->
-                            <hr>
-
-                            <!-- News -->
-                            <section class="tex2jax_ignore mathjax_ignore" id="our-values">            
-                                
-
-                                <h2> Our values</h2>
-
-                                We embrace the <a href="https://jupyter.org/governance/conduct/code_of_conduct.html">Project Jupyter Code of Conduct</a>. The main principles are: 
-
-                                <ul class="simple">
-                                    <li>Be inclusive, friendly, and patient </li>
-                                    <li>Be welcoming, considerate, and respectful </li>
-                                    <li>Be careful in the words you choose. Be kind. </li>
-                                    <li>Moderate your expectations. We are all busy. Different people contribute differently. </li>
-                                    <li>When we disagree, try to understand why. A simple apology can go a long way.</li>
-                                </ul>
-                            </section>
-                            <br>
-                            <hr>
-                            
-
-                            <!-- I want to... -->
-                        
-                            <section class="tex2jax_ignore mathjax_ignore" id="i-want-to">
-                                <h2> I want to...</h2>
-                                
-                                <!-- join -->
-                                <section id="our-goals" class="float-left col-4 d-block">
-                                    <h3 >Join ORMIR!</h3>
-                                    Just email any member of the <a href="about.html#community-advisory-board">Community Advisory Board</a>, and we will get you started!          
-                                </section>
-
-                                <!-- join -->
-                                <section id="our-goals" class="float-left col-4 d-block">
-                                    <h3 >Use code and data!</h3>
-                                    Look into our 
-                                    <a href="packages.html">Python packages</a>, 
-                                    <a href="nb_gallery.html">Jupyter notebooks</a>, and 
-                                    <a href="datasets.html">datasets</a>!
-                                    <br>
-                                    If you want to contribute, have a look at our  
-                                    <a href="guidelines.html">coding guidelines</a>! 
-
-                                </section>
-
-                                <!-- learn -->
-                                <section id="our-goals" class="float-left col-4 d-block">
-                                    <h3 >Learn Open Science!</h3>
-                                    Find tutorials, notebooks, and cheat sheets <a href="learning.html">here</a>!
-                                </section>
-
-                            </section>
-                            
-
-                            <div class="d-flex col-12 p-2 docutils"></div> <!-- Need this to create the horizontal line -->
-                            <hr>
-
-                            <!-- News -->
-                            <section class="tex2jax_ignore mathjax_ignore" id="news">            
-                                
-
-                                <h2> News</h2>
-
-
-                                <!-- Manifesto -->
-                                <section id="">
-                                    <h4>ORMIR manifesto paper - preprint</h4>
-                                    <ul class="simple">
-                                        <li> Find the preprint of the manifesto paper of our community 
-                                            <a class="reference external" href="https://www.doi.org/10.5281/zenodo.8119062">here</a> 
-                                    </ul>
-                                </section>
-                            
-                                <!-- JNb template -->
-                                <section id="jnb-template">
-                                    <h4>ORMIR Jupyter Notebook template</h4>
-                                    <ul class="simple">
-                                        <li> We have created a template to standardize our Jupyter notebooks. 
-                                            Download the template from 
-                                            <a class="reference external" href="https://github.com/ORMIRcommunity/templates/blob/main/ORMIR_nb_template.ipynb">GitHub</a> 
-                                    </ul>
-                                </section>
-
-                                <!-- JCW -->
-                                <section id="JCW2022">
-                                    <h4>Jupyter Community Workshop 2022</h4>
-                                    <ul class="simple">
-                                        <li> We held our Jupyter Community Workshop "Building the Jupyter Community in MSK imaging Research" on June 9-11, 2022 in Maastricht (The Netherlands). 
-                                            See our full report 
-                                            <a class="reference external" href="https://github.com/JCMSK/2022_JCW/blob/main/README.md">here</a></li>
-                                    </ul>
-                                </section>
-
-                            </section>
-
-                            <br>
-                            <hr>
-
-                            <!-- Calendar -->
-                            <section class="tex2jax_ignore mathjax_ignore" id="event-calendar">
-                                <h2> Calendar</h2>
-                                <div class="d-flex col-12 p-2 docutils">
-                                    <div class="card w-100 text-center docutils">
-                                        <div class="card-header bg-light docutils"
-                                            style="display: flex; flex-direction: row; align-items: center;">
-                                            <button style="width:10%" class="border-0 bg-transparent"
-                                                onclick="prevMonth()"><img src=" _images/icon_arrow_l.png"
-                                                    height="30"></button>
-                                            <div id="month-name" class="font-weight-bolder" style="width:80%">Month
-                                            </div>
-                                            <button style="width:10%" class="border-0 bg-transparent"
-                                                onclick="nextMonth()"><img src="_images/icon_arrow_r.png"
-                                                    height="30"></button>
-                                        </div>
-                                        <div class="card-body docutils p-0">
-                                            <table class="calendar">
-                                                <tr class="days">
-                                                    <th>Sun</th>
-                                                    <th>Mon</th>
-                                                    <th>Tue</th>
-                                                    <th>Wed</th>
-                                                    <th>Thu</th>
-                                                    <th>Fri</th>
-                                                    <th>Sat</th>
-                                                </tr>
-                                                <tr class="day-box">
-                                                    <td id="r1c1">a</td>
-                                                    <td id="r1c2">a</td>
-                                                    <td id="r1c3">a</td>
-                                                    <td id="r1c4">a</td>
-                                                    <td id="r1c5">a</td>
-                                                    <td id="r1c6">a</td>
-                                                    <td id="r1c7">a</td>
-                                                </tr>
-                                                <tr class="day-box">
-                                                    <td id="r2c1">a</td>
-                                                    <td id="r2c2">a</td>
-                                                    <td id="r2c3">a</td>
-                                                    <td id="r2c4">a</td>
-                                                    <td id="r2c5">a</td>
-                                                    <td id="r2c6">a</td>
-                                                    <td id="r2c7">a</td>
-                                                </tr>
-                                                <tr class="day-box">
-                                                    <td id="r3c1">a</td>
-                                                    <td id="r3c2">a</td>
-                                                    <td id="r3c3">a</td>
-                                                    <td id="r3c4">a</td>
-                                                    <td id="r3c5">a</td>
-                                                    <td id="r3c6">a</td>
-                                                    <td id="r3c7">a</td>
-                                                </tr>
-                                                <tr class="day-box">
-                                                    <td id="r4c1">a</td>
-                                                    <td id="r4c2">a</td>
-                                                    <td id="r4c3">a</td>
-                                                    <td id="r4c4">a</td>
-                                                    <td id="r4c5">a</td>
-                                                    <td id="r4c6">a</td>
-                                                    <td id="r4c7">a</td>
-                                                </tr>
-                                                <tr class="day-box day-box-extra">
-                                                    <td id="r5c1">a</td>
-                                                    <td id="r5c2">a</td>
-                                                    <td id="r5c3">a</td>
-                                                    <td id="r5c4">a</td>
-                                                    <td id="r5c5">a</td>
-                                                    <td id="r5c6">a</td>
-                                                    <td id="r5c7">a</td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                        <div class="card-footer bg-white docutils d-none" id="event-banner">
-                                            <p class="font-weight-bolder" style="font-size: large;"
-                                                id="event-banner-name">Event name</p>
-                                            <p id="event-banner-time">time</p>
-                                            <p id="event-banner-text">description</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-
-                            <script type="text/x-thebe-config">
-                            {
-                                requestKernel: true,
-                                binderOptions: {
-                                    repo: "binder-examples/jupyter-stacks-datascience",
-                                    ref: "master",
-                                },
-                                codeMirrorConfig: {
-                                    theme: "abcdef",
-                                    mode: "python"
-                                },
-                                kernelOptions: {
-                                    kernelName: "python3",
-                                    path: "./."
-                                },
-                                predefinedOutput: true
-                            }
-                            </script>
-                            <script>kernelName = 'python3'</script>
-
-                        </div>
-
-
-                        <!-- Previous / next buttons
-                        <div class='prev-next-area'>
-                            <a class='right-next' id="next-link" href="about.html" title="next page">
-                                <div class="prev-next-info">
-                                    <p class="prev-next-subtitle">next</p>
-                                    <p class="prev-next-title">About</p>
-                                </div>
-                                <i class="fas fa-angle-right"></i>
-                            </a>
-                        </div> -->
-
-                    </div>
-                </div>
-
-                <br>
-                <footer class="footer">
-                    <p>
-                        Website by the ORMIR community. Template modified from <a href="https://jupyterbook.org/en/stable/intro.html" > Jupyter Book</a>
-                    </p>
-                </footer>
-            </main>
-
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-hive"></i></div>
+              <h4 class="title">Know more</h4>
+              <p class="description">Learn more about the ORMIR community and us!</p>
+              <p class="view-more"><a href="motivation.html">Read more &#10230;</a></p>
+            </div>
+          </div>
 
         </div>
-    </div>
 
-    <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Calendar ======= -->
+    <!-- Info on how to embed calendar:
+    https://support.google.com/calendar/answer/41207?hl=en
+   -->
+    <section>
+        
+      <div class="container">     
+        <div class="row">
+          <div class="col-md-12 offset-md-0">
+
+            <div class="section-title">
+              <h2>Join our meetings</h2>
+            </div>
+            
+              <div class="section-sub-title">
+                We have quarterly community meetings and various meetings for the Technical Advisory Board, Community Advisory Board, or for projects. Join us!
+              </div>
+
+              <div align="center">
+                <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FZurich&bgcolor=%23ffffff&showTitle=0&showPrint=0&showCalendars=0&src=b3JtaXJjb21tdW5pdHlAZ21haWwuY29t&color=%23039BE5" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+   
+
+    
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Tempo</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/tempo-free-onepage-bootstrap-theme/ -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>.
+          Template inspired from <a href="https://docbox-astro.vercel.app/">Docbox</a>
+          <br>
+          Modified by the <a href="index.html">ORMIR community</a>
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="https://github.com/ORMIRcommunity" class="github"><i class="bx bxl-github"></i></a>
+        <a href="https://www.linkedin.com/in/ormir-community-63b824307/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://twitter.com/ORMIR_Community" class="twitter"><i class="bx bxl-twitter"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
 
