@@ -25,10 +25,7 @@
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- CSS Files for Python code -->
-  <link rel="stylesheet" type="text/css" href="assets/css/pygments.css" />
-  <link rel="stylesheet" type="text/css" href="assets/css/sphinx-book-theme.css" />
-
+ 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
@@ -95,6 +92,8 @@
                   <li><a href="events.html">Events</a></li>
               </ul>
               </li>
+
+              <li><a class="nav-link scrollto" href="contact.html">Questions?</a></li> 
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
           </nav><!-- .navbar -->
@@ -112,6 +111,11 @@
             <div class="section-title">
               <div class="col-md-12 offset-md-0">
               <h2>Coding guidelines</h2>
+              <div class="section-sub-title">
+                
+                Here are our guidelines for <a href="#code">code</a>, <a href="#data">data</a>, and <a href="#publications">publications</a>
+           
+            </div>
               </div>
             </div>
 
@@ -120,8 +124,13 @@
             <div class="row">
                 <div class="col-md-12 offset-md-0">
 
+                  <!-- Trick to jump at the top of the title (not bottom) for internal links -->
+                  <span class="anchor" id="code"></span>
+                  <h4>Python code</h4>
                     <!-- Python code style ----------------------------------->
                     <div class="accordion-container">
+
+                        
                         <button class="accordion">
                           What Python <i>code</i> style do I use?
                         </button>
@@ -211,6 +220,8 @@
                       </div>
                     </div>
 
+                    <br>
+                    <h4>Python documentation</h4>
 
                     <!-- Python documentation style (docstrings) ----------------------------------->
                     <div class="accordion-container">
@@ -329,7 +340,8 @@
                       </div>
                     </div>
                     
-
+                    <br>
+                    <h4>Code license</h4>
                     <!-- What license do I use? ----------------------------------->
                     <div class="accordion-container">
                       <button class="accordion">
@@ -345,6 +357,21 @@
                         <a class="reference external" href="https://www.youtube.com/watch?v=GlAnKGBnhFY">this video</a> (from minute 4)
                       </div>
                     </div>
+
+                    <br>
+                    <h4>Jupyter notebook</h4>
+
+
+                    <!-- What are Jupyter notebooks useful for? ----------------------------------->
+                    <div class="accordion-container">
+                      <button class="accordion">
+                        What are Jupyter notebooks useful for? 
+                      </button>
+                      <div class="answer">
+                        Jupyter notebooks are useful not only to draft code, but also to create use cases, demos, or examples for  Python packages
+                      </div>
+                    </div>
+
 
                     <!-- How do I structure a Jupyter notebook? ----------------------------------->
                     <div class="accordion-container">
@@ -364,6 +391,9 @@
                       </div>
                     </div>
 
+                    <br>
+                    <h4>GitHub</h4>
+
                     <!-- How do I structure the readme file of a GitHub repository? ----------------------------------->
                     <div class="accordion-container">
                       <button class="accordion">
@@ -377,6 +407,11 @@
                       </div>
                     </div>
 
+                    <br>
+                    <!-- Trick to jump at the top of the title (not bottom) for internal links -->
+                    <span class="anchor" id="data"></span>
+                    <h4>Data</h4>
+
                     
                     <!--  What image file formats should I use? ----------------------------------->
                     <div class="accordion-container">
@@ -389,6 +424,10 @@
                       </div>
                     </div>
 
+                    <br>
+                    <!-- Trick to jump at the top of the title (not bottom) for internal links -->
+                    <span class="anchor" id="publications"></span>
+                    <h4>Publishing</h4>
                     <!-- In what journal can I publish my Python package?  ----------------------------------->
                     <div class="accordion-container">
                       <button class="accordion">
@@ -399,7 +438,6 @@
                         The paper is only a few pages and reviewers check your repository, helping you improve it. 
                       </div>
                     </div>
-
 
                     <!-- How do I get a DOI for my code? ----------------------------------->
                     <div class="accordion-container">
@@ -419,7 +457,7 @@
 
             <center>
 
-                <strong>Do you have some questions that we didn't address? <a href="mailto:ormircommunity@google.com">Contact us!</a> </strong>
+                <strong>Do you have some questions that we didn't address? <a href="mailto:ormircommunity@gmail.com">Contact us!</a> </strong>
 
             </center>
         </div>
@@ -428,9 +466,22 @@
     <!-- ======= accordion-end ======= -->
 
                 
-           
-              </div>
-            </li>
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start"></div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="https://github.com/ORMIRcommunity" class="github"><i class="bx bxl-github"></i></a>
+        <a href="https://www.linkedin.com/in/ormir-community-63b824307/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://twitter.com/ORMIR_Community" class="twitter"><i class="bx bxl-twitter"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
 
 

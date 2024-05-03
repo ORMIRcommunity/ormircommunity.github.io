@@ -93,6 +93,9 @@
                     <li><a href="events.html">Events</a></li>
                 </ul>
                 </li>
+
+                <li><a class="nav-link scrollto" href="contact.html">Questions?</a></li> 
+
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
@@ -112,6 +115,12 @@
                         <h2>Datasets</h2> 
                     </div>
 
+                    <div class="section-sub-title">
+                        Here are <a href="#ORMIR-datasets">datasets shared and curated by member of the ORMIR community</a> and <a href="#other-datasets">other datasets</a> of MSK images available online
+                    </div>
+
+                    <!-- Trick to jump at the top of the title (not bottom) for internal links -->
+                    <span class="anchor" id="ORMIR-datasets"></span>
                     <p>
                         Datasets created by members of the ORMIR community:
                     <p>
@@ -132,10 +141,18 @@
                             
                             <tr>
                                 <td>Human</td>
+                                <td>Trabecular bone (micro CT)</td>
+                                <td>Segmented trabecular bone samples and corresponding distance tranforms</td>
+                                <td>Abstract at QMSKI 2024</td>
+                                <td><a href="https:www.doi.org/10.5281/zenodo.11061946">Zenodo</a></td>
+                            </tr>
+
+                            <tr>
+                                <td>Human</td>
                                 <td>Radius and tibia (HR-pQCT)</td>
                                 <td>1 radius and 1 tibia acquired with standard protocol (82µ)</td>
                                 <td>No publication available</td>
-                                <td><a href="https:www.doi.org/10.5281/zenodo.4072904">here</a></td>
+                                <td><a href="https:www.doi.org/10.5281/zenodo.4072904">Zenodo</a></td>
                             </tr>
 
                             <tr>
@@ -143,21 +160,22 @@
                                 <td>Knee (MR)</td>
                                 <td>About 100 OAI images with corresponding femoral cartilage masks, thicknesses, and relaxometry</td>
                                 <td>Bonaretti S. et al.  <a href="https://doi.org/10.1371/journal.pone.0226501">pyKNEEr: An image analysis workflow for open and reproducible research on femoral knee cartilage</a></td>
-                                <td><a href="https://www.doi.org/10.5281/zenodo.2530608">here</a></td>
+                                <td><a href="https://www.doi.org/10.5281/zenodo.2530608">Zenodo</a></td>
                             </tr>
+                            
                             <tr>
                                 <td>Synthetic data</td>
                                 <td>Spheres, cylinders, and plates</td>
                                 <td>Synthetic shapes for algorithm comparison</td>
                                 <td>No publication available</td>
-                                <td><a href="https://www.doi.org/10.5281/zenodo.7746338">here</a></td>
+                                <td><a href="https://www.doi.org/10.5281/zenodo.7746338">Zenodo</a></td>
                             </tr>
                             <tr>
                                 <td>Mouse</td>
                                 <td>Knee (µCT)</td>
                                 <td>22 images of trabecular bone at the proximal tibia</td>
                                 <td>Lau A. et al. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4396845/">Joint bleeding in factor VIII deficient mice causes an acute loss of trabecular bone and calcification of joint soft tissues which is prevented with aggressive factor replacement</a></td>
-                                <td><a href="https://www.doi.org/10.5281/zenodo.3890143">here</a></td>
+                                <td><a href="https://www.doi.org/10.5281/zenodo.3890143">Zenodo</a></td>
                             </tr>
 
                         </tbody>
@@ -173,8 +191,10 @@
 
             <div class="row">
                 <div class="col-md-12 offset-md-0">
+                    <!-- Trick to jump at the top of the title (not bottom) for internal links -->
+                    <span class="anchor" id="other-datasets"></span>
                     <p>
-                        Dataset with MSK images available online:
+                        Dataset of MSK images available online:
                     </p>
                     <table>
                         <thead>
@@ -191,44 +211,44 @@
                             <tr>
                                 <td>Human</td>
                                 <td>Knee (MR)</td>
-                                <td>Masks of bones and cartilages of about 600 images from the OAI dataset</td>
+                                <td>Masks of bones and cartilages of about 500 images from the OAI dataset</td>
                                 <td>Ambellan F. et al. <a href="https://pubmed.ncbi.nlm.nih.gov/30529224/">Automated segmentation of knee bone and cartilage combining statistical shape knowledge and convolutional neural networks: Data from the Osteoarthritis Initiative</a></td>
-                                <td><a href="https://opus4.kobv.de/opus4-zib/frontdoor/index/index/docId/6995">here</a></td>
+                                <td><a href="https://opus4.kobv.de/opus4-zib/frontdoor/index/index/docId/6995">ZIB</a></td>
                             </tr>
                             <tr>
                                 <td>Human</td>
                                 <td>Knee (MR)</td>
                                 <td>1,370 knee MRI exams performed at Stanford University Medical Center.</td>
                                 <td>Bien N. et al.  <a href="https://doi.org/10.1371/journal.pmed.1002699">Deep-learning-assisted diagnosis for knee magnetic resonance imaging: Development and retrospective validation of MRNet</a></td>
-                                <td><a href="https://stanfordmlgroup.github.io/competitions/mrnet/">here</a></td>
+                                <td><a href="https://stanfordmlgroup.github.io/competitions/mrnet/">Stanford repository</a></td>
                             </tr>
                             <tr class="row-odd">
                                 <td>Human</td>
                                 <td>Knee (MR)</td>
                                 <td>46996 automated segmentations of bones and cartilages from the OAI dataset</td>
                                 <td>Tack A. et al.  <a href="https://doi.org/10.1371/journal.pone.0258855">Towards novel osteoarthritis biomarkers: Multi-criteria evaluation of 46,996 segmented knee MRI data from the Osteoarthritis Initiative</a></td>
-                                <td><a href="https://pubdata.zib.de/">here</a></td>
+                                <td><a href="https://pubdata.zib.de/">ZIB</a></td>
                             </tr>
                                 <tr>
                                 <td>Human</td>
                                 <td>Knee (MR)</td>
                                 <td>2399 automated MR knee menisci</td>
                                 <td>Tack A. et al.  <a href="https://www.frontiersin.org/articles/10.3389/fbioe.2021.747217">A deep multi-task learning method for detection of meniscal tears in MRI data from the Osteoarthritis Initiative database.</a></td>
-                                <td><a href="https://pubdata.zib.de/">here</a></td>
+                                <td><a href="https://pubdata.zib.de/">ZIB</a></td>
                             </tr>
                                 <tr class="row-odd">
                                 <td>Human</td>
                                 <td>Spine (CT)</td>
                                 <td>160 CT image series of 141 patients with segmentation masks of 1725 vertebrae</td>
                                 <td>Sekuboyina A. et al  <a href="https://pubmed.ncbi.nlm.nih.gov/34340104/">VerSe: A Vertebrae labelling and segmentation benchmark for multi-detector CT images</a></td>
-                                <td><a href="https://osf.io/nqjyw/">here</a></td>
+                                <td><a href="https://osf.io/nqjyw/">OSF</a></td>
                             </tr>
                                 <tr>
                                 <td>Human</td>
                                 <td>Spine (MR)</td>
                                 <td>Collection of single subject datasets across 19 centers and multi-subject datasets across 42 centers (for a total of 260 participants), spanning different MRI manufacturers</td>
                                 <td>Cohen-Adad J. et al.  <a href="https://www.nature.com/articles/s41597-021-00941-8">Open-access quantitative MRI data of the spinal cord and reproducibility across participants, sites and manufacturers</a></td>
-                                <td><a href="https://spine-generic.readthedocs.io/">here</a></td>
+                                <td><a href="https://spine-generic.readthedocs.io/">Spine generic</a></td>
                             </tr>
 
                         </table>
@@ -237,10 +257,35 @@
     
                 </div>
 
-
+                
 
         </div>
+        <br>
+        <br>
+        <center>
+
+            <strong>Is your dataset missing? <a href="mailto:ormircommunity@gmail.com">Contact us!</a> </strong>
+
+        </center>
     </section><!-- End Team Section -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+        
+        <div class="container d-md-flex py-4">
+
+        <div class="me-md-auto text-center text-md-start"></div>
+        <div class="social-links text-center text-md-right pt-3 pt-md-0">
+            <a href="https://github.com/ORMIRcommunity" class="github"><i class="bx bxl-github"></i></a>
+            <a href="https://www.linkedin.com/in/ormir-community-63b824307/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://twitter.com/ORMIR_Community" class="twitter"><i class="bx bxl-twitter"></i></a>
+        </div>
+        </div>
+    </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
 
 
 
@@ -258,33 +303,3 @@
 
 </html>
 
-
-
-<!-- Template -->
-<!-- <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-    <div class="tile">
-        <div class="tile-img">
-            <img src="assets/img/projects/project_dafne.png" class="img-fluid" alt="">
-            <div class="social"> -->
-                <!-- GitHub -->
-                <!-- <a href="https://github.com/dafne-imaging"><i class="bi bi-github"></i></a> -->
-                <!-- Jupyter notebooks -->
-                <!-- <a href="https://github.com/dafne-imaging/dafne-evaluation"><img
-                src="assets/img/misc/logo_jupyter.png" alt="jupyter notebooks" width="21"
-                height="24"></a> -->
-                <!-- Documentation -->
-                <!-- <a href="https://www.dafne.network/"> <img
-                    src="assets/img/misc/logo_documentation.png" alt="documentation" width="30"
-                    height="24"></a> -->
-                <!-- Publication -->
-                <!-- <a href="https://doi.org/10.48550/arXiv.2302.06352"> <img
-                    src="assets/img/misc/logo_publication.png" alt="publication"
-                    height="24"></a>   -->
-            <!-- </div>
-        </div>
-        <div class="tile-info">
-            <h4>Dafne</h4>
-            <span>Annotate MRI images and training machine learning models</span>
-        </div>
-    </div>
-</div> -->

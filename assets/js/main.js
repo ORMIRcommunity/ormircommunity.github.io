@@ -79,6 +79,9 @@
     })
   }
 
+ 
+
+
   /**
    * Toggle .header-scrolled class to #header when page is scrolled
    */
@@ -87,8 +90,10 @@
     const headerScrolled = () => {
       if (window.scrollY > 100) {
         selectHeader.classList.add('header-scrolled')
+        navbar.classList.add('nav-scrolled');
       } else {
         selectHeader.classList.remove('header-scrolled')
+        navbar.classList.remove('nav-scrolled');
       }
     }
     window.addEventListener('load', headerScrolled)
@@ -131,7 +136,7 @@
   }, true)
 
   /**
-   * Scrool with ofset on links with a class name .scrollto
+   * Scrool with offset on links with a class name .scrollto
    */
   on('click', '.scrollto', function(e) {
     if (select(this.hash)) {
@@ -202,7 +207,7 @@
   });
 
   /**
-   * Scroll with ofset on page load with hash links in the url
+   * Scroll with offset on page load with hash links in the url
    */
   window.addEventListener('load', () => {
     if (window.location.hash) {

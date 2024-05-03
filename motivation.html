@@ -91,6 +91,8 @@
                   <li><a href="events.html">Events</a></li>
               </ul>
               </li>
+
+              <li><a class="nav-link scrollto" href="contact.html">Questions?</a></li> 
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
           </nav><!-- .navbar --><!-- .navbar -->
@@ -104,82 +106,136 @@
     <section>
         
       <div class="container">   
+        <div class="section-title">
+          <h2>Why a community</h2>
+        </div>
+
+        <div class="section-sub-title">
+          Get to know about our research, the challenges we aim to address, how we built a community to find solutions, and how we are organized!
+        </div>
+
+        <br>
+        <br>
+        <!-- <hr> -->
+    
         <div class="row">
-          <div class="col-md-12 offset-md-0">
-
-        
-            <div class="section-title">
-              <h2>Why a community</h2>
+          
+          <div class="col-md-6 offset-md-0">
+            <div class="section-sub-title">
+              <h4><span>Our research<h4><span>
             </div>
-
-      
-            <h3>What is our research about?</h3>
-
+            
             <p>
-              As musculoskeletal (MSK) imaging scientists, we extract quantitative information from medical images of bones, muscles, and joints to investigate diseases such as osteoporosis, osteoarthritis, and muscular dystrophies.  
+              As musculoskeletal (MSK) imaging scientists, we extract <b>quantitative information from medical images</b> of bones, muscles, and joints to <b>investigate diseases</b> such as osteoporosis, osteoarthritis, and muscular dystrophies  
             </p>
-
+         
             <p>
-              We use computational workflows that have a <strong>similar structure</strong>:
+              Our approach involve workflows with a <strong>common structure</strong>, including:
               <ul class="custom-list-tight">
                 <li class="custom-list-tight">
                   <strong> Acquisition of medical images </strong> using magnetic resonance or computed tomography
                 </li>
                 <li>
-                  <strong> Segmentation</strong> (i.e. labeling) of images to extract the organ/s of interest 
+                  <strong> Segmentation</strong> (i.e. labeling) of images to extract the organs of interest 
                 </li>
                 <li>
                   <strong> Quantification</strong> of organ or tissue morphology, structure (e.g. cartilage thickness), chemical composition (e.g. calcium content), and mechanical response (e.g. strains and stresses) 
                 </li>
               </ul>
             </p>
-            
             <p>
-              Our <strong>goal</strong> is to <strong>create computational tools to investigate diseases</strong> in a reliable and robust way
+              Our ultimate <b>goal</b> is to <b>create computational tools</b> to investigate diseases in a <b>reliable and robust</b> way
             </p>
+          </div>
+          
+          <div class="col-md-6 offset-md-0" id="img-general">
+            <img src="assets/img/general/pipeline.png" class="img-fluid" alt="">
 
-                  <!-- <p>
-                    <div class="image-container">
-                      <img alt="" src="assets/img/general/workflow.png" height="150px">
-                    </div>
-                  </p> -->
-                <!-- </div>
-              </div> -->
-
-
-            <hr>
-
-
-            <h3>Why a community for open and reproducible research?</h3>
+          </div>
+      
             
-            <p> 
-              Although we share similar workflows, we experience several challenges when dealing with code: 
+        
+          <hr>
+          <br>
+          <br>
+          <br>
+          <br>
+
+          <div class="col-md-12 offset-md-0">
+            <div class="section-sub-title">
+                <h4><span>Our challenges<h4><span></span>
+            </div>
+          
+            <p> The <b>computational tools in our labs</b> are traditionally composed of <b>fragmented code</b>, resulting from a combination of proprietary software, in-house implementations, and occasionally open-source code. This approach presents several challenges:
               <ul class="custom-list-tight">
-                <li class="custom-list-tight">
-                  Existing <strong>code is usually fragmented</strong> because it mainly consists of a combination of proprietary software and in-house algorithms
-                </li>
                 <li>
-                  When dealing with proprietary software, it is <strong>impossible to verify parameters and implementations</strong> and adapt the code to new images or anatomies
+                  When using <b>proprietary software</b>, it is <b>impossible to verify and modify parameters and implementations</b>, limiting our <b>awareness</b> of implementations and ability to <b>adapt</b> the code for new image modalities or anatomies
                 </li>
                 <li>       
-                  The life of in-house code is strictly linked to the employment of the code creators (e.g., PhD students or PostDocs), <strong>restricting code reuse and expansion</strong> by newer lab members   
+                  The life of <b>in-house code</b> is often <b>tied to the employment</b> of the code creators (mainly MSc students, PhD students, or PostDocs), restricting <b>code reuse and expansion</b> by newer lab members   
                 </li>
                 <li>
-                  Existing open software is hard to reuse because of <strong>lack of documentation</strong> and dishomogenization of coding language and guidelines
+                  Existing <b>open source software</b> is often difficult to reuse because of <b>insufficient documentation</b> and variability of programming languages 
                 </li>
               </ul>  
             </p>
             <p>
-              To overcome these issues, we created the ORMIR community. 
-              Our main aim is to <strong>create open, reproducible, well-tested, and well-documented software to analyze musculoskeletal (MSK) images</strong>.   
+              To overcome these challenges, we <b>established the ORMIR community</b>. Our goal is to <b>develop open, reproducible, well-tested, and well-documented software to analyze musculoskeletal (MSK) images</b>   
             </p>
+          </div>
         
 
-            <hr>
+          <hr>
+          <br>
+          <br>
+          <br>
+          <br>
 
-            <h3>What do we do?</h3>
+          <div class="col-md-12 offset-md-0">
+            <div class="section-sub-title">
+              <h4><span>How we started building a community<h4><span></span>
+            </div>
+              
             <p>
-              <ul>
+              The  <b>ideas  of  code  sharing, openness,  and  reproducibility</b>  as  a  solution  to  code  fragmentation  <b>began  circulating</b>  in our scientific community during  <b>two satellite  events</b> of the <a href="https://www.qmski.org/">Quantitative  Musculoskeletal  Imaging (QMSKI) Workshop</a> in 2019:
+              <i>Hands-on  Transparent  QMSKI  research:  Open  data,  reproducible  workflows,  and  interactive  publications</i>, and
+              <i>Working group on standardization of quantitative metrics for 3D  imaging</i>
+            </p>
+            <p>
+              A few months later, a group of researchers <b>successfully applied</b>  for  funds  to  hold  a  <b>Jupyter  Community  Workshop</b> entitled <a href="https://github.com/JCMSK/2022_JCW/blob/main/README.md">Building the Jupyter Community in MSK Imaging Research</a>.  We consider the day of acceptance of the proposal, 24 January 2020, as the birthdate of our community. You can read more about our beginnings in our <a href="https://zenodo.org/doi/10.5281/zenodo.8119062">manifesto paper</a> 
+            </p>
+
+            <p>
+              Since 2020, we have <b>grown</b> to include more and more <a href="members.html">MSK researchers and contributors from academia and industry</a>. We have developed <a href="software.html">Python packages</a>, written <a href="publications.html">publications</a>, applied for <a href="funding.html">funds</a>, and hosted <a href="events.html">workshops</a> 
+
+            </p>
+
+
+            
+          </div>
+
+          <hr>
+          <br>
+          <br>
+          <br>
+          <br>
+
+          <div class="col-md-12 offset-md-0">
+            <div class="section-sub-title">
+                <h4><span>How we are organized<h4><span></span>
+            </div>
+
+            <p>We are divided in <a href="groups.html">working groups</a>, based on our <b>research interests</b>. Each working group has one or more <b>coordinators</b> that support <b>contributors</b> in finding their way to participate in projects
+            </p>
+
+            <p>We also have a <a href="boards.html#CAB">Community Advisory Board</a> and a <a href="boards.html#TAB">Technical Advisory Board</a>, who <b>coordinate the community outreach</b> and <b>provide technical support</b>
+            </p>
+
+            <p>We share common <a href="index.html#goals">goals</a> and <a href="index.html#values">values</a> and we are <b>always open to welcoming</b> <a href="newcomers.html">new contributors</a>
+            </p>
+
+
+              <!-- <ul>
                 <li>
                     <strong>We write code!</strong> We create Python packages with Jupyter Notebooks as user-interface, focusing on application related to our research interest (see our <a href="packages.html">packages</a>) 
                 </li>
@@ -188,14 +244,10 @@
                     See the  <a href="https://github.com/JCMSK/2022_JCW/blob/main/README.md#numfocus-blog-post">report</a> of our latest workshop
                 </li>  
               </ul>
-            </p>
+            </p> -->
             
-            <hr>
             
-            <h3>How did we start?</h3>
-
-            To know more about our story, read the  <a class="reference external" href="">manifesto paper</a> </li> (coming soon!) 
-
+            
         </div>
       </div>
     </div>
@@ -221,6 +273,22 @@
 
 
     </section>
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start"></div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="https://github.com/ORMIRcommunity" class="github"><i class="bx bxl-github"></i></a>
+        <a href="https://www.linkedin.com/in/ormir-community-63b824307/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://twitter.com/ORMIR_Community" class="twitter"><i class="bx bxl-twitter"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
 
 

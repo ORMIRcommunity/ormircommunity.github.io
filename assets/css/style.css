@@ -50,6 +50,7 @@ p {
   margin-bottom: 27px;
   font-size: 18px;
   line-height: 32px;
+  font-size: 16px;
 }
 
 code-text{
@@ -66,10 +67,6 @@ hr {
   margin-top:45px;
 }
 
-/* 
-ul li{
-  padding-bottom: 20px;
-} */
 
 .custom-list {
   list-style-type: disc;
@@ -102,12 +99,20 @@ ul li{
   font-size: 27px; /* Adjusts the size of the marker */
 }
 
+/* Trick to jump at the top of the title (not bottom) for internal links */
+.anchor{
+  display:block;
+  height:90px; /* this is the height of your header */
+  margin-top:-90px; /* this is again negative value of the height of your header */
+  visibility:hidden;
+}
 
+#img-general{
 
-
-
-
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /*--------------------------------------------------------------
 # accordion
@@ -336,7 +341,7 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #c7e565;
+  background: #3d3d3d;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -350,7 +355,7 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
 }
 
 .back-to-top:hover {
-  background: #e9607a;
+  background: #c7e565;
   color: #fff;
 }
 
@@ -684,14 +689,14 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/general/hero-bg.png") top center;
   background-size: cover;
   position: relative;
 }
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -738,14 +743,14 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
 }
 
 #hero .btn-get-started {
-  font-family: "Poppins", sans-serif;
+  font-family: "IBM Plex Mono", sans-serif;
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 22px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 8px 30px 9px 30px;
-  border-radius: 50px;
+  padding: 6px 35px 6px 35px;
+  border-radius: 12px;
   transition: 0.5s;
   border: 2px solid #fff;
   color: #fff;
@@ -754,6 +759,7 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
 #hero .btn-get-started:hover {
   background: #c7e565;
   border: 2px solid #c7e565;
+  color: #111111; 
 }
 
 @media (min-width: 1024px) {
@@ -873,8 +879,7 @@ section {
 
 
 
-
-/*--------------------------------------------------------------
+/*-------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
 .about .content h3 {
@@ -882,9 +887,66 @@ section {
   font-size: 26px;
 }
 
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  padding-left: 28px;
+  position: relative;
+}
+
+.about .content ul li+li {
+  margin-top: 10px;
+}
+
+/* disc symbol in front on li */
+.about .content ul i { 
+  position: absolute;
+  left: 0;
+  top: 7px;
+  font-size: 10px;
+  color: #222222;
+  line-height: 1;
+}
+
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+
+.about .content .btn-learn-more {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 50px;
+  transition: 0.3s;
+  line-height: 1;
+  color: #e43c5c;
+  animation-delay: 0.8s;
+  margin-top: 6px;
+  border: 2px solid #e43c5c;
+}
+
+.about .content .btn-learn-more:hover {
+  background: #e43c5c;
+  color: #fff;
+  text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+/* .about .content h3 {
+  font-weight: 600;
+  font-size: 26px;
+}
+
 .about h4 {
-  /* font-weight: 600;
-  font-size: 26px; */
+
   color: #c7e565;
   padding-top: 10px;
   padding-bottom: 15px;
@@ -892,21 +954,20 @@ section {
 
 .about .content {
   padding-bottom: 40px;
-  padding-left: 80px;  /* Padding of the whole page */
+  padding-left: 80px; 
   padding-right: 80px;
 }
 
-/* the code below does not work */
+
 @media (max-width: 900px) {
   .about .container {
-    padding-left: 10px;  /* Padding of the whole page */
+    padding-left: 10px; 
     padding-right: 10px;
   }
 }
 
 .about .image-container{
   max-width: 5%;
-  /* margin: 0 auto; Optional: Center the container */
 }
 
 
@@ -923,18 +984,25 @@ section {
   padding-left: 31px;
   position: relative;
   line-height: 32px;
-}
+  color: blue;
+} */
 
-.about .content ul li::before { /* Characteristics of the list marker */
-  content: '•'; /* Use a disc as the marker */
-  color: #222222; /* Set the color of the marker */
-  font-size: 48px; /* Set the size of the marker */
-  line-height: 1; /* Set line height to 1 for accurate positioning */
-  position: absolute;
-  left: 0;
-  top: 50%; /* Position the marker at the vertical center of the li */
-  transform: translateY(-50%);
-}
+/* .about .content ul li::before {  */
+  /* Characteristics of the list marker */
+  /* content: '•';  */
+  /* Use a disc as the marker */
+  /* color: #222222;  */
+  /* Set the color of the marker */
+  /* font-size: 48px;  */
+  /* Set the size of the marker */
+  /* line-height: 1;  */
+  /* Set line height to 1 for accurate positioning */
+  /* position: absolute;
+  left: 0; */
+  /* top: 50%;  */
+  /* Position the marker at the vertical center of the li */
+  /* transform: translateY(-50%);
+} */
 
 
 
@@ -962,7 +1030,7 @@ section {
   line-height: 1;
 } */
 
-.about .content p:last-child {
+/* .about .content p:last-child {
   margin-bottom: 0;
 }
 
@@ -986,27 +1054,87 @@ section {
   background: #c7e565;
   color: #fff;
   text-decoration: none;
-}
+} */
 
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
 .services {
   padding-bottom: 30px;
+  background-color: #111111;
+  border-radius: 40px;
 }
 
 .services .icon-box {
-  padding: 60px 30px;
+  padding: 40px 30px;
   position: relative;
   overflow: hidden;
-  background: #fff;
-  box-shadow: 2px 0 35px 0 rgba(68, 88, 144, 0.12);
+  background: #111111;
+  box-shadow: 0px 0px 1px 1px rgba(71, 71, 71, 1);
+  border-right-color: red;
+  /* border: red; */
+  /* border-color: white; */
+  /* #f3f3f3; */
+  /* box-shadow: 2px 0 35px 0 rgba(68, 88, 144, 0.12); */
   /* transition: all 0.3s ease-in-out; */
-  border-radius: 8px;
+  border-radius: 16px;
   z-index: 1;
-  text-align: center;
+  text-align: left;
+  /* color: #919191; */
 }
 
+
+.services h2{
+  text-align: left;
+  color: white;
+}
+
+.services .description {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 10;
+  color: #919191;
+  font-weight: 400;
+}
+
+.services .view-more a{
+  font-family: "IBM Plex Mono", monospace;
+  color: #c7e565;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.services .view-more a:hover{
+  text-decoration: underline;
+}
+
+
+.services .icon {
+  margin-bottom: 15px;
+}
+
+.services .icon i {
+  font-size: 48px;
+  line-height: 1;
+  color: #c7e565;
+  transition: all 0.3s ease-in-out;
+}
+
+.services .title {
+  color:white;
+  font-weight: 400;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+
+.services .title a {
+  color: #111;
+}
+
+
+
+/* The two following command sections transform the card to green when hovering */
 /* .services .icon-box::before {
   content: "";
   position: absolute;
@@ -1024,33 +1152,6 @@ section {
   top: 0;
   border-radius: 0px;
 } */
-
-.services .icon {
-  margin-bottom: 15px;
-}
-
-.services .icon i {
-  font-size: 48px;
-  line-height: 1;
-  color: #c7e565;
-  transition: all 0.3s ease-in-out;
-}
-
-.services .title {
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
-.services .title a {
-  color: #111;
-}
-
-.services .description {
-  font-size: 15px;
-  line-height: 28px;
-  margin-bottom: 10;
-}
 
 /* .services .icon-box:hover .title a,
 .services .icon-box:hover .description {
@@ -1102,16 +1203,22 @@ section {
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
+#margin-cta{
+  /* padding-bottom: 0px; */
+  margin-bottom: -80px;
+}
+
 .cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.8)), url("../img/cta-bg.jpg") center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.95)), url("../img/general/hero-bg.png") center center;
   background-size: cover;
-  padding: 60px 0;
+  padding: 100px 0;
 }
 
 .cta h3 {
   color: #fff;
   font-size: 28px;
   font-weight: 700;
+  font-family: "IBM Plex Mono", sans-serif;
 }
 
 .cta p {
@@ -1119,23 +1226,25 @@ section {
 }
 
 .cta .cta-btn {
-  font-family: "Nunito", sans-serif;
+  font-family: "IBM Plex Mono", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 8px 28px;
-  border-radius: 25px;
+  border-radius: 12px;
   transition: 0.5s;
   margin-top: 10px;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid #c7e565;
+  color: #c7e565;
+  text-decoration: none;
 }
 
 .cta .cta-btn:hover {
-  background: #c7e565;
+  /* background: #c7e565; */
   border: 2px solid #c7e565;
+  text-decoration: underline;
 }
 
 @media (min-width: 1024px) {
@@ -1777,7 +1886,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #d01d3f;
+  background: #90bc00;
 }
 
 @keyframes animate-loading {
@@ -2342,10 +2451,15 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  color: #444444;
-  font-size: 14px;
-  background: #f6f4f4;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  color: #919191;
+  font-size: 13px;
+  /* background: #f6f4f4; */
+  background: #111111;
+  /* box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); */
+  /* position: fixed; */
+  /* bottom: 0; 
+  left: 0; 
+  z-index: 10; */
 }
 
 #footer .footer-top {
@@ -2393,7 +2507,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #ea6981;
+  color: #90bc00;
   font-size: 18px;
   line-height: 1;
 }
@@ -2417,7 +2531,7 @@ section {
 
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
-  color: #c7e565;
+  color: #90bc00;
 }
 
 #footer .footer-newsletter {
@@ -2457,7 +2571,7 @@ section {
   background: none;
   font-size: 15px;
   padding: 0 22px;
-  background: #c7e565;
+  background: #90bc00;
   color: #fff;
   transition: 0.3s;
   border-radius: 50px;
@@ -2465,19 +2579,19 @@ section {
 }
 
 #footer .footer-newsletter form input[type=submit]:hover {
-  background: #d01d3f;
+  background: #90bc00;
 }
 
 #footer .credits {
   padding-top: 5px;
   font-size: 13px;
-  color: #444444;
+  color: #919191;
 }
 
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #c7e565;
+  background: #3d3d3d;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -2490,9 +2604,130 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: #d01d3f;
+  background: #c7e565;
   color: #fff;
   text-decoration: none;
 }
 
 
+
+/* Code for the contact us form from: 
+https://formspree.io/library/simple-contact-form/#editing-section 
+*/
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm fieldset,
+#fs-frm optgroup,
+#fs-frm label,
+#fs-frm #card-element:disabled {
+  font-family: inherit;
+  font-size: 100%;
+  color: inherit;
+  border: none;
+  border-radius: 0;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+#fs-frm label,
+#fs-frm legend,
+#fs-frm ::placeholder {
+  font-size: 100%;
+  color: #90bc00;
+  margin-bottom: .5rem;
+  padding-top: .2rem;
+  display: flex;
+  align-items: baseline;
+}
+
+/* Submit button */
+#fs-frm [type="submit"]{
+  background: black;
+  color:white;
+  border-radius: 12px;
+  font-family: "IBM Plex Mono", monospace;
+  /* color: #90bc00; */
+
+}
+
+/* border, padding, margin, width */
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm #card-element {
+  border: 1px solid rgba(0,0,0,0.2);
+  background-color: rgba(255,255,255,0.9);
+  padding: .75em 1rem;
+  margin-bottom: 1.5rem;
+}
+#fs-frm input:focus,
+#fs-frm select:focus,
+#fs-frm textarea:focus {
+  background-color: white;
+  outline-style: solid;
+  outline-width: thin;
+  outline-color: gray;
+  outline-offset: -1px;
+}
+#fs-frm [type="text"],
+#fs-frm [type="email"] {
+  width: 100%;
+}
+#fs-frm [type="button"],
+#fs-frm [type="submit"],
+#fs-frm [type="reset"] {
+  width: auto;
+  cursor: pointer;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
+#fs-frm [type="button"]:focus,
+#fs-frm [type="submit"]:focus,
+#fs-frm [type="reset"]:focus {
+  outline: none;
+}
+#fs-frm [type="submit"],
+#fs-frm [type="reset"] {
+  margin-bottom: 0;
+}
+#fs-frm select {
+  text-transform: none;
+}
+
+#fs-frm [type="checkbox"] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+  appearance: checkbox;
+  display: inline-block;
+  width: auto;
+  margin: 0 .5em 0 0 !important;
+}
+
+#fs-frm [type="radio"] {
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+  appearance: radio;
+}
+
+/* address, locale */
+#fs-frm fieldset.locale input[name="city"],
+#fs-frm fieldset.locale select[name="state"],
+#fs-frm fieldset.locale input[name="postal-code"] {
+  display: inline;
+}
+#fs-frm fieldset.locale input[name="city"] {
+  width: 52%;
+}
+#fs-frm fieldset.locale select[name="state"],
+#fs-frm fieldset.locale input[name="postal-code"] {
+  width: 20%;
+}
+#fs-frm fieldset.locale input[name="city"],
+#fs-frm fieldset.locale select[name="state"] {
+  margin-right: 3%;
+}
