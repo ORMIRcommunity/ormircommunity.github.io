@@ -224,7 +224,7 @@
                     <h4>Python documentation</h4>
 
                     <!-- Python documentation style (docstrings) ----------------------------------->
-                    <div class="accordion-container">
+                    <div class="accordion-container" id="docstrings">
                         <button class="accordion">
                             What Python <i>documentation</i> style (docstrings) do I use?
                         </button>
@@ -339,6 +339,52 @@
 
                       </div>
                     </div>
+
+                    <!-- How do I create a website using Jupyter Book? ----------------------------------->
+                    <div class="accordion-container">
+                      <button class="accordion">
+                        How do I create a website using Jupyter Book? 
+                      </button>
+                      <div class="answer">
+                        You can find comprehensive guidelines and a template on the <a href="https://jupyterbook.org/en/stable/intro.html">Jupyter Book website</a>. In a nutshell: 
+                        <ol>
+                          <li> For each website page, create one <code-text>.md</code-text> or <code-text>.ipynb</code-text> file and write the content using markdown</li>
+                          <li> Create a <code-text>_toc.yml</code-text> and a <code-text>_config.yml</code-text> files (see examples <a href="https://jupyterbook.org/en/stable/start/create.html#anatomy-of-a-jupyter-book">here</a>)</li>
+                          <li> Install Jupyter Book with the command <code-text>pip install jupyter-book</code-text></li>
+                          <li> Create your book with the command <code-text>jupyter-book build book_name</code-text>
+                        </ol>
+                        The created <code-text>.html</code-text> files will be in the folder <code-text>_build/html</code-text> 
+
+                      </div>
+                    </div>
+
+                    <!-- How do I deploy my Jupyter Book website on GitHub using CI? ----------------------------------------------------->
+                    <div class="accordion-container">
+                      <button class="accordion">
+                        How do I deploy my Jupyter Book website on GitHub using CI?
+                      </button>
+                      <div class="answer">
+                        CI (Continuous Integration) is a tool that allows you to automate procedures, and in GitHub it is called <i>Actions</i>. 
+                        Deploying a Jupyter Book website using Actions is very convenient because it automates the building process, ensuring that your site is continuously and seamlessly updated with every change pushed to the repository. You can find detailed information on how to deploy a Jupyter Book website using Actions <a href="https://jupyterbook.org/en/stable/publish/gh-pages.html">here</a>. 
+                        Briefly: 
+                        <ol>
+                          <li> Make sure that your repository contains all the website content files, (that is, <code-text>.md</code-text> and/or <code-text>.ipynb</code-text> files, together with figures, etc.), <code-text>_config.yml</code-text> and <code-text>_toc.yml</code-text>. Note: You do <i>not</i> need to push the <code-text>_built</code-text> folder because GitHub Action will create the <code-text>.html</code-text> files or your website
+                          </li>
+                          <li> In the same repository, add the following files from 
+                            <a href="https://github.com/ORMIRcommunity/templates/tree/main/github_actions_jupyter_book">this</a> ORMIR template folder: 
+                            <a href="https://github.com/ORMIRcommunity/templates/blob/main/github_actions_jupyter_book/requirements.txt">requirements.txt</a>, 
+                            <a href="https://github.com/ORMIRcommunity/templates/blob/main/github_actions_jupyter_book/.nojekyll">.nojekyll</a>, and 
+                            <a href="https://github.com/ORMIRcommunity/templates/blob/main/github_actions_jupyter_book/.github/workflows/ci.yml">.github/workflows/ci.yml</a> (note that <code-text>.nojekyll</code-text> and <code-text>.github/workflows/ci.yml</code-text> are hidden files)
+                          </li>
+                          <li>Go to your GitHub repository on GitHub.com. In the top bar, click on <code-text>Settings</code-text>, and in the appearing left panel, click on <code-text>Pages</code-text>. Under <code-text>Build and deployment</code-text>, <code-text>Source</code-text>, select <code-text>GitHub Actions</code-text>
+                          </li>
+                          <li>Every time you push new content to the repository, the book will be automatically created and the new <code-text>.html</code-text> files will be automatically deployed to your website. You can follow the progress by clicking <code-text>Actions</code-text> on the top bar of the GitHub repository
+                        </ol>
+                      </div>
+                    </div>
+
+
+
                     
                     <br>
                     <h4>Code license</h4>
@@ -420,7 +466,7 @@
                       </button>
                       <div class="answer">
                         Our pipelines usually start with <code-text>.dcm</code-text> images for CT/MR acquisitions or <code-text>.isq</code-text> images for µCT/HR-pQCT acquisitions. 
-                        We recommend to organize image files and folders following the <a href="https://ormir-mids.github.io/specs">ORMIR-MIDS specifications</a> implemented by the <a href="https://ormir-mids.github.io/package">ORMIR-MIDS Python package</a>. 
+                        We recommend to organize image files and folders following the <a href="https://ormir-mids.github.io/specs">ORMIR-MIDS specifications</a> implemented by the <a href="https://github.com/ormir-mids/ormir-mids">ORMIR-MIDS Python package</a>. 
                       </div>
                     </div>
 
