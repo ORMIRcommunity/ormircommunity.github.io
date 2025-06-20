@@ -791,6 +791,27 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
   }
 }
 
+#hero .social-links a {
+  font-size: 28px;
+  display: inline-block;
+  /* background: #3d3d3d; */
+  color: #fff;
+  line-height: 1;
+  padding: 0px 8px 36px 8px;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#hero .social-links a:hover {
+  /* background: #c7e565; */
+  color: #c7e565;
+  text-decoration: none;
+}
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
