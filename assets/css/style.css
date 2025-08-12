@@ -114,6 +114,11 @@ hr {
   align-items: center;
 }
 
+/* The following command is used to solve the “scroll offset” problem, so that the browser can jump to the exact top of the element with the id. Used for guidelines.html*/
+html {
+  scroll-padding-top: 85px; /* adjust to your header height */
+}
+
 /*--------------------------------------------------------------
 # accordion
 --------------------------------------------------------------*/
