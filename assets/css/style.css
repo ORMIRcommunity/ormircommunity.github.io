@@ -99,6 +99,15 @@ hr {
   font-size: 27px; /* Adjusts the size of the marker */
 }
 
+a.alumni{
+  color: #111;
+  text-decoration: none;
+  /* font-weight: 600; */
+}
+a.alumni:hover {
+  text-decoration: underline;
+}
+
 /* Trick to jump at the top of the title (not bottom) for internal links */
 .anchor{
   display:block;
