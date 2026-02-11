@@ -108,6 +108,18 @@ a.alumni:hover {
   text-decoration: underline;
 }
 
+.tile-info span a.template,
+.tile-info span a.template:visited {
+  color: #90bc00;
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+.tile-info span a.template:hover {
+  color: #90bc00;
+  text-decoration: none;
+}
+
 /* Trick to jump at the top of the title (not bottom) for internal links */
 .anchor{
   display:block;
