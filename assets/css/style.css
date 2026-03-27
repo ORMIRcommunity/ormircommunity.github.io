@@ -744,7 +744,7 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
 #hero .hero-container {
   position: absolute;
   bottom: 0;
-  top: 0;
+  top: 23%;
   left: 0;
   right: 0;
   display: flex;
@@ -847,6 +847,28 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
   /* background: #c7e565; */
   color: #c7e565;
   text-decoration: none;
+}
+
+.hero-link {
+  color: white;
+  text-decoration: none;
+}
+
+.hero-link:hover {
+  color: #c7e565;
+}
+
+.responsive-hero-div {
+  width: 50%;   /* 4 out of 12 columns */
+  margin-right: auto; 
+  margin: 0 auto;  /* center horizontally */
+  color: white;
+  text-align: left;
+}
+@media (max-width: 991px) {
+  .responsive-hero-div {
+    width: 100%;
+  }
 }
 
 /*--------------------------------------------------------------
